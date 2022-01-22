@@ -368,8 +368,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">init_notebook_mode</span><span class="p">,</span> <span class="n">show</span>
-<span class="kn">from</span> <span class="nn">itables.sample_dfs</span> <span class="kn">import</span> <span class="n">get_dict_of_test_dfs</span><span class="p">,</span> <span class="n">get_dict_of_test_series</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span>
+<span class="kn">from</span> <span class="nn">itables.sample_dfs</span> <span class="kn">import</span> <span class="n">get_dict_of_test_dfs</span>
 
 <span class="n">dict_of_test_dfs</span> <span class="o">=</span> <span class="n">get_dict_of_test_dfs</span><span class="p">()</span>
 <span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">all_interactive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -386,35 +385,6 @@
     });
 </script></div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd"># We first tried to generate all the examples with this code</span>
-<span class="sd"># but that is not supported atm by jp, see</span>
-<span class="sd"># https://github.com/executablebooks/jupyter-book/issues/1610</span>
-<span class="sd">for df_name, df in get_dict_of_test_dfs().items():</span>
-<span class="sd">    display(Markdown(f&quot;## {df_name}&quot;))</span>
-<span class="sd">    display(show(df, maxBytes=1e5, maxColumns=100))</span>
-<span class="sd">&quot;&quot;&quot;</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="sd"># So instead we generated the content of this notebook with</span>
-<span class="sd">cells = []</span>
-<span class="sd">for df_name in dict_of_test_dfs:</span>
-<span class="sd">    cells.append(f&quot;## {df_name}&quot;)</span>
-<span class="sd">    cells.append(f&#39;&#39;&#39;</span>
-
-<span class="sd">```{{code-cell}}</span>
-<span class="sd">show(dict_of_test_dfs[&quot;{df_name}&quot;])</span>
-<span class="sd">```</span>
-<span class="sd">&#39;&#39;&#39;)</span>
-
-<span class="sd">print(&#39;\n&#39;.join(cells))</span>
-<span class="sd">&quot;&quot;&quot;</span><span class="p">;</span>
-</pre></div>
-</div>
-</div>
-</div>
 <div class="section" id="empty">
 <h2>empty<a class="headerlink" href="#empty" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
@@ -424,7 +394,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="e92cbffa-bd65-4a08-b4de-a3345d540316" class="display"><thead><th></th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="36bace50-6ca3-4cf3-acf6-aeb02248addd" class="display"><thead><th></th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -454,7 +424,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#e92cbffa-bd65-4a08-b4de-a3345d540316').DataTable(dt_args);
+            $('#36bace50-6ca3-4cf3-acf6-aeb02248addd').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -464,7 +434,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#e92cbffa-bd65-4a08-b4de-a3345d540316').DataTable(dt_args);
+                    $('#36bace50-6ca3-4cf3-acf6-aeb02248addd').DataTable(dt_args);
                 });
             }
         )
@@ -482,7 +452,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="3ef4b0d2-060d-4aeb-9e77-1293cfc4c9f3" class="display"><thead><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="3cfcb304-9b9b-439e-95eb-816a23153f29" class="display"><thead><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -512,7 +482,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#3ef4b0d2-060d-4aeb-9e77-1293cfc4c9f3').DataTable(dt_args);
+            $('#3cfcb304-9b9b-439e-95eb-816a23153f29').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -522,7 +492,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#3ef4b0d2-060d-4aeb-9e77-1293cfc4c9f3').DataTable(dt_args);
+                    $('#3cfcb304-9b9b-439e-95eb-816a23153f29').DataTable(dt_args);
                 });
             }
         )
@@ -540,7 +510,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="cda968ff-4bee-4ebe-b66a-72dd78da8d43" class="display"><thead><th>int</th><th>inf</th><th>nan</th><th>math</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="7419e763-2599-4b4f-bfb2-1c8a90e94947" class="display"><thead><th>int</th><th>inf</th><th>nan</th><th>math</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -570,7 +540,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#cda968ff-4bee-4ebe-b66a-72dd78da8d43').DataTable(dt_args);
+            $('#7419e763-2599-4b4f-bfb2-1c8a90e94947').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -580,7 +550,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#cda968ff-4bee-4ebe-b66a-72dd78da8d43').DataTable(dt_args);
+                    $('#7419e763-2599-4b4f-bfb2-1c8a90e94947').DataTable(dt_args);
                 });
             }
         )
@@ -598,7 +568,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="c6338635-445a-45db-88e0-0cd9b1552192" class="display"><thead><th>text_column</th><th>very_long_text_column</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="4974fae8-5d6e-4042-b762-1d9da0ace45c" class="display"><thead><th>text_column</th><th>very_long_text_column</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -628,7 +598,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#c6338635-445a-45db-88e0-0cd9b1552192').DataTable(dt_args);
+            $('#4974fae8-5d6e-4042-b762-1d9da0ace45c').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -638,7 +608,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#c6338635-445a-45db-88e0-0cd9b1552192').DataTable(dt_args);
+                    $('#4974fae8-5d6e-4042-b762-1d9da0ace45c').DataTable(dt_args);
                 });
             }
         )
@@ -656,7 +626,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="6f748959-2456-43d8-948c-a68073ecc843" class="display"><thead><th>datetime</th><th>timedelta</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="b3af9f61-ac22-46c4-8a9f-fb1a2c99689f" class="display"><thead><th>datetime</th><th>timedelta</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -686,7 +656,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#6f748959-2456-43d8-948c-a68073ecc843').DataTable(dt_args);
+            $('#b3af9f61-ac22-46c4-8a9f-fb1a2c99689f').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -696,7 +666,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#6f748959-2456-43d8-948c-a68073ecc843').DataTable(dt_args);
+                    $('#b3af9f61-ac22-46c4-8a9f-fb1a2c99689f').DataTable(dt_args);
                 });
             }
         )
@@ -714,7 +684,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="19b0f7e1-6722-4299-ae90-80a96070e0eb" class="display"><thead><th>dict</th><th>list</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="381fed2f-9883-4b3f-aa7d-f756ee7b139a" class="display"><thead><th>dict</th><th>list</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -744,7 +714,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#19b0f7e1-6722-4299-ae90-80a96070e0eb').DataTable(dt_args);
+            $('#381fed2f-9883-4b3f-aa7d-f756ee7b139a').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -754,7 +724,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#19b0f7e1-6722-4299-ae90-80a96070e0eb').DataTable(dt_args);
+                    $('#381fed2f-9883-4b3f-aa7d-f756ee7b139a').DataTable(dt_args);
                 });
             }
         )
@@ -772,7 +742,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="e106663f-fdc8-402e-aa51-0f95b06ac903" class="display"><thead><th></th><th></th><th>('A', 1)</th><th>('A', 2)</th><th>('B', 1)</th><th>('B', 2)</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="d80e50fc-8657-4db8-9861-24872a424dba" class="display"><thead><th></th><th></th><th>('A', 1)</th><th>('A', 2)</th><th>('B', 1)</th><th>('B', 2)</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -802,7 +772,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#e106663f-fdc8-402e-aa51-0f95b06ac903').DataTable(dt_args);
+            $('#d80e50fc-8657-4db8-9861-24872a424dba').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -812,7 +782,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#e106663f-fdc8-402e-aa51-0f95b06ac903').DataTable(dt_args);
+                    $('#d80e50fc-8657-4db8-9861-24872a424dba').DataTable(dt_args);
                 });
             }
         )
@@ -830,7 +800,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="466fd0fb-eefd-4b53-b3a1-77ffdece29d6" class="display"><thead><th>id</th><th>iso2Code</th><th>name</th><th>region</th><th>adminregion</th><th>incomeLevel</th><th>lendingType</th><th>capitalCity</th><th>longitude</th><th>latitude</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="e3bcb041-e845-41e4-a259-391fceca0cec" class="display"><thead><th>id</th><th>iso2Code</th><th>name</th><th>region</th><th>adminregion</th><th>incomeLevel</th><th>lendingType</th><th>capitalCity</th><th>longitude</th><th>latitude</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -860,7 +830,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#466fd0fb-eefd-4b53-b3a1-77ffdece29d6').DataTable(dt_args);
+            $('#e3bcb041-e845-41e4-a259-391fceca0cec').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -870,7 +840,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#466fd0fb-eefd-4b53-b3a1-77ffdece29d6').DataTable(dt_args);
+                    $('#e3bcb041-e845-41e4-a259-391fceca0cec').DataTable(dt_args);
                 });
             }
         )
@@ -888,7 +858,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="6e103faa-a605-4eb9-bec6-d9fbc0d3cb78" class="display"><thead><th></th><th></th><th>capitalCity</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="5f7e0d6b-2509-438f-9b92-75d01f07dd14" class="display"><thead><th></th><th></th><th>capitalCity</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -918,7 +888,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#6e103faa-a605-4eb9-bec6-d9fbc0d3cb78').DataTable(dt_args);
+            $('#5f7e0d6b-2509-438f-9b92-75d01f07dd14').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -928,7 +898,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#6e103faa-a605-4eb9-bec6-d9fbc0d3cb78').DataTable(dt_args);
+                    $('#5f7e0d6b-2509-438f-9b92-75d01f07dd14').DataTable(dt_args);
                 });
             }
         )
@@ -946,7 +916,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="4779b148-c033-4054-b7c6-35d1e5b5ec0c" class="display"><thead><th></th><th></th><th>('code', 'id')</th><th>('code', 'iso2Code')</th><th>('property', 'adminregion')</th><th>('property', 'incomeLevel')</th><th>('localisation', 'lendingType')</th><th>('localisation', 'capitalCity')</th><th>('localisation', 'longitude')</th><th>('localisation', 'latitude')</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="1639f5a9-6383-4555-a3d2-23ae12e33302" class="display"><thead><th></th><th></th><th>('code', 'id')</th><th>('code', 'iso2Code')</th><th>('property', 'adminregion')</th><th>('property', 'incomeLevel')</th><th>('localisation', 'lendingType')</th><th>('localisation', 'capitalCity')</th><th>('localisation', 'longitude')</th><th>('localisation', 'latitude')</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -976,7 +946,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#4779b148-c033-4054-b7c6-35d1e5b5ec0c').DataTable(dt_args);
+            $('#1639f5a9-6383-4555-a3d2-23ae12e33302').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -986,7 +956,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#4779b148-c033-4054-b7c6-35d1e5b5ec0c').DataTable(dt_args);
+                    $('#1639f5a9-6383-4555-a3d2-23ae12e33302').DataTable(dt_args);
                 });
             }
         )
@@ -1004,7 +974,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="e1178405-6889-48f6-adb8-8d06d39e2318" class="display"><thead><th>int</th><th>float</th><th>str</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="ff6af6b2-15a3-456c-8840-b8e084e7429b" class="display"><thead><th>int</th><th>float</th><th>str</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -1034,7 +1004,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#e1178405-6889-48f6-adb8-8d06d39e2318').DataTable(dt_args);
+            $('#ff6af6b2-15a3-456c-8840-b8e084e7429b').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -1044,7 +1014,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#e1178405-6889-48f6-adb8-8d06d39e2318').DataTable(dt_args);
+                    $('#ff6af6b2-15a3-456c-8840-b8e084e7429b').DataTable(dt_args);
                 });
             }
         )
@@ -1062,7 +1032,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="fd6c4907-c3b4-4db0-a09c-9ecc39cddc4f" class="display"><thead><th></th><th>column_0</th><th>column_1</th><th>column_2</th><th>column_3</th><th>column_4</th><th>column_5</th><th>column_6</th><th>column_7</th><th>column_8</th><th>column_9</th><th>column_10</th><th>column_11</th><th>column_12</th><th>column_13</th><th>column_14</th><th>column_15</th><th>column_16</th><th>column_17</th><th>column_18</th><th>column_19</th><th>column_20</th><th>column_21</th><th>column_22</th><th>column_23</th><th>column_24</th><th>column_25</th><th>column_26</th><th>column_27</th><th>column_28</th><th>column_29</th><th>column_30</th><th>column_31</th><th>column_32</th><th>column_33</th><th>column_34</th><th>column_35</th><th>column_36</th><th>column_37</th><th>column_38</th><th>column_39</th><th>column_40</th><th>column_41</th><th>column_42</th><th>column_43</th><th>column_44</th><th>column_45</th><th>column_46</th><th>column_47</th><th>column_48</th><th>column_49</th><th>column_50</th><th>column_51</th><th>column_52</th><th>column_53</th><th>column_54</th><th>column_55</th><th>column_56</th><th>column_57</th><th>column_58</th><th>column_59</th><th>column_60</th><th>column_61</th><th>column_62</th><th>column_63</th><th>column_64</th><th>column_65</th><th>column_66</th><th>column_67</th><th>column_68</th><th>column_69</th><th>column_70</th><th>column_71</th><th>column_72</th><th>column_73</th><th>column_74</th><th>column_75</th><th>column_76</th><th>column_77</th><th>column_78</th><th>column_79</th><th>column_80</th><th>column_81</th><th>column_82</th><th>column_83</th><th>column_84</th><th>column_85</th><th>column_86</th><th>column_87</th><th>column_88</th><th>column_89</th><th>column_90</th><th>column_91</th><th>column_92</th><th>column_93</th><th>column_94</th><th>column_95</th><th>column_96</th><th>column_97</th><th>column_98</th><th>column_99</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="a6e4c070-bc52-4003-8539-7e9c14435e9d" class="display"><thead><th></th><th>column_0</th><th>column_1</th><th>column_2</th><th>column_3</th><th>column_4</th><th>column_5</th><th>column_6</th><th>column_7</th><th>column_8</th><th>column_9</th><th>column_10</th><th>column_11</th><th>column_12</th><th>column_13</th><th>column_14</th><th>column_15</th><th>column_16</th><th>column_17</th><th>column_18</th><th>column_19</th><th>column_20</th><th>column_21</th><th>column_22</th><th>column_23</th><th>column_24</th><th>column_25</th><th>column_26</th><th>column_27</th><th>column_28</th><th>column_29</th><th>column_30</th><th>column_31</th><th>column_32</th><th>column_33</th><th>column_34</th><th>column_35</th><th>column_36</th><th>column_37</th><th>column_38</th><th>column_39</th><th>column_40</th><th>column_41</th><th>column_42</th><th>column_43</th><th>column_44</th><th>column_45</th><th>column_46</th><th>column_47</th><th>column_48</th><th>column_49</th><th>column_50</th><th>column_51</th><th>column_52</th><th>column_53</th><th>column_54</th><th>column_55</th><th>column_56</th><th>column_57</th><th>column_58</th><th>column_59</th><th>column_60</th><th>column_61</th><th>column_62</th><th>column_63</th><th>column_64</th><th>column_65</th><th>column_66</th><th>column_67</th><th>column_68</th><th>column_69</th><th>column_70</th><th>column_71</th><th>column_72</th><th>column_73</th><th>column_74</th><th>column_75</th><th>column_76</th><th>column_77</th><th>column_78</th><th>column_79</th><th>column_80</th><th>column_81</th><th>column_82</th><th>column_83</th><th>column_84</th><th>column_85</th><th>column_86</th><th>column_87</th><th>column_88</th><th>column_89</th><th>column_90</th><th>column_91</th><th>column_92</th><th>column_93</th><th>column_94</th><th>column_95</th><th>column_96</th><th>column_97</th><th>column_98</th><th>column_99</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -1092,7 +1062,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#fd6c4907-c3b4-4db0-a09c-9ecc39cddc4f').DataTable(dt_args);
+            $('#a6e4c070-bc52-4003-8539-7e9c14435e9d').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -1102,7 +1072,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#fd6c4907-c3b4-4db0-a09c-9ecc39cddc4f').DataTable(dt_args);
+                    $('#a6e4c070-bc52-4003-8539-7e9c14435e9d').DataTable(dt_args);
                 });
             }
         )
@@ -1120,7 +1090,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="f74b8493-21e7-447d-82e0-789275b551a6" class="display"><thead><th>short name</th><th>very very very very very long name</th><th>very very very very very very very very very very long name</th><th>very very very very very very very very very very very very very very very very very very very very long name</th><th>nospaceinveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongname</th><th>nospaceinveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongname</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="464d7501-499d-4844-b2db-745f7e21cb4b" class="display"><thead><th>short name</th><th>very very very very very long name</th><th>very very very very very very very very very very long name</th><th>very very very very very very very very very very very very very very very very very very very very long name</th><th>nospaceinveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongname</th><th>nospaceinveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongname</th></thead><tbody><tr><td>Loading... (need <a href=https://github.com/mwouts/itables/#table-not-loading>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -1150,7 +1120,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#f74b8493-21e7-447d-82e0-789275b551a6').DataTable(dt_args);
+            $('#464d7501-499d-4844-b2db-745f7e21cb4b').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -1160,7 +1130,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#f74b8493-21e7-447d-82e0-789275b551a6').DataTable(dt_args);
+                    $('#464d7501-499d-4844-b2db-745f7e21cb4b').DataTable(dt_args);
                 });
             }
         )
