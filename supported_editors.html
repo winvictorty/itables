@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title &#8212; Interactive Tables</title>
+    <title>Supported Notebook Editors &#8212; Interactive Tables</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,7 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Developing ITables" href="developing.html" />
+    <link rel="next" title="Advanced parameters" href="advanced_parameters.html" />
+    <link rel="prev" title="Interactive Tables" href="quick_start.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -91,9 +92,19 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Supported Notebook Editors
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="advanced_parameters.html">
    Advanced parameters
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="downsampling.html">
+   Downsampling
   </a>
  </li>
  <li class="toctree-l1">
@@ -111,9 +122,9 @@
    Developing ITables
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Title
+ <li class="toctree-l1">
+  <a class="reference internal" href="troubleshooting.html">
+   Troubleshooting
   </a>
  </li>
 </ul>
@@ -155,12 +166,9 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="_sources/non_consecutive_header_level_increase.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/non_consecutive_header_level_increase.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/supported_editors.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -180,23 +188,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/non_consecutive_header_level_increase.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -208,8 +199,38 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#subtitle-1">
-   Subtitle 1
+  <a class="reference internal nav-link" href="#jupyter-notebook">
+   Jupyter Notebook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-lab">
+   Jupyter Lab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-nb-convert">
+   Jupyter NB convert
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-book">
+   Jupyter Book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#google-colab">
+   Google Colab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vs-code">
+   VS Code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pycharm">
+   PyCharm
   </a>
  </li>
 </ul>
@@ -222,7 +243,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Title</h1>
+                <h1>Supported Notebook Editors</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -233,8 +254,38 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#subtitle-1">
-   Subtitle 1
+  <a class="reference internal nav-link" href="#jupyter-notebook">
+   Jupyter Notebook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-lab">
+   Jupyter Lab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-nb-convert">
+   Jupyter NB convert
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-book">
+   Jupyter Book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#google-colab">
+   Google Colab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vs-code">
+   VS Code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pycharm">
+   PyCharm
   </a>
  </li>
 </ul>
@@ -246,24 +297,41 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="title">
-<h1>Title<a class="headerlink" href="#title" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subtitle-1">
-<h2>Subtitle 1<a class="headerlink" href="#subtitle-1" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;## Subtitle 2&quot;</span><span class="p">))</span>
-</pre></div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="supported-notebook-editors">
+<h1>Supported Notebook Editors<a class="headerlink" href="#supported-notebook-editors" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">itables</span></code> has been tested in many development environments.</p>
+<div class="section" id="jupyter-notebook">
+<h2>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<p>Try it on <a class="reference external" href="https://mybinder.org/v2/gh/mwouts/itables/main?filepath=docs/quick_start.md"><img alt="Notebook" src="https://img.shields.io/badge/Binder-JupyterNotebook-blue.svg" /></a></p>
+<p><img alt="" src="_images/notebook.png" /></p>
 </div>
+<div class="section" id="jupyter-lab">
+<h2>Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Permalink to this headline">¶</a></h2>
+<p>Try it on <a class="reference external" href="https://mybinder.org/v2/gh/mwouts/itables/main?urlpath=lab/tree/docs/quick_start.md"><img alt="Lab" src="https://img.shields.io/badge/Binder-JupyterLab-blue.svg" /></a></p>
+<p><img alt="" src="_images/lab.png" /></p>
 </div>
-<div class="cell_output docutils container">
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/marc/GitHub/itables/docs/non_consecutive_header_level_increase.md</span>, line 1)</p>
-<p>Non-consecutive header level increase; 0 to 2 [myst.header]</p>
+<div class="section" id="jupyter-nb-convert">
+<h2>Jupyter NB convert<a class="headerlink" href="#jupyter-nb-convert" title="Permalink to this headline">¶</a></h2>
+<p>The tables are still interactive when you <em>download</em> the notebook as an HTML file, or when you execute <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">nbconvert</span> <span class="pre">--to</span> <span class="pre">html</span></code>.</p>
+<p><img alt="" src="_images/html.png" /></p>
 </div>
+<div class="section" id="jupyter-book">
+<h2>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">¶</a></h2>
+<p>The tables are interactive in interactive books powered by <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, see e.g. the <a class="reference external" href="https://mwouts.github.io/itables/">ITables documentation</a>.</p>
 </div>
+<div class="section" id="google-colab">
+<h2>Google Colab<a class="headerlink" href="#google-colab" title="Permalink to this headline">¶</a></h2>
+<p>A short sample notebook is available <a class="reference external" href="https://colab.research.google.com/drive/1JPZIasTiH3rIUysDr3eWDz4jgTTq00aq?usp=sharing">here</a></p>
+<p><img alt="" src="_images/colab.png" /></p>
 </div>
+<div class="section" id="vs-code">
+<h2>VS Code<a class="headerlink" href="#vs-code" title="Permalink to this headline">¶</a></h2>
+<p>In VS Code, <code class="docutils literal notranslate"><span class="pre">itables</span></code> works both for Jupyter Notebooks and Python scripts</p>
+<p><img alt="" src="_images/code.png" /></p>
+</div>
+<div class="section" id="pycharm">
+<h2>PyCharm<a class="headerlink" href="#pycharm" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="_images/pycharm.png" /></p>
 </div>
 </div>
 
@@ -276,28 +344,35 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "itables"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "itables",
+            kernelName: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'itables'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="developing.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="quick_start.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Developing ITables</p>
+            <p class="prev-next-title">Interactive Tables</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="advanced_parameters.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Advanced parameters</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
