@@ -26,7 +26,7 @@ show(alpha_numeric_df, column_filters="footer", dom="lrtip")
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-[0;32m/tmp/ipykernel_1755/2209532529.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/tmp/ipykernel_1718/2209532529.py[0m in [0;36m<module>[0;34m[0m
 [1;32m      3[0m )
 [1;32m      4[0m [0;34m[0m[0m
 [0;32m----> 5[0;31m [0mshow[0m[0;34m([0m[0malpha_numeric_df[0m[0;34m,[0m [0mcolumn_filters[0m[0;34m=[0m[0;34m"footer"[0m[0;34m,[0m [0mdom[0m[0;34m=[0m[0;34m"lrtip"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
