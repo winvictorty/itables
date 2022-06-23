@@ -328,6 +328,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#selecting-table-controls">
+   Selecting table controls
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#row-sorting">
    Row sorting
   </a>
@@ -402,6 +407,16 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-search-option">
    The search option
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#search-highlight-with-mark-js">
+   Search highlight with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     mark.js
+    </span>
+   </code>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -434,6 +449,11 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#selecting-table-controls">
+   Selecting table controls
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#row-sorting">
    Row sorting
   </a>
@@ -508,6 +528,16 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-search-option">
    The search option
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#search-highlight-with-mark-js">
+   Search highlight with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     mark.js
+    </span>
+   </code>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -573,14 +603,87 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<section id="selecting-table-controls">
+<h2>Selecting table controls<a class="headerlink" href="#selecting-table-controls" title="Permalink to this headline">#</a></h2>
+<p>Use DataTables’ <a class="reference external" href="https://datatables.net/reference/option/dom"><code class="docutils literal notranslate"><span class="pre">dom</span></code> option</a>
+to select the elements of the table that should be displayed:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span></code>: length changing input control</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">f</span></code>: filtering input</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">t</span></code>: The table!</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">i</span></code>: Table information summary</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">p</span></code>: pagination control</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>: processing display element</p></li>
+</ul>
+<p>For instance, if you don’t want the search box, the length input control and the table summary, use</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">show</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]}),</span> <span class="n">dom</span><span class="o">=</span><span class="s2">&quot;tpr&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table id="ea8ee228-056a-445d-8f85-846a290eb33a" class="display"style="max-width:100%"><thead>
+    <tr style="text-align: right;">
+
+      <th>a</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<style>
+table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+</style>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [[2], [1]];
+
+        // Define the dt_args
+        let dt_args = {"dom": "tpr", "paging": false};
+        dt_args["data"] = data;
+
+        // Display the table
+        $(document).ready(function () {
+
+            window.__itables_render('#ea8ee228-056a-445d-8f85-846a290eb33a', dt_args);
+        });
+    }
+</script>
+</div></div>
+</div>
+<p>Note: you can change the default value of the dom option by setting <code class="docutils literal notranslate"><span class="pre">opt.dom</span></code> as in the examples below.</p>
+</section>
 <section id="row-sorting">
 <h2>Row sorting<a class="headerlink" href="#row-sorting" title="Permalink to this headline">#</a></h2>
 <p>Select the order in which the row are sorted with the <a class="reference external" href="https://datatables.net/reference/option/order">datatables’ <code class="docutils literal notranslate"><span class="pre">order</span></code></a> argument. By default, the rows are sorted according to the first column (<code class="docutils literal notranslate"><span class="pre">order</span> <span class="pre">=</span> <span class="pre">[[0,</span> <span class="pre">'asc']]</span></code>).</p>
 <p>If you want to deactivate the sorting, set <code class="docutils literal notranslate"><span class="pre">order</span> <span class="pre">=</span> <span class="pre">[]</span></code>, either in the <code class="docutils literal notranslate"><span class="pre">show</span></code> method, or as a global option:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">itables.options</span> <span class="k">as</span> <span class="nn">opt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itables.options</span> <span class="k">as</span> <span class="nn">opt</span>
 
 <span class="n">opt</span><span class="o">.</span><span class="n">order</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># no sorting</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]})</span>
@@ -588,7 +691,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="050ec283-7107-4950-b346-93cb156c6625" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><table id="83cbc586-6f9c-4b28-ba94-c5cc950ca51e" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>a</th>
@@ -632,7 +735,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#050ec283-7107-4950-b346-93cb156c6625', dt_args);
+            window.__itables_render('#83cbc586-6f9c-4b28-ba94-c5cc950ca51e', dt_args);
         });
     }
 </script>
@@ -654,7 +757,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="793838a1-68e6-48e0-8149-371a669a7596" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><table id="109e2f6e-604f-4b1b-8dda-3919bf9c67f4" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -707,7 +810,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#793838a1-68e6-48e0-8149-371a669a7596', dt_args);
+            window.__itables_render('#109e2f6e-604f-4b1b-8dda-3919bf9c67f4', dt_args);
         });
     }
 </script>
@@ -724,7 +827,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="97110f83-3d15-4f07-9ddc-77117dced30a" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><table id="1ea6d0f5-8b2e-464c-9369-350e76415b81" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -777,7 +880,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#97110f83-3d15-4f07-9ddc-77117dced30a', dt_args);
+            window.__itables_render('#1ea6d0f5-8b2e-464c-9369-350e76415b81', dt_args);
         });
     }
 </script>
@@ -794,7 +897,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="44f77331-81b4-4f14-a8bf-bc45b39c1868" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><table id="4b534ec1-654a-4044-bd60-60594c1e36d2" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -847,7 +950,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#44f77331-81b4-4f14-a8bf-bc45b39c1868', dt_args);
+            window.__itables_render('#4b534ec1-654a-4044-bd60-60594c1e36d2', dt_args);
         });
     }
 </script>
@@ -866,7 +969,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="9faa4053-717c-4244-a390-65d9857e27fc" class="display nowrap"style="max-width:100%"><thead>
+<div class="output text_html"><table id="72dd6c99-c8a1-4df9-b17e-e258e072b8b3" class="display nowrap"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -919,7 +1022,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#9faa4053-717c-4244-a390-65d9857e27fc', dt_args);
+            window.__itables_render('#72dd6c99-c8a1-4df9-b17e-e258e072b8b3', dt_args);
         });
     }
 </script>
@@ -933,7 +1036,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="4f55427e-15cd-4f2d-9068-f18ef650ff5d" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><table id="bb864b7a-a866-466f-95c6-112f2fb0e1d7" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -986,7 +1089,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#4f55427e-15cd-4f2d-9068-f18ef650ff5d', dt_args);
+            window.__itables_render('#bb864b7a-a866-466f-95c6-112f2fb0e1d7', dt_args);
         });
     }
 </script>
@@ -1003,7 +1106,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="9fb926b2-ca5a-4ff3-a87d-7f89ed1c4bc9" class="display cell-border"style="max-width:100%"><caption>Countries from the World Bank Database</caption><thead>
+<div class="output text_html"><table id="c7d50393-e831-46c9-8891-815b8500e002" class="display cell-border"style="max-width:100%"><caption>Countries from the World Bank Database</caption><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -1056,7 +1159,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#9fb926b2-ca5a-4ff3-a87d-7f89ed1c4bc9', dt_args);
+            window.__itables_render('#c7d50393-e831-46c9-8891-815b8500e002', dt_args);
         });
     }
 </script>
@@ -1073,7 +1176,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="678abde9-0c5c-4f65-9562-d440e1458f10" class="display cell-border"style="max-width:100%"><caption style="caption-side: top">Countries from the World Bank Database</caption><thead>
+<div class="output text_html"><table id="5eeb097b-8b9b-47fa-ad73-40b888a6a96b" class="display cell-border"style="max-width:100%"><caption style="caption-side: top">Countries from the World Bank Database</caption><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -1126,7 +1229,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#678abde9-0c5c-4f65-9562-d440e1458f10', dt_args);
+            window.__itables_render('#5eeb097b-8b9b-47fa-ad73-40b888a6a96b', dt_args);
         });
     }
 </script>
@@ -1150,7 +1253,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="df9c530d-29ce-49aa-a704-609252dab3e3" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><table id="34cf71f0-4b26-4ef8-abc4-3e6aa7f59bb6" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -1217,7 +1320,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#df9c530d-29ce-49aa-a704-609252dab3e3', dt_args);
+            window.__itables_render('#34cf71f0-4b26-4ef8-abc4-3e6aa7f59bb6', dt_args);
         });
     }
 </script>
@@ -1241,7 +1344,7 @@ tfoot input {
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1716</span><span class="o">/</span><span class="mf">2209532529.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1721</span><span class="o">/</span><span class="mf">2209532529.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> 
 <span class="ne">----&gt; </span><span class="mi">5</span> <span class="n">show</span><span class="p">(</span><span class="n">alpha_numeric_df</span><span class="p">,</span> <span class="n">column_filters</span><span class="o">=</span><span class="s2">&quot;footer&quot;</span><span class="p">,</span> <span class="n">dom</span><span class="o">=</span><span class="s2">&quot;lrtip&quot;</span><span class="p">)</span>
@@ -1435,6 +1538,18 @@ tfoot input {
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">search</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;regex&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;caseInsensitive&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;search&quot;</span><span class="p">:</span> <span class="s2">&quot;s.ain&quot;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="search-highlight-with-mark-js">
+<h2>Search highlight with <code class="docutils literal notranslate"><span class="pre">mark.js</span></code><a class="headerlink" href="#search-highlight-with-mark-js" title="Permalink to this headline">#</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">mark</span></code> option in either the <code class="docutils literal notranslate"><span class="pre">show</span></code> function or in <code class="docutils literal notranslate"><span class="pre">itables.options</span></code> to highlight
+the current search:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">mark</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
