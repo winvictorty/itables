@@ -399,6 +399,7 @@ title="Print to PDF"
 <h1>Interactive Tables<a class="headerlink" href="#interactive-tables" title="Permalink to this headline">#</a></h1>
 <p><strong>Pandas DataFrames as Interactive DataTables</strong></p>
 <p><a class="reference external" href="https://pypi.python.org/pypi/itables"><img alt="Pypi" src="https://img.shields.io/pypi/v/itables.svg" /></a>
+<a class="reference external" href="https://anaconda.org/conda-forge/itables"><img alt="Conda Version" src="https://img.shields.io/conda/vn/conda-forge/itables.svg" /></a>
 <img alt="CI" src="https://github.com/mwouts/itables/workflows/CI/badge.svg" />
 <a class="reference external" href="https://codecov.io/github/mwouts/itables?branch=main"><img alt="codecov.io" src="https://codecov.io/github/mwouts/itables/coverage.svg?branch=main" /></a>
 <a class="reference external" href="https://lgtm.com/projects/g/mwouts/itables/context:python"><img alt="Language grade: Python" src="https://img.shields.io/lgtm/grade/python/g/mwouts/itables.svg" /></a>
@@ -407,8 +408,12 @@ title="Print to PDF"
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <section id="quick-start">
 <h2>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this headline">#</a></h2>
-<p>Install the <code class="docutils literal notranslate"><span class="pre">itables</span></code> package with</p>
+<p>Install the <code class="docutils literal notranslate"><span class="pre">itables</span></code> package with either</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install itables
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install itables -c conda-forge
 </pre></div>
 </div>
 <p>Activate the interactive mode for all series and dataframes with</p>
@@ -451,7 +456,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="480909e4-590c-4d07-8da8-a67992f950fb" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><table id="68d1cd06-46f2-497f-b17f-db63653f43ac" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -504,7 +509,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#480909e4-590c-4d07-8da8-a67992f950fb', dt_args);
+            window.__itables_render('#68d1cd06-46f2-497f-b17f-db63653f43ac', dt_args);
         });
     }
 </script>
@@ -522,7 +527,7 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="107a94ca-15fa-4d4e-be50-ee662ab0c0f1" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><table id="21522060-7eec-4b5d-a181-d1cbc7fde5f2" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>SP.POP.TOTL</th>
@@ -570,7 +575,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#107a94ca-15fa-4d4e-be50-ee662ab0c0f1', dt_args);
+            window.__itables_render('#21522060-7eec-4b5d-a181-d1cbc7fde5f2', dt_args);
         });
     }
 </script>
