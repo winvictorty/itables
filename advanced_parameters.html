@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Downsampling" href="downsampling.html" />
+    <link rel="next" title="Custom CSS" href="custom_css.html" />
     <link rel="prev" title="Supported Notebook Editors" href="supported_editors.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -117,6 +117,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Advanced parameters
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="custom_css.html">
+   Custom CSS
   </a>
  </li>
  <li class="toctree-l1">
@@ -605,36 +610,35 @@ to select the elements of the table that should be displayed:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="533fbb70-c8e0-480c-85ea-80a01546ebbd" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="2a81cf70-20a4-4807-8b1e-1641aee784cb" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>a</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -649,10 +653,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#533fbb70-c8e0-480c-85ea-80a01546ebbd', dt_args);
+            window.__itables_render('#2a81cf70-20a4-4807-8b1e-1641aee784cb', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>Note: you can change the default value of the dom option by setting <code class="docutils literal notranslate"><span class="pre">opt.dom</span></code> as in the examples below.</p>
@@ -672,7 +677,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="1f354fd2-8249-4044-a778-b73b679a2741" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="aff432f6-2cdb-47f3-a139-007b4bda4830" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -687,30 +715,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -725,10 +729,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#1f354fd2-8249-4044-a778-b73b679a2741', dt_args);
+            window.__itables_render('#aff432f6-2cdb-47f3-a139-007b4bda4830', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -742,7 +747,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="c515cb19-6e1a-407c-adf8-913baa6ab251" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="0a1f2988-a3b3-40ea-8603-044ed70cd321" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -757,30 +785,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -795,10 +799,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#c515cb19-6e1a-407c-adf8-913baa6ab251', dt_args);
+            window.__itables_render('#0a1f2988-a3b3-40ea-8603-044ed70cd321', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -812,7 +817,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="517be35d-d8f6-4bb7-b30b-2b0f4febad56" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="c6a7a2e7-c194-4fa5-8e8f-08c961f5ebab" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -827,30 +855,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -865,10 +869,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#517be35d-d8f6-4bb7-b30b-2b0f4febad56', dt_args);
+            window.__itables_render('#c6a7a2e7-c194-4fa5-8e8f-08c961f5ebab', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -884,7 +889,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="aac581d8-7a31-49c9-91e1-6c548c68435d" class="display nowrap"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="5885d4ec-6da3-4eaf-9af5-f1138a413057" class="display nowrap"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -899,30 +927,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -937,10 +941,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#aac581d8-7a31-49c9-91e1-6c548c68435d', dt_args);
+            window.__itables_render('#5885d4ec-6da3-4eaf-9af5-f1138a413057', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <div class="cell docutils container">
@@ -951,7 +956,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="a694d1a8-9cea-4038-b43e-13556d28d5b9" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="cc1c6e33-0758-43ac-94c0-7bdd23f348cd" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -966,30 +994,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1004,10 +1008,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#a694d1a8-9cea-4038-b43e-13556d28d5b9', dt_args);
+            window.__itables_render('#cc1c6e33-0758-43ac-94c0-7bdd23f348cd', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -1021,7 +1026,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="33da4346-9425-4503-ad2e-e949633da01a" class="display cell-border"style="max-width:100%"><caption>Countries from the World Bank Database</caption><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="053d1b11-3ac7-42bf-a880-58e545b75fa9" class="display cell-border"style="max-width:100%"><caption>Countries from the World Bank Database</caption><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -1036,30 +1064,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1074,10 +1078,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#33da4346-9425-4503-ad2e-e949633da01a', dt_args);
+            window.__itables_render('#053d1b11-3ac7-42bf-a880-58e545b75fa9', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>The position of the caption can be set explicitly as in the datatables example above (note that the default position may depend on how you render the notebook):</p>
@@ -1091,7 +1096,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="7959c4a3-3448-4e6b-adc1-5f486da9ce53" class="display cell-border"style="max-width:100%"><caption style="caption-side: top">Countries from the World Bank Database</caption><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="eb4d2c13-35d8-4a1a-af57-40f1797f9b67" class="display cell-border"style="max-width:100%"><caption style="caption-side: top">Countries from the World Bank Database</caption><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -1106,30 +1134,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1144,10 +1148,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#7959c4a3-3448-4e6b-adc1-5f486da9ce53', dt_args);
+            window.__itables_render('#eb4d2c13-35d8-4a1a-af57-40f1797f9b67', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <div class="cell docutils container">
@@ -1168,7 +1173,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="629d07d4-107e-4d65-8f86-340032a34b3b" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="c07eac7d-75ab-4855-b2b3-b20cb5aca989" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -1197,30 +1225,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </tfoot></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1235,10 +1239,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#629d07d4-107e-4d65-8f86-340032a34b3b', dt_args);
+            window.__itables_render('#c07eac7d-75ab-4855-b2b3-b20cb5aca989', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -1257,37 +1262,36 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="ef91b806-b9be-4bcc-83a6-68ef271bf6c5" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="eefbd9de-a98e-452e-91de-350e5925d6be" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>string</th>
       <th>numeric</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody><tfoot><th>string</th><th>numeric</th></tfoot></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1316,7 +1320,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
             // Setup - add a text input to each header or footer cell
-$('#ef91b806-b9be-4bcc-83a6-68ef271bf6c5 tfoot th').each(function () {
+$('#eefbd9de-a98e-452e-91de-350e5925d6be tfoot th').each(function () {
     let title = $(this).text();
     $(this).html('<input type="text" placeholder="Search ' +
         // We use encodeURI to avoid this LGTM error:
@@ -1325,10 +1329,11 @@ $('#ef91b806-b9be-4bcc-83a6-68ef271bf6c5 tfoot th').each(function () {
         '" />');
 });
 
-            window.__itables_render('#ef91b806-b9be-4bcc-83a6-68ef271bf6c5', dt_args);
+            window.__itables_render('#eefbd9de-a98e-452e-91de-350e5925d6be', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>As always you can set activate column filters by default with e.g.</p>
@@ -1340,37 +1345,36 @@ $('#ef91b806-b9be-4bcc-83a6-68ef271bf6c5 tfoot th').each(function () {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="9f5d4a52-b426-409b-9f6f-f7782920ae6a" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="e6751611-1697-4501-ab0a-4ab2c57aef1c" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>string</th>
       <th>numeric</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody><tfoot><th>string</th><th>numeric</th></tfoot></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1399,7 +1403,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
             // Setup - add a text input to each header or footer cell
-$('#9f5d4a52-b426-409b-9f6f-f7782920ae6a tfoot th').each(function () {
+$('#e6751611-1697-4501-ab0a-4ab2c57aef1c tfoot th').each(function () {
     let title = $(this).text();
     $(this).html('<input type="text" placeholder="Search ' +
         // We use encodeURI to avoid this LGTM error:
@@ -1408,10 +1412,11 @@ $('#9f5d4a52-b426-409b-9f6f-f7782920ae6a tfoot th').each(function () {
         '" />');
 });
 
-            window.__itables_render('#9f5d4a52-b426-409b-9f6f-f7782920ae6a', dt_args);
+            window.__itables_render('#e6751611-1697-4501-ab0a-4ab2c57aef1c', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>Column filters also work on dataframes with multiindex columns:</p>
@@ -1424,7 +1429,30 @@ $('#9f5d4a52-b426-409b-9f6f-f7782920ae6a tfoot th').each(function () {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="095a302a-41a6-4bd5-ab82-ec04539712c7" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="21354d02-5081-469b-ba30-792912d4005a" class="display cell-border"style="max-width:100%"><thead>
     <tr>
       <th></th>
       <th></th>
@@ -1440,30 +1468,6 @@ $('#9f5d4a52-b426-409b-9f6f-f7782920ae6a tfoot th').each(function () {
       <th>2</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody><tfoot><th>None</th><th>None</th><th>('A', 1)</th><th>('A', 2)</th><th>('B', 1)</th><th>('B', 2)</th></tfoot></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1492,7 +1496,7 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
             // Setup - add a text input to each header or footer cell
-$('#095a302a-41a6-4bd5-ab82-ec04539712c7 tfoot th').each(function () {
+$('#21354d02-5081-469b-ba30-792912d4005a tfoot th').each(function () {
     let title = $(this).text();
     $(this).html('<input type="text" placeholder="Search ' +
         // We use encodeURI to avoid this LGTM error:
@@ -1501,10 +1505,11 @@ $('#095a302a-41a6-4bd5-ab82-ec04539712c7 tfoot th').each(function () {
         '" />');
 });
 
-            window.__itables_render('#095a302a-41a6-4bd5-ab82-ec04539712c7', dt_args);
+            window.__itables_render('#21354d02-5081-469b-ba30-792912d4005a', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>Now we deactivate the column filters for the rest of the notebook</p>
@@ -1530,36 +1535,35 @@ $('#095a302a-41a6-4bd5-ab82-ec04539712c7 tfoot th').each(function () {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="91df176c-ff7a-4a73-978e-3d29efd59923" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="654f7cbd-76a0-44ef-8996-574d1691e15a" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>0</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1574,10 +1578,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#91df176c-ff7a-4a73-978e-3d29efd59923', dt_args);
+            window.__itables_render('#654f7cbd-76a0-44ef-8996-574d1691e15a', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>You may also choose to convert floating numbers to strings:</p>
@@ -1589,36 +1594,35 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="60e5ef07-97ce-4991-a71c-8625ebd6bd80" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="1b50c33a-540b-4cf0-9e88-e954310bbfd3" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>0</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1633,10 +1637,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#60e5ef07-97ce-4991-a71c-8625ebd6bd80', dt_args);
+            window.__itables_render('#1b50c33a-540b-4cf0-9e88-e954310bbfd3', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -1658,7 +1663,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="5b0cd899-4dbf-4960-b5eb-b0b0e5a5bbd5" class="display cell-border"style="max-width:100%"><Caption>Sorted Index</Caption><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="6f31aa70-e40f-47f4-9774-4525690458f9" class="display cell-border"style="max-width:100%"><Caption>Sorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -1670,30 +1698,6 @@ tfoot input {
       <th></th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1708,11 +1712,35 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#5b0cd899-4dbf-4960-b5eb-b0b0e5a5bbd5', dt_args);
+            window.__itables_render('#6f31aa70-e40f-47f4-9774-4525690458f9', dt_args);
         });
     }
 </script>
-</div><div class="output text_html"><table id="e4ffef92-9512-438d-8fea-f99a47ee135e" class="display cell-border"style="max-width:100%"><Caption>Reverse Sorted Index</Caption><thead>
+</div>
+</div><div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="ef10a233-ae3c-43bb-a095-81acd9beee1f" class="display cell-border"style="max-width:100%"><Caption>Reverse Sorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -1724,30 +1752,6 @@ tfoot input {
       <th></th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1762,11 +1766,35 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#e4ffef92-9512-438d-8fea-f99a47ee135e', dt_args);
+            window.__itables_render('#ef10a233-ae3c-43bb-a095-81acd9beee1f', dt_args);
         });
     }
 </script>
-</div><div class="output text_html"><table id="7ce7c38a-7719-4baa-891d-1f4e3a2a2d36" class="display cell-border"style="max-width:100%"><Caption>Sorted Multiindex</Caption><thead>
+</div>
+</div><div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="e9ae5f89-b56f-41ad-85e8-7a75fcb87b16" class="display cell-border"style="max-width:100%"><Caption>Sorted Multiindex</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -1780,30 +1808,6 @@ tfoot input {
       <th></th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1818,11 +1822,35 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#7ce7c38a-7719-4baa-891d-1f4e3a2a2d36', dt_args);
+            window.__itables_render('#e9ae5f89-b56f-41ad-85e8-7a75fcb87b16', dt_args);
         });
     }
 </script>
-</div><div class="output text_html"><table id="529b2274-8195-436c-8ae5-591c7888a1f7" class="display cell-border"style="max-width:100%"><Caption>Unsorted Index</Caption><thead>
+</div>
+</div><div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="98b2848f-3134-457c-81f6-43780d5b4485" class="display cell-border"style="max-width:100%"><Caption>Unsorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -1834,30 +1862,6 @@ tfoot input {
       <th></th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1872,10 +1876,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#529b2274-8195-436c-8ae5-591c7888a1f7', dt_args);
+            window.__itables_render('#98b2848f-3134-457c-81f6-43780d5b4485', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>You can also set an explicit <a class="reference external" href="https://datatables.net/reference/option/order"><code class="docutils literal notranslate"><span class="pre">order</span></code></a> argument, and e.g. deactivate the sorting with <code class="docutils literal notranslate"><span class="pre">order</span> <span class="pre">=</span> <span class="pre">[]</span></code>:</p>
@@ -1887,7 +1892,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="d4fa8318-2c6f-4cd0-9ef3-3532ac8ab6ed" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="6a6e1f9a-804f-442d-8885-cfbac2a30779" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>a</th>
@@ -1897,30 +1925,6 @@ tfoot input {
       <th></th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1935,10 +1939,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#d4fa8318-2c6f-4cd0-9ef3-3532ac8ab6ed', dt_args);
+            window.__itables_render('#6a6e1f9a-804f-442d-8885-cfbac2a30779', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -1972,7 +1977,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="2084330d-2fbb-49a3-8968-de917c268138" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="5f9390dc-d7ae-4250-ac3e-04f1925e4acd" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>a</th>
@@ -1982,30 +2010,6 @@ tfoot input {
       <th>e</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -2026,10 +2030,11 @@ function (td, cellData, rowData, row, col) {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#2084330d-2fbb-49a3-8968-de917c268138', dt_args);
+            window.__itables_render('#5f9390dc-d7ae-4250-ac3e-04f1925e4acd', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -2047,7 +2052,30 @@ function (td, cellData, rowData, row, col) {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="0d62d439-c381-48e0-bae3-ec646d9c9707" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="6a6e4069-475c-46cd-8240-ac843411a333" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -2062,30 +2090,6 @@ function (td, cellData, rowData, row, col) {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -2100,10 +2104,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#0d62d439-c381-48e0-bae3-ec646d9c9707', dt_args);
+            window.__itables_render('#6a6e4069-475c-46cd-8240-ac843411a333', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>You can also adjust the width of selected columns only:</p>
@@ -2117,7 +2122,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="dfacf26c-7d21-4961-94f9-502e0db70ab3" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="d8003075-b44d-4ac5-a5aa-469d5bdff422" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -2132,30 +2160,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -2170,10 +2174,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#dfacf26c-7d21-4961-94f9-502e0db70ab3', dt_args);
+            window.__itables_render('#d8003075-b44d-4ac5-a5aa-469d5bdff422', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>If you wish you can also set a value for <code class="docutils literal notranslate"><span class="pre">columnDefs</span></code> permanently in <code class="docutils literal notranslate"><span class="pre">itables.options</span></code> as demonstrated in the cell alignment example below.</p>
@@ -2188,7 +2193,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="ebddf50b-a767-4465-ac8d-0c9c9ed381bc" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="a699412e-d0ae-4982-a3bb-d4f9c9522d98" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -2203,30 +2231,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -2241,10 +2245,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#ebddf50b-a767-4465-ac8d-0c9c9ed381bc', dt_args);
+            window.__itables_render('#a699412e-d0ae-4982-a3bb-d4f9c9522d98', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>or globally by setting <code class="docutils literal notranslate"><span class="pre">opt.columnDefs</span></code>:</p>
@@ -2256,7 +2261,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="0e353a21-fa2a-4d32-a660-7db34a949fb7" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="ca788b42-abcc-4c05-bf9f-9258530929dc" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -2271,30 +2299,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -2309,10 +2313,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#0e353a21-fa2a-4d32-a660-7db34a949fb7', dt_args);
+            window.__itables_render('#ca788b42-abcc-4c05-bf9f-9258530929dc', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <div class="cell docutils container">
@@ -2344,36 +2349,35 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="45d13cc1-9777-46cd-9acc-434e1180cd87" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="12d273ce-91a7-440f-aea4-c3cee8b5cbeb" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>HTML</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -2388,10 +2392,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#45d13cc1-9777-46cd-9acc-434e1180cd87', dt_args);
+            window.__itables_render('#12d273ce-91a7-440f-aea4-c3cee8b5cbeb', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -2405,7 +2410,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="b02f9686-a5a5-4945-91e7-6f90dd01d238" class="display cell-border"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="8ea1a78f-3aa4-47d9-9a11-e13e50a9180e" class="display cell-border"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -2420,30 +2448,6 @@ tfoot input {
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -2458,10 +2462,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#b02f9686-a5a5-4945-91e7-6f90dd01d238', dt_args);
+            window.__itables_render('#8ea1a78f-3aa4-47d9-9a11-e13e50a9180e', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
@@ -2509,10 +2514,10 @@ tfoot input {
             <p class="prev-next-title">Supported Notebook Editors</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="downsampling.html" title="next page">
+    <a class='right-next' id="next-link" href="custom_css.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Downsampling</p>
+        <p class="prev-next-title">Custom CSS</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -119,6 +119,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="custom_css.html">
+   Custom CSS
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="downsampling.html">
    Downsampling
   </a>
@@ -456,7 +461,30 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="0b189b07-508b-4205-bd48-1beaaa2c7f87" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="21b6e226-d5df-4321-8008-d2d57697fb75" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>id</th>
@@ -471,30 +499,6 @@ title="Print to PDF"
       <th>latitude</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -509,10 +513,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#0b189b07-508b-4205-bd48-1beaaa2c7f87', dt_args);
+            window.__itables_render('#21b6e226-d5df-4321-8008-d2d57697fb75', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 <p>If you prefer to render just one series or dataframe as an interactive table, use <code class="docutils literal notranslate"><span class="pre">show</span></code>:</p>
@@ -527,7 +532,30 @@ tfoot input {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="7e342227-c0db-43b2-8995-b03adb66d07f" class="display"style="max-width:100%"><thead>
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="145a5791-034c-4aba-9dcc-ed3a1f5f3be2" class="display"style="max-width:100%"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>SP.POP.TOTL</th>
@@ -537,30 +565,6 @@ tfoot input {
       <th></th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
-<style>
-table td {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-table th {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-thead input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-tfoot input {
-    width: 100%;
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-</style>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -575,10 +579,11 @@ tfoot input {
         // Display the table
         $(document).ready(function () {
 
-            window.__itables_render('#7e342227-c0db-43b2-8995-b03adb66d07f', dt_args);
+            window.__itables_render('#145a5791-034c-4aba-9dcc-ed3a1f5f3be2', dt_args);
         });
     }
 </script>
+</div>
 </div></div>
 </div>
 </section>
