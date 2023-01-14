@@ -340,23 +340,23 @@ title="Print to PDF"
 <section id="how-to-setup-a-dev-environment">
 <h2>How to setup a dev environment<a class="headerlink" href="#how-to-setup-a-dev-environment" title="Permalink to this headline">#</a></h2>
 <p>Create a conda environment with</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mamba env create --file environment.yml
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>--file<span class="w"> </span>environment.yml
 </pre></div>
 </div>
 <p>(use <code class="docutils literal notranslate"><span class="pre">conda</span></code> if you don’t have <code class="docutils literal notranslate"><span class="pre">mamba</span></code>) or update it with</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mamba env update --file environment.yml
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>env<span class="w"> </span>update<span class="w"> </span>--file<span class="w"> </span>environment.yml
 </pre></div>
 </div>
 <p>Then, activate that environment with</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda activate itables
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>itables
 </pre></div>
 </div>
 <p>Install the pre-commit hooks with</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pre-commit install
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pre-commit<span class="w"> </span>install
 </pre></div>
 </div>
 <p>and finally, install the development version of <code class="docutils literal notranslate"><span class="pre">itables</span></code> with</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install -e .
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
 </pre></div>
 </div>
 <p>The test suite can be run with</p>
@@ -368,7 +368,7 @@ title="Print to PDF"
 <h2>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">itables</span></code> documentation uses <a class="reference external" href="https://jupyterbook.org/">Jupyter Book</a>.</p>
 <p>To build the documentation locally, create a kernel named <code class="docutils literal notranslate"><span class="pre">itables</span></code> with</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python -m ipykernel install --name itables --user
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--name<span class="w"> </span>itables<span class="w"> </span>--user
 </pre></div>
 </div>
 <p>and then build the documentation with</p>
@@ -376,7 +376,7 @@ title="Print to PDF"
 </pre></div>
 </div>
 <p>To publish the documentation to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch, use</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ghp-import -n -p -f docs/_build/html
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>docs/_build/html
 </pre></div>
 </div>
 </section>
