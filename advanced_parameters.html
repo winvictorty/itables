@@ -1,48 +1,59 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Advanced parameters &#8212; Interactive Tables</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,56 +61,87 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'advanced_parameters';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Custom CSS" href="custom_css.html" />
     <link rel="prev" title="Supported Notebook Editors" href="supported_editors.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">Interactive Tables</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="quick_start.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Interactive Tables</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -109,464 +151,198 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="supported_editors.html">
-   Supported Notebook Editors
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Advanced parameters
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="custom_css.html">
-   Custom CSS
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="downsampling.html">
-   Downsampling
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="sample_dataframes.html">
-   Sample dataframes
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="references.html">
-   References
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="developing.html">
-   Developing ITables
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="troubleshooting.html">
-   Troubleshooting
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="changelog.html">
-   ITables ChangeLog
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="supported_editors.html">Supported Notebook Editors</a></li>
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Advanced parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_css.html">Custom CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="downsampling.html">Downsampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sample_dataframes.html">Sample dataframes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developing.html">Developing ITables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">ITables ChangeLog</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/advanced_parameters.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/advanced_parameters.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/advanced_parameters.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="_sources/advanced_parameters.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#position-and-width">
-   Position and width
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#theme">
-   Theme
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#caption">
-   Caption
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#removing-the-search-box">
-   Removing the search box
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pagination">
-   Pagination
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-many-rows-per-page">
-     How many rows per page
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#show-the-table-in-full">
-     Show the table in full
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scroll">
-     Scroll
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-footer">
-   Table footer
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#column-filters">
-   Column filters
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pandas-formatting">
-   Pandas formatting
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#javascript-formatting">
-   Javascript formatting
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#row-order">
-   Row order
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#advanced-cell-formatting-with-js-callbacks">
-   Advanced cell formatting with JS callbacks
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#column-width">
-   Column width
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cell-alignment">
-   Cell alignment
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#html-in-cells">
-   HTML in cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-search-option">
-   The search option
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#select-rows">
-   Select rows
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#copy-csv-pdf-and-excel-buttons">
-   Copy, CSV, PDF and Excel buttons
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Advanced parameters</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#position-and-width">
-   Position and width
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#theme">
-   Theme
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#caption">
-   Caption
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#removing-the-search-box">
-   Removing the search box
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pagination">
-   Pagination
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-many-rows-per-page">
-     How many rows per page
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#show-the-table-in-full">
-     Show the table in full
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scroll">
-     Scroll
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-footer">
-   Table footer
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#column-filters">
-   Column filters
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pandas-formatting">
-   Pandas formatting
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#javascript-formatting">
-   Javascript formatting
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#row-order">
-   Row order
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#advanced-cell-formatting-with-js-callbacks">
-   Advanced cell formatting with JS callbacks
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#column-width">
-   Column width
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cell-alignment">
-   Cell alignment
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#html-in-cells">
-   HTML in cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-search-option">
-   The search option
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#select-rows">
-   Select rows
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#copy-csv-pdf-and-excel-buttons">
-   Copy, CSV, PDF and Excel buttons
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Advanced parameters</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#position-and-width">Position and width</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theme">Theme</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caption">Caption</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-the-search-box">Removing the search box</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pagination">Pagination</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-rows-per-page">How many rows per page</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#show-the-table-in-full">Show the table in full</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scroll">Scroll</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-footer">Table footer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#column-filters">Column filters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas-formatting">Pandas formatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#javascript-formatting">Javascript formatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#row-order">Row order</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-cell-formatting-with-js-callbacks">Advanced cell formatting with JS callbacks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#column-width">Column width</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cell-alignment">Cell alignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-in-cells">HTML in cells</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-search-option">The search option</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-rows">Select rows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-csv-pdf-and-excel-buttons">Copy, CSV, PDF and Excel buttons</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="advanced-parameters">
-<h1>Advanced parameters<a class="headerlink" href="#advanced-parameters" title="Permalink to this headline">#</a></h1>
+<h1>Advanced parameters<a class="headerlink" href="#advanced-parameters" title="Permalink to this heading">#</a></h1>
 <p>The <code class="docutils literal notranslate"><span class="pre">itables</span></code> package is a wrapper for the Javascript <a class="reference external" href="https://datatables.net/">datatables.net</a> library, which has a great <a class="reference external" href="https://datatables.net/">documentation</a>, a huge collection of <a class="reference external" href="https://datatables.net/examples/index">examples</a>, and a useful <a class="reference external" href="https://datatables.net/forums/">forum</a>.</p>
 <p>Below we give a few examples of how the <a class="reference external" href="http://datatables.net">datatables.net</a> examples can be ported to Python with <code class="docutils literal notranslate"><span class="pre">itables</span></code>.</p>
 <p>As always, we initialize the <code class="docutils literal notranslate"><span class="pre">itables</span></code> library with</p>
@@ -606,7 +382,7 @@ title="Print to PDF"
 </div>
 </div>
 <section id="position-and-width">
-<h2>Position and width<a class="headerlink" href="#position-and-width" title="Permalink to this headline">#</a></h2>
+<h2>Position and width<a class="headerlink" href="#position-and-width" title="Permalink to this heading">#</a></h2>
 <p>The default value for the table CSS is <code class="docutils literal notranslate"><span class="pre">table-layout:auto;width:auto;margin:auto;caption-side:bottom</span></code>.
 Without <code class="docutils literal notranslate"><span class="pre">width:auto</span></code>, tables with few columns still take the full notebook width in Jupyter.
 Using <code class="docutils literal notranslate"><span class="pre">margin:auto</span></code> makes non-wide tables centered in Jupyter.</p>
@@ -641,9 +417,9 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="3e0d88a8-f16c-4854-b7fb-59d66d4e5806" class="display nowrap"style="table-layout:auto;width:50%;float:right"><thead>
+<table id="f8fa7e28-9a2b-4303-9f4a-cec6ca81114e" class="display nowrap"style="table-layout:auto;width:50%;float:right"><thead>
     <tr style="text-align: right;">
-
+      
       <th>a</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
@@ -661,8 +437,8 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 let dt_args = {"order": [], "dom": "t"};
                 dt_args["data"] = data;
 
-
-                $('#3e0d88a8-f16c-4854-b7fb-59d66d4e5806').DataTable(dt_args);
+                
+                $('#f8fa7e28-9a2b-4303-9f4a-cec6ca81114e').DataTable(dt_args);
             });
         })
     }
@@ -678,7 +454,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 </div>
 </section>
 <section id="theme">
-<h2>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">#</a></h2>
+<h2>Theme<a class="headerlink" href="#theme" title="Permalink to this heading">#</a></h2>
 <p>Select how your table looks like with the <code class="docutils literal notranslate"><span class="pre">classes</span></code> argument (defaults to <code class="docutils literal notranslate"><span class="pre">&quot;display</span> <span class="pre">nowrap&quot;</span></code>) of the <code class="docutils literal notranslate"><span class="pre">show</span></code> function, or by changing <code class="docutils literal notranslate"><span class="pre">itables.options.classes</span></code>.</p>
 <p>Add <code class="docutils literal notranslate"><span class="pre">&quot;compact&quot;</span></code> if you want a denser table:</p>
 <div class="cell tag_full-width docutils container">
@@ -711,9 +487,9 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="ef13926e-b0d2-4f80-a25c-176121649b3a" class="display nowrap compact"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="92413487-2046-4df8-a9c9-c81b2baee35a" class="display nowrap compact"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -740,8 +516,8 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 let dt_args = {"lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#ef13926e-b0d2-4f80-a25c-176121649b3a').DataTable(dt_args);
+                
+                $('#92413487-2046-4df8-a9c9-c81b2baee35a').DataTable(dt_args);
             });
         })
     }
@@ -780,9 +556,9 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="19ca8451-fc32-4967-8d0f-2f115d6aedda" class="display"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d9591806-0a4d-46c1-ab7d-060978359194" class="display"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -809,8 +585,8 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 let dt_args = {"scrollX": true, "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#19ca8451-fc32-4967-8d0f-2f115d6aedda').DataTable(dt_args);
+                
+                $('#d9591806-0a4d-46c1-ab7d-060978359194').DataTable(dt_args);
             });
         })
     }
@@ -849,9 +625,9 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="73d15195-7cb2-4c9c-b77b-959edbeeaf7e" class="display nowrap cell-border"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="8a4be4f1-4c04-419c-8953-db9bd752da8d" class="display nowrap cell-border"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -878,8 +654,8 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 let dt_args = {"lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#73d15195-7cb2-4c9c-b77b-959edbeeaf7e').DataTable(dt_args);
+                
+                $('#8a4be4f1-4c04-419c-8953-db9bd752da8d').DataTable(dt_args);
             });
         })
     }
@@ -889,7 +665,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 </div>
 </section>
 <section id="caption">
-<h2>Caption<a class="headerlink" href="#caption" title="Permalink to this headline">#</a></h2>
+<h2>Caption<a class="headerlink" href="#caption" title="Permalink to this heading">#</a></h2>
 <p>You can set additional <code class="docutils literal notranslate"><span class="pre">tags</span></code> on the table like e.g. a <a class="reference external" href="https://datatables.net/blog/2014-11-07">caption</a>:</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -921,9 +697,9 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="7378c8a4-1c8d-4569-afca-f9e676cf0625" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption style="white-space: nowrap; overflow: hidden">Countries from the World Bank Database</caption><thead>
+<table id="1a26a036-9421-4cad-b4b0-54cf0d79c608" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption style="white-space: nowrap; overflow: hidden">Countries from the World Bank Database</caption><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -950,8 +726,8 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 let dt_args = {"lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#7378c8a4-1c8d-4569-afca-f9e676cf0625').DataTable(dt_args);
+                
+                $('#1a26a036-9421-4cad-b4b0-54cf0d79c608').DataTable(dt_args);
             });
         })
     }
@@ -994,9 +770,9 @@ in the <code class="docutils literal notranslate"><span class="pre">style</span>
 }
 </style>
 <div class="itables">
-<table id="e9498e84-d602-4cf1-ac49-f9a96043628c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption style="caption-side: top">Countries from the World Bank Database</caption><thead>
+<table id="97b6d73d-febc-4977-afe7-58e66c274c75" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption style="caption-side: top">Countries from the World Bank Database</caption><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -1023,8 +799,8 @@ in the <code class="docutils literal notranslate"><span class="pre">style</span>
                 let dt_args = {"lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#e9498e84-d602-4cf1-ac49-f9a96043628c').DataTable(dt_args);
+                
+                $('#97b6d73d-febc-4977-afe7-58e66c274c75').DataTable(dt_args);
             });
         })
     }
@@ -1036,7 +812,7 @@ in the <code class="docutils literal notranslate"><span class="pre">style</span>
 </div>
 </section>
 <section id="removing-the-search-box">
-<h2>Removing the search box<a class="headerlink" href="#removing-the-search-box" title="Permalink to this headline">#</a></h2>
+<h2>Removing the search box<a class="headerlink" href="#removing-the-search-box" title="Permalink to this heading">#</a></h2>
 <p>By default, datatables that don’t fit in one page come with a search box, a pagination control, a table summary, etc.
 You can select which elements are actually displayed using
 DataTables’ <a class="reference external" href="https://datatables.net/reference/option/dom"><code class="docutils literal notranslate"><span class="pre">dom</span></code> option</a> with e.g.:</p>
@@ -1070,9 +846,9 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="879646d8-1b68-41a5-9054-72d658da2a2f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c9cec206-2680-47f4-bd10-c722204c1b07" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>a</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
@@ -1090,8 +866,8 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 let dt_args = {"dom": "tpr", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#879646d8-1b68-41a5-9054-72d658da2a2f').DataTable(dt_args);
+                
+                $('#c9cec206-2680-47f4-bd10-c722204c1b07').DataTable(dt_args);
             });
         })
     }
@@ -1120,9 +896,9 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </div>
 </section>
 <section id="pagination">
-<h2>Pagination<a class="headerlink" href="#pagination" title="Permalink to this headline">#</a></h2>
+<h2>Pagination<a class="headerlink" href="#pagination" title="Permalink to this heading">#</a></h2>
 <section id="how-many-rows-per-page">
-<h3>How many rows per page<a class="headerlink" href="#how-many-rows-per-page" title="Permalink to this headline">#</a></h3>
+<h3>How many rows per page<a class="headerlink" href="#how-many-rows-per-page" title="Permalink to this heading">#</a></h3>
 <p>Select <a class="reference external" href="https://datatables.net/examples/advanced_init/length_menu.html">how many entries</a> should appear at once in the table with either the <code class="docutils literal notranslate"><span class="pre">lengthMenu</span></code> argument of the <code class="docutils literal notranslate"><span class="pre">show</span></code> function, or with the global option <code class="docutils literal notranslate"><span class="pre">itables.options.lengthMenu</span></code>:</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1154,9 +930,9 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="25eb5979-a0e9-42f6-a811-fb2b7844d4d1" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="576a5af2-5df4-48ad-ae0c-b495e8ddb2a7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -1183,8 +959,8 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 let dt_args = {"lengthMenu": [2, 5, 10, 20, 50], "dom": "lfrtip", "order": []};
                 dt_args["data"] = data;
 
-
-                $('#25eb5979-a0e9-42f6-a811-fb2b7844d4d1').DataTable(dt_args);
+                
+                $('#576a5af2-5df4-48ad-ae0c-b495e8ddb2a7').DataTable(dt_args);
             });
         })
     }
@@ -1194,7 +970,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </div>
 </section>
 <section id="show-the-table-in-full">
-<h3>Show the table in full<a class="headerlink" href="#show-the-table-in-full" title="Permalink to this headline">#</a></h3>
+<h3>Show the table in full<a class="headerlink" href="#show-the-table-in-full" title="Permalink to this heading">#</a></h3>
 <p>Use <a class="reference external" href="https://datatables.net/reference/option/paging"><code class="docutils literal notranslate"><span class="pre">paging=False</span></code></a> to show the table in full:</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1226,9 +1002,9 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="702f7cb7-b690-4660-be7c-34b422e5e2c5" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="2fbb3606-d08b-4f87-9fe3-6dafc5c78838" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -1255,8 +1031,8 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 let dt_args = {"paging": false, "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#702f7cb7-b690-4660-be7c-34b422e5e2c5').DataTable(dt_args);
+                
+                $('#2fbb3606-d08b-4f87-9fe3-6dafc5c78838').DataTable(dt_args);
             });
         })
     }
@@ -1266,7 +1042,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </div>
 </section>
 <section id="scroll">
-<h3>Scroll<a class="headerlink" href="#scroll" title="Permalink to this headline">#</a></h3>
+<h3>Scroll<a class="headerlink" href="#scroll" title="Permalink to this heading">#</a></h3>
 <p>You can replace the pagination with a <a class="reference external" href="https://datatables.net/examples/basic_init/scroll_y.html">vertical scroll</a>:</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1298,9 +1074,9 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="1c5fbd8b-b912-4a72-b820-f5aec3421f33" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c4da431f-bbd9-40cd-86f5-a09240556e21" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -1327,8 +1103,8 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 let dt_args = {"scrollY": "200px", "scrollCollapse": true, "paging": false, "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#1c5fbd8b-b912-4a72-b820-f5aec3421f33').DataTable(dt_args);
+                
+                $('#c4da431f-bbd9-40cd-86f5-a09240556e21').DataTable(dt_args);
             });
         })
     }
@@ -1340,7 +1116,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </section>
 </section>
 <section id="table-footer">
-<h2>Table footer<a class="headerlink" href="#table-footer" title="Permalink to this headline">#</a></h2>
+<h2>Table footer<a class="headerlink" href="#table-footer" title="Permalink to this heading">#</a></h2>
 <p>Use <code class="docutils literal notranslate"><span class="pre">footer</span> <span class="pre">=</span> <span class="pre">True</span></code> if you wish to display a table footer.</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1372,9 +1148,9 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="7dd525eb-7555-4c5c-bf22-472d8379bf9c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="ca4f966e-0aeb-470d-af12-5ee6de4a2d02" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -1388,7 +1164,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody><tfoot>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -1415,8 +1191,8 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 let dt_args = {"dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#7dd525eb-7555-4c5c-bf22-472d8379bf9c').DataTable(dt_args);
+                
+                $('#ca4f966e-0aeb-470d-af12-5ee6de4a2d02').DataTable(dt_args);
             });
         })
     }
@@ -1426,7 +1202,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </div>
 </section>
 <section id="column-filters">
-<h2>Column filters<a class="headerlink" href="#column-filters" title="Permalink to this headline">#</a></h2>
+<h2>Column filters<a class="headerlink" href="#column-filters" title="Permalink to this heading">#</a></h2>
 <p>Use <code class="docutils literal notranslate"><span class="pre">column_filters</span> <span class="pre">=</span> <span class="pre">&quot;header&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;footer&quot;</span></code> if you wish to display individual column filters
 (remove the global search box with <a class="reference external" href="https://datatables.net/reference/option/dom"><code class="docutils literal notranslate"><span class="pre">dom='lrtip'</span></code></a> if desired).</p>
 <div class="cell docutils container">
@@ -1463,9 +1239,9 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="a1ee0b78-da59-4712-8c29-f8994b2380fa" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="dc04e5fe-787a-431c-9c28-12074d533190" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>string</th>
       <th>numeric</th>
     </tr>
@@ -1499,7 +1275,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 dt_args["data"] = data;
 
                 // Setup - add a text input to each header or footer cell
-$('#a1ee0b78-da59-4712-8c29-f8994b2380fa tfoot th').each(function () {
+$('#dc04e5fe-787a-431c-9c28-12074d533190 tfoot th').each(function () {
     let title = $(this).text();
     $(this).html('<input type="text" placeholder="Search ' +
         // We use encodeURI to avoid this LGTM error:
@@ -1508,7 +1284,7 @@ $('#a1ee0b78-da59-4712-8c29-f8994b2380fa tfoot th').each(function () {
         '" />');
 });
 
-                $('#a1ee0b78-da59-4712-8c29-f8994b2380fa').DataTable(dt_args);
+                $('#dc04e5fe-787a-431c-9c28-12074d533190').DataTable(dt_args);
             });
         })
     }
@@ -1557,7 +1333,7 @@ $('#a1ee0b78-da59-4712-8c29-f8994b2380fa tfoot th').each(function () {
 }
 </style>
 <div class="itables">
-<table id="b1fdcd54-ea34-451e-ad84-fe6d698bb145" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d486a038-1676-4559-907b-757cdc137972" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr>
       <th></th>
       <th></th>
@@ -1602,7 +1378,7 @@ $('#a1ee0b78-da59-4712-8c29-f8994b2380fa tfoot th').each(function () {
                 dt_args["data"] = data;
 
                 // Setup - add a text input to each header or footer cell
-$('#b1fdcd54-ea34-451e-ad84-fe6d698bb145 tfoot th').each(function () {
+$('#d486a038-1676-4559-907b-757cdc137972 tfoot th').each(function () {
     let title = $(this).text();
     $(this).html('<input type="text" placeholder="Search ' +
         // We use encodeURI to avoid this LGTM error:
@@ -1611,7 +1387,7 @@ $('#b1fdcd54-ea34-451e-ad84-fe6d698bb145 tfoot th').each(function () {
         '" />');
 });
 
-                $('#b1fdcd54-ea34-451e-ad84-fe6d698bb145').DataTable(dt_args);
+                $('#d486a038-1676-4559-907b-757cdc137972').DataTable(dt_args);
             });
         })
     }
@@ -1621,7 +1397,7 @@ $('#b1fdcd54-ea34-451e-ad84-fe6d698bb145 tfoot th').each(function () {
 </div>
 </section>
 <section id="pandas-formatting">
-<h2>Pandas formatting<a class="headerlink" href="#pandas-formatting" title="Permalink to this headline">#</a></h2>
+<h2>Pandas formatting<a class="headerlink" href="#pandas-formatting" title="Permalink to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">itables</span></code> builds the HTML representation of your Pandas dataframes using Pandas itself, so
 you can use <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html">Pandas’ formatting options</a>.
 For instance, you can change the precision used to display floating numbers:</p>
@@ -1659,9 +1435,9 @@ For instance, you can change the precision used to display floating numbers:</p>
 }
 </style>
 <div class="itables">
-<table id="72558f46-fcd0-4d2e-9cbc-5076b2c16252" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="4a6b11ec-04bc-48a4-be00-bc214aecbb38" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>0</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
@@ -1679,8 +1455,8 @@ For instance, you can change the precision used to display floating numbers:</p>
                 let dt_args = {"dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#72558f46-fcd0-4d2e-9cbc-5076b2c16252').DataTable(dt_args);
+                
+                $('#4a6b11ec-04bc-48a4-be00-bc214aecbb38').DataTable(dt_args);
             });
         })
     }
@@ -1720,9 +1496,9 @@ For instance, you can change the precision used to display floating numbers:</p>
 }
 </style>
 <div class="itables">
-<table id="f1409812-4de5-4a35-a6b7-29a590fad9d9" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="61494fd7-fbcd-4da5-b6ee-e36b72e21d2e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>0</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
@@ -1740,8 +1516,8 @@ For instance, you can change the precision used to display floating numbers:</p>
                 let dt_args = {"dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#f1409812-4de5-4a35-a6b7-29a590fad9d9').DataTable(dt_args);
+                
+                $('#61494fd7-fbcd-4da5-b6ee-e36b72e21d2e').DataTable(dt_args);
             });
         })
     }
@@ -1751,7 +1527,7 @@ For instance, you can change the precision used to display floating numbers:</p>
 </div>
 </section>
 <section id="javascript-formatting">
-<h2>Javascript formatting<a class="headerlink" href="#javascript-formatting" title="Permalink to this headline">#</a></h2>
+<h2>Javascript formatting<a class="headerlink" href="#javascript-formatting" title="Permalink to this heading">#</a></h2>
 <p>Numbers are formatted using Pandas, then are converted back to float to ensure they come in the right order when sorted.
 Therefore, to achieve a particular formatting you might have to resort to the
 <a class="reference external" href="https://datatables.net/examples/advanced_init/column_render.html"><code class="docutils literal notranslate"><span class="pre">columns.render</span></code> option</a>
@@ -1799,9 +1575,9 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="47508993-cc6e-4939-9d79-269a134e7e83" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e317ef0d-44a8-4240-9d20-f00ee4dfa947" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>0</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
@@ -1819,8 +1595,8 @@ can be ported like this:</p>
                 let dt_args = {"columnDefs": [{"targets": "_all", "render": $.fn.dataTable.render.number(',', '.', 3, '$')}], "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#47508993-cc6e-4939-9d79-269a134e7e83').DataTable(dt_args);
+                
+                $('#e317ef0d-44a8-4240-9d20-f00ee4dfa947').DataTable(dt_args);
             });
         })
     }
@@ -1830,7 +1606,7 @@ can be ported like this:</p>
 </div>
 </section>
 <section id="row-order">
-<h2>Row order<a class="headerlink" href="#row-order" title="Permalink to this headline">#</a></h2>
+<h2>Row order<a class="headerlink" href="#row-order" title="Permalink to this heading">#</a></h2>
 <p>Since <code class="docutils literal notranslate"><span class="pre">itables&gt;=1.3.0</span></code>, the interactive datatable shows the rows in the same order as the original dataframe:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1870,7 +1646,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="88a4a3ae-8bb0-40e1-a5c1-2734eab49797" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Sorted Index</Caption><thead>
+<table id="ae465bde-95c5-4164-81e9-a91c16a3d5f3" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Sorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -1896,8 +1672,8 @@ can be ported like this:</p>
                 let dt_args = {"dom": "tpr", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#88a4a3ae-8bb0-40e1-a5c1-2734eab49797').DataTable(dt_args);
+                
+                $('#ae465bde-95c5-4164-81e9-a91c16a3d5f3').DataTable(dt_args);
             });
         })
     }
@@ -1926,7 +1702,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="d3295ce1-5570-43cf-9bfa-b55327fd6a77" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Reverse Sorted Index</Caption><thead>
+<table id="39281ba8-e521-4e6c-ac3f-8ef58e7cb741" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Reverse Sorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -1952,8 +1728,8 @@ can be ported like this:</p>
                 let dt_args = {"dom": "tpr", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#d3295ce1-5570-43cf-9bfa-b55327fd6a77').DataTable(dt_args);
+                
+                $('#39281ba8-e521-4e6c-ac3f-8ef58e7cb741').DataTable(dt_args);
             });
         })
     }
@@ -1982,7 +1758,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="76bd2c25-23d8-4f34-a587-120b68debd68" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Sorted Multiindex</Caption><thead>
+<table id="16c454ee-38ad-4e29-a1e7-2fbfdcd215ff" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Sorted Multiindex</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -2010,8 +1786,8 @@ can be ported like this:</p>
                 let dt_args = {"dom": "tpr", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#76bd2c25-23d8-4f34-a587-120b68debd68').DataTable(dt_args);
+                
+                $('#16c454ee-38ad-4e29-a1e7-2fbfdcd215ff').DataTable(dt_args);
             });
         })
     }
@@ -2040,7 +1816,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="635ca866-a375-4801-aed2-6c4833504940" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Unsorted Index</Caption><thead>
+<table id="da493975-9f9a-4191-af69-d842c7919dec" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Unsorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -2066,8 +1842,8 @@ can be ported like this:</p>
                 let dt_args = {"dom": "tpr", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#635ca866-a375-4801-aed2-6c4833504940').DataTable(dt_args);
+                
+                $('#da493975-9f9a-4191-af69-d842c7919dec').DataTable(dt_args);
             });
         })
     }
@@ -2107,7 +1883,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="374b5ce1-5176-4b8c-b6fb-4be27a2a1d07" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="5fa2bbc9-99b2-46b2-ba86-358932815156" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>a</th>
@@ -2131,8 +1907,8 @@ can be ported like this:</p>
                 let dt_args = {"order": [[1, "asc"]], "dom": "tpr", "lengthMenu": [5, 10, 20, 50, 100, 200, 500]};
                 dt_args["data"] = data;
 
-
-                $('#374b5ce1-5176-4b8c-b6fb-4be27a2a1d07').DataTable(dt_args);
+                
+                $('#5fa2bbc9-99b2-46b2-ba86-358932815156').DataTable(dt_args);
             });
         })
     }
@@ -2142,7 +1918,7 @@ can be ported like this:</p>
 </div>
 </section>
 <section id="advanced-cell-formatting-with-js-callbacks">
-<h2>Advanced cell formatting with JS callbacks<a class="headerlink" href="#advanced-cell-formatting-with-js-callbacks" title="Permalink to this headline">#</a></h2>
+<h2>Advanced cell formatting with JS callbacks<a class="headerlink" href="#advanced-cell-formatting-with-js-callbacks" title="Permalink to this heading">#</a></h2>
 <p>You can use Javascript callbacks to set the cell or row style depending on the cell content.</p>
 <p>The example below, in which we color in red the cells with negative numbers, is directly inspired by the corresponding <a class="reference external" href="http://datatables.net">datatables.net</a> <a class="reference external" href="https://datatables.net/reference/option/columns.createdCell">example</a>.</p>
 <p>Note how the Javascript callback is declared as <code class="docutils literal notranslate"><span class="pre">JavascriptFunction</span></code> object below.</p>
@@ -2194,9 +1970,9 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="e34c356d-b551-4135-b73b-c4cf3cf52159" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="1d4d579b-cd7f-4f98-8ed6-a996cf4e9c21" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>a</th>
       <th>b</th>
       <th>c</th>
@@ -2224,8 +2000,8 @@ function (td, cellData, rowData, row, col) {
 }], "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#e34c356d-b551-4135-b73b-c4cf3cf52159').DataTable(dt_args);
+                
+                $('#1d4d579b-cd7f-4f98-8ed6-a996cf4e9c21').DataTable(dt_args);
             });
         })
     }
@@ -2235,7 +2011,7 @@ function (td, cellData, rowData, row, col) {
 </div>
 </section>
 <section id="column-width">
-<h2>Column width<a class="headerlink" href="#column-width" title="Permalink to this headline">#</a></h2>
+<h2>Column width<a class="headerlink" href="#column-width" title="Permalink to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://datatables.net/reference/option/columns.width"><code class="docutils literal notranslate"><span class="pre">columnDefs.width</span></code></a> argument let you adjust the column widths.</p>
 <p>Note that the default value of <code class="docutils literal notranslate"><span class="pre">style</span></code>, or of <code class="docutils literal notranslate"><span class="pre">autoWidth</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>), might override custom column widths,
 so you might have to change their values as in the examples below.</p>
@@ -2276,9 +2052,9 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="b1fa916e-9a22-449d-9ffe-f4e2b8e6e8a9" class="display nowrap"style="width:1200px"><thead>
+<table id="5fa3412a-0e5f-4d19-8706-15ff1cf372b7" class="display nowrap"style="width:1200px"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -2305,8 +2081,8 @@ so you might have to change their values as in the examples below.</p>
                 let dt_args = {"columnDefs": [{"width": "120px", "targets": "_all"}], "scrollX": true, "autoWidth": false, "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#b1fa916e-9a22-449d-9ffe-f4e2b8e6e8a9').DataTable(dt_args);
+                
+                $('#5fa3412a-0e5f-4d19-8706-15ff1cf372b7').DataTable(dt_args);
             });
         })
     }
@@ -2349,9 +2125,9 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="c25b6895-ea1f-4d75-a49d-ab824c797ac4" class="display nowrap"style="width:100%;margin:auto"><thead>
+<table id="d63b595e-fc1a-4ce0-9632-ca57915255c6" class="display nowrap"style="width:100%;margin:auto"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -2378,8 +2154,8 @@ so you might have to change their values as in the examples below.</p>
                 let dt_args = {"columnDefs": [{"width": "30%", "targets": [2, 3]}], "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#c25b6895-ea1f-4d75-a49d-ab824c797ac4').DataTable(dt_args);
+                
+                $('#d63b595e-fc1a-4ce0-9632-ca57915255c6').DataTable(dt_args);
             });
         })
     }
@@ -2390,7 +2166,7 @@ so you might have to change their values as in the examples below.</p>
 <p>If you wish you can also set a value for <code class="docutils literal notranslate"><span class="pre">columnDefs</span></code> permanently in <code class="docutils literal notranslate"><span class="pre">itables.options</span></code> as demonstrated in the cell alignment example below.</p>
 </section>
 <section id="cell-alignment">
-<h2>Cell alignment<a class="headerlink" href="#cell-alignment" title="Permalink to this headline">#</a></h2>
+<h2>Cell alignment<a class="headerlink" href="#cell-alignment" title="Permalink to this heading">#</a></h2>
 <p>You can use the <a class="reference external" href="http://datatables.net">datatables.net</a> <a class="reference external" href="https://datatables.net/manual/styling/classes#Cell-classes">cell classes</a> like <code class="docutils literal notranslate"><span class="pre">dt-left</span></code>, <code class="docutils literal notranslate"><span class="pre">dt-center</span></code>, <code class="docutils literal notranslate"><span class="pre">dt-right</span></code> etc. to set the cell alignment. Specify it for one table by using the <code class="docutils literal notranslate"><span class="pre">columnDefs</span></code> argument of <code class="docutils literal notranslate"><span class="pre">show</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2422,9 +2198,9 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="719933fb-b231-48e9-aded-4bc2a4f23a4a" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="45e59aa8-f08b-4977-b7e7-2616bc638c97" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -2451,8 +2227,8 @@ so you might have to change their values as in the examples below.</p>
                 let dt_args = {"columnDefs": [{"className": "dt-center", "targets": "_all"}], "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#719933fb-b231-48e9-aded-4bc2a4f23a4a').DataTable(dt_args);
+                
+                $('#45e59aa8-f08b-4977-b7e7-2616bc638c97').DataTable(dt_args);
             });
         })
     }
@@ -2492,9 +2268,9 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="68240a9f-3474-4356-b471-250105f66df1" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="1cf12c5b-f73e-4647-9095-1bbdabf2481c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -2521,8 +2297,8 @@ so you might have to change their values as in the examples below.</p>
                 let dt_args = {"columnDefs": [{"className": "dt-center", "targets": "_all"}], "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#68240a9f-3474-4356-b471-250105f66df1').DataTable(dt_args);
+                
+                $('#1cf12c5b-f73e-4647-9095-1bbdabf2481c').DataTable(dt_args);
             });
         })
     }
@@ -2539,7 +2315,7 @@ so you might have to change their values as in the examples below.</p>
 </div>
 </section>
 <section id="html-in-cells">
-<h2>HTML in cells<a class="headerlink" href="#html-in-cells" title="Permalink to this headline">#</a></h2>
+<h2>HTML in cells<a class="headerlink" href="#html-in-cells" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -2582,9 +2358,9 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="7b110b2f-f5c6-4cff-b584-b2aa66744f6e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c3418081-07a2-4f01-b1a4-3ecfc33d6899" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>HTML</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
@@ -2602,8 +2378,8 @@ so you might have to change their values as in the examples below.</p>
                 let dt_args = {"paging": false, "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#7b110b2f-f5c6-4cff-b584-b2aa66744f6e').DataTable(dt_args);
+                
+                $('#c3418081-07a2-4f01-b1a4-3ecfc33d6899').DataTable(dt_args);
             });
         })
     }
@@ -2613,7 +2389,7 @@ so you might have to change their values as in the examples below.</p>
 </div>
 </section>
 <section id="the-search-option">
-<h2>The search option<a class="headerlink" href="#the-search-option" title="Permalink to this headline">#</a></h2>
+<h2>The search option<a class="headerlink" href="#the-search-option" title="Permalink to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://datatables.net/reference/option/search">search option</a> let you control the initial value for the search field, and whether the query should be treated as a regular expression or not:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2645,9 +2421,9 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="27692142-554c-492e-a986-aae6db47f2b2" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d42767f5-1c14-4da4-a9e5-a3243e90c2ec" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
-
+      
       <th>id</th>
       <th>iso2Code</th>
       <th>name</th>
@@ -2674,8 +2450,8 @@ so you might have to change their values as in the examples below.</p>
                 let dt_args = {"search": {"regex": true, "caseInsensitive": true, "search": "s.ain"}, "dom": "lfrtip", "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
                 dt_args["data"] = data;
 
-
-                $('#27692142-554c-492e-a986-aae6db47f2b2').DataTable(dt_args);
+                
+                $('#d42767f5-1c14-4da4-a9e5-a3243e90c2ec').DataTable(dt_args);
             });
         })
     }
@@ -2685,11 +2461,11 @@ so you might have to change their values as in the examples below.</p>
 </div>
 </section>
 <section id="select-rows">
-<h2>Select rows<a class="headerlink" href="#select-rows" title="Permalink to this headline">#</a></h2>
+<h2>Select rows<a class="headerlink" href="#select-rows" title="Permalink to this heading">#</a></h2>
 <p>Not currently implemented. May be made available at a later stage using the <a class="reference external" href="https://datatables.net/extensions/select/">select</a> extension for datatables.</p>
 </section>
 <section id="copy-csv-pdf-and-excel-buttons">
-<h2>Copy, CSV, PDF and Excel buttons<a class="headerlink" href="#copy-csv-pdf-and-excel-buttons" title="Permalink to this headline">#</a></h2>
+<h2>Copy, CSV, PDF and Excel buttons<a class="headerlink" href="#copy-csv-pdf-and-excel-buttons" title="Permalink to this heading">#</a></h2>
 <p>Not currently implemented. May be made available at a later stage thanks to the <a class="reference external" href="https://datatables.net/extensions/buttons/">buttons</a> extension for datatable.</p>
 </section>
 </section>
@@ -2706,7 +2482,7 @@ so you might have to change their values as in the examples below.</p>
             mode: "itables"
         },
         kernelOptions: {
-            kernelName: "itables",
+            name: "itables",
             path: "./."
         },
         predefinedOutput: true
@@ -2714,50 +2490,120 @@ so you might have to change their values as in the examples below.</p>
     </script>
     <script>kernelName = 'itables'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="supported_editors.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Supported Notebook Editors</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="supported_editors.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Supported Notebook Editors</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="custom_css.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="custom_css.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Custom CSS</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#position-and-width">Position and width</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theme">Theme</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caption">Caption</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-the-search-box">Removing the search box</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pagination">Pagination</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-rows-per-page">How many rows per page</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#show-the-table-in-full">Show the table in full</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scroll">Scroll</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-footer">Table footer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#column-filters">Column filters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas-formatting">Pandas formatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#javascript-formatting">Javascript formatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#row-order">Row order</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-cell-formatting-with-js-callbacks">Advanced cell formatting with JS callbacks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#column-width">Column width</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cell-alignment">Cell alignment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-in-cells">HTML in cells</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-search-option">The search option</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-rows">Select rows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-csv-pdf-and-excel-buttons">Copy, CSV, PDF and Excel buttons</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
   
-    By Marc Wouts<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
-</div>
+<p class="component-author">
+By Marc Wouts
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
 
-      </div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
