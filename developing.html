@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Troubleshooting" href="troubleshooting.html" />
-    <link rel="prev" title="References" href="references.html" />
+    <link rel="prev" title="Contributing" href="contributing.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -159,6 +159,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="downsampling.html">Downsampling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sample_dataframes.html">Sample dataframes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Developing ITables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">ITables ChangeLog</a></li>
@@ -308,8 +309,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-setup-a-dev-environment">How to setup a dev environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-development-environment">How to create a development environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-python-test-suite">How to run the Python test suite</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book">Jupyter Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">Jupyter Lab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-notebook-editors">Other notebook editors</a></li>
 </ul>
             </nav>
         </div>
@@ -323,8 +327,11 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="developing-itables">
 <h1>Developing ITables<a class="headerlink" href="#developing-itables" title="Permalink to this heading">#</a></h1>
-<section id="how-to-setup-a-dev-environment">
-<h2>How to setup a dev environment<a class="headerlink" href="#how-to-setup-a-dev-environment" title="Permalink to this heading">#</a></h2>
+<p>In this page you will find instructions on how to
+create a development environment and how
+to test your changes.</p>
+<section id="how-to-create-a-development-environment">
+<h2>How to create a development environment<a class="headerlink" href="#how-to-create-a-development-environment" title="Permalink to this heading">#</a></h2>
 <p>Create a conda environment with</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>--file<span class="w"> </span>environment.yml
 </pre></div>
@@ -345,24 +352,65 @@ document.write(`
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
 </pre></div>
 </div>
-<p>The test suite can be run with</p>
+</section>
+<section id="how-to-run-the-python-test-suite">
+<h2>How to run the Python test suite<a class="headerlink" href="#how-to-run-the-python-test-suite" title="Permalink to this heading">#</a></h2>
+<p>The Python code can be tested with just</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pytest
 </pre></div>
 </div>
+<p>Running the <code class="docutils literal notranslate"><span class="pre">pytest</span></code> test suite is not enough to guaranty that a change won’t
+break <code class="docutils literal notranslate"><span class="pre">itables</span></code>. You also need to test that the tables are well rendered in the
+different contexts like Jupyter Book, Jupyter Lab, VS Code.</p>
 </section>
 <section id="jupyter-book">
 <h2>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this heading">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">itables</span></code> documentation uses <a class="reference external" href="https://jupyterbook.org/">Jupyter Book</a>.</p>
-<p>To build the documentation locally, create a kernel named <code class="docutils literal notranslate"><span class="pre">itables</span></code> with</p>
+<p>To build the documentation locally,
+you need to create a Jupyter kernel named <code class="docutils literal notranslate"><span class="pre">itables</span></code> with</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--name<span class="w"> </span>itables<span class="w"> </span>--user
 </pre></div>
 </div>
-<p>and then build the documentation with</p>
+<p>Then you can build the documentation with</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">docs</span>
 </pre></div>
 </div>
-<p>To publish the documentation to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch, use</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>docs/_build/html
+<p>This will give you a link to a local version of the documentation.</p>
+<p>If you make any significant change then you should go through
+the updated documentation and make sure all the examples
+still work properly.</p>
+</section>
+<section id="jupyter-lab">
+<h2>Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Permalink to this heading">#</a></h2>
+<p>In the <code class="docutils literal notranslate"><span class="pre">itables</span></code> conda environment, you can start Jupyter with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<p>You should test at least this code snippet:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">init_notebook_mode</span>
+<span class="kn">from</span> <span class="nn">itables.sample_dfs</span> <span class="kn">import</span> <span class="n">get_countries</span>
+
+<span class="c1"># try both connected=False (the default) and connected=True</span>
+<span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">all_interactive</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">connected</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">get_countries</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>You can do this using for instance the notebook at <code class="docutils literal notranslate"><span class="pre">tests/test_notebook.ipynb</span></code>.</p>
+<p>Note that you can also open the documentation in Jupyter:
+go to the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder and open e.g.
+<a class="reference internal" href="advanced_parameters.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">advanced_parameters.md</span></code></span></a>
+<em>as a notebook</em> (using a right click).</p>
+</section>
+<section id="other-notebook-editors">
+<h2>Other notebook editors<a class="headerlink" href="#other-notebook-editors" title="Permalink to this heading">#</a></h2>
+<p>If you change anything related to the Javascript/HTML code,
+you should test the <a class="reference internal" href="supported_editors.html"><span class="doc std std-doc">supported editors</span></a>
+in both the connected and offline mode.</p>
+<p>For the online editors like <a class="reference external" href="https://colab.research.google.com/">Google Colab</a>,
+you might have to install your development version there with e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip uninstall itables -y
+!pip install git+https://github.com/mwouts/itables.git@branch
 </pre></div>
 </div>
 </section>
@@ -397,12 +445,12 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="references.html"
+       href="contributing.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">References</p>
+        <p class="prev-next-title">Contributing</p>
       </div>
     </a>
     <a class="right-next"
@@ -429,8 +477,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-setup-a-dev-environment">How to setup a dev environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-development-environment">How to create a development environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-python-test-suite">How to run the Python test suite</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book">Jupyter Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">Jupyter Lab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-notebook-editors">Other notebook editors</a></li>
 </ul>
   </nav></div>
 

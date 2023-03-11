@@ -4,6 +4,9 @@ ITables ChangeLog
 1.4.7 (2023-03-??)
 ------------------
 
+**Added**
+- We have addressed the `window.initializeDataTable` is not a function error when a notebook is reloaded.
+
 **Changed**
 - We have updated the pre-commit hooks
 - We have added links and images (flags from https://flagpedia.net) to the sample countries df ([#158](https://github.com/mwouts/itables/issues/158)).
