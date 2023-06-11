@@ -311,6 +311,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#empty">empty</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-rows">No rows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-rows-one-column">No rows one column</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-columns">No columns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-columns-one-row">No columns one row</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bool">bool</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nullable-boolean">Nullable boolean</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#int">int</a></li>
@@ -408,7 +412,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="74fd1cfd-33da-43b5-92ee-0745b363cf83" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d2b99f4c-d811-44b2-bd98-9c9ad340862f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -427,7 +431,249 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#74fd1cfd-33da-43b5-92ee-0745b363cf83').DataTable(dt_args);
+                $('#d2b99f4c-d811-44b2-bd98-9c9ad340862f').DataTable(dt_args);
+            });
+        })
+    }
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="no-rows">
+<h2>No rows<a class="headerlink" href="#no-rows" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_rows&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="0ea87f0b-4fa5-455b-b167-ebae6c6d58ce" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      
+      <th>a</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [];
+        // Display the table
+        $(document).ready(function () {
+            window.dataTablePromise.then(() => {
+                // Define the dt_args
+                let dt_args = {"order": [], "dom": "t"};
+                dt_args["data"] = data;
+
+                
+                $('#0ea87f0b-4fa5-455b-b167-ebae6c6d58ce').DataTable(dt_args);
+            });
+        })
+    }
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="no-rows-one-column">
+<h2>No rows one column<a class="headerlink" href="#no-rows-one-column" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_rows_one_column&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="bf95131c-76c7-43b2-b06a-55af1d95ebab" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      
+      <th>a</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [];
+        // Display the table
+        $(document).ready(function () {
+            window.dataTablePromise.then(() => {
+                // Define the dt_args
+                let dt_args = {"order": [], "dom": "t"};
+                dt_args["data"] = data;
+
+                
+                $('#bf95131c-76c7-43b2-b06a-55af1d95ebab').DataTable(dt_args);
+            });
+        })
+    }
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="no-columns">
+<h2>No columns<a class="headerlink" href="#no-columns" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_columns&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="00c25803-c8a8-459c-a2f5-a73e63315f5c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [];
+        // Display the table
+        $(document).ready(function () {
+            window.dataTablePromise.then(() => {
+                // Define the dt_args
+                let dt_args = {"order": [], "dom": "t"};
+                dt_args["data"] = data;
+
+                
+                $('#00c25803-c8a8-459c-a2f5-a73e63315f5c').DataTable(dt_args);
+            });
+        })
+    }
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="no-columns-one-row">
+<h2>No columns one row<a class="headerlink" href="#no-columns-one-row" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_columns_one_row&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="8ac9f02a-a16d-402b-819a-8d7b1417070a" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [];
+        // Display the table
+        $(document).ready(function () {
+            window.dataTablePromise.then(() => {
+                // Define the dt_args
+                let dt_args = {"order": [], "dom": "t"};
+                dt_args["data"] = data;
+
+                
+                $('#8ac9f02a-a16d-402b-819a-8d7b1417070a').DataTable(dt_args);
             });
         })
     }
@@ -468,7 +714,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="ddea8cab-ba2e-428e-a487-f94bab3ba26b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="95bfb51b-84a3-4b53-bf35-41604acedaa3" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -491,7 +737,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#ddea8cab-ba2e-428e-a487-f94bab3ba26b').DataTable(dt_args);
+                $('#95bfb51b-84a3-4b53-bf35-41604acedaa3').DataTable(dt_args);
             });
         })
     }
@@ -532,7 +778,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="19ffd2e3-9c3f-444b-a94d-0c1eb7c9090e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e0101caa-f259-4c48-a1d1-d6141aace9c7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -555,7 +801,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#19ffd2e3-9c3f-444b-a94d-0c1eb7c9090e').DataTable(dt_args);
+                $('#e0101caa-f259-4c48-a1d1-d6141aace9c7').DataTable(dt_args);
             });
         })
     }
@@ -596,7 +842,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="f2078cf4-442d-40f0-83fc-465fec5f3b16" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c71c79ab-b055-4db5-a079-e4a6400f045d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -620,7 +866,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#f2078cf4-442d-40f0-83fc-465fec5f3b16').DataTable(dt_args);
+                $('#c71c79ab-b055-4db5-a079-e4a6400f045d').DataTable(dt_args);
             });
         })
     }
@@ -661,7 +907,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="a5e80d0b-0546-4011-864f-667a7e9aa8f6" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="fd49d5da-1c57-4c48-9597-6b4eaa96f8be" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -683,7 +929,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#a5e80d0b-0546-4011-864f-667a7e9aa8f6').DataTable(dt_args);
+                $('#fd49d5da-1c57-4c48-9597-6b4eaa96f8be').DataTable(dt_args);
             });
         })
     }
@@ -724,7 +970,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="0fab6fe2-8241-47e7-83af-5ab3b57f1c42" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="764fcbd4-9b6c-4b15-bfd6-f183a0b8934e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -747,7 +993,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#0fab6fe2-8241-47e7-83af-5ab3b57f1c42').DataTable(dt_args);
+                $('#764fcbd4-9b6c-4b15-bfd6-f183a0b8934e').DataTable(dt_args);
             });
         })
     }
@@ -788,7 +1034,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="26a4bd8d-5d10-407a-9eec-6dfe5fba377e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="99560031-a87c-4879-bed7-39c1b1598bb9" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>text_column</th>
@@ -809,7 +1055,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#26a4bd8d-5d10-407a-9eec-6dfe5fba377e').DataTable(dt_args);
+                $('#99560031-a87c-4879-bed7-39c1b1598bb9').DataTable(dt_args);
             });
         })
     }
@@ -850,7 +1096,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="6b976106-3654-478a-b6f2-1a2a7f2dad66" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="193eb8b0-c378-49a9-abef-112156d0fd90" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>datetime</th>
@@ -872,7 +1118,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#6b976106-3654-478a-b6f2-1a2a7f2dad66').DataTable(dt_args);
+                $('#193eb8b0-c378-49a9-abef-112156d0fd90').DataTable(dt_args);
             });
         })
     }
@@ -913,7 +1159,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="fe269d9d-a32a-4863-87ae-200ac8862469" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="b58bcf6f-e6e5-40b5-8596-ed399915c4c8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -933,7 +1179,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#fe269d9d-a32a-4863-87ae-200ac8862469').DataTable(dt_args);
+                $('#b58bcf6f-e6e5-40b5-8596-ed399915c4c8').DataTable(dt_args);
             });
         })
     }
@@ -974,7 +1220,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="6af167ac-5f3e-4b72-8063-1eca8c6af3ec" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e3e34bb9-054f-4816-aad9-c098c8c8c47b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -994,7 +1240,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#6af167ac-5f3e-4b72-8063-1eca8c6af3ec').DataTable(dt_args);
+                $('#e3e34bb9-054f-4816-aad9-c098c8c8c47b').DataTable(dt_args);
             });
         })
     }
@@ -1035,7 +1281,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="81e7b146-5761-4fe9-b1c5-5241138a49ed" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="f7ad0c2f-a088-4211-9126-55d7e40d2662" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>('A', 1)</th>
@@ -1058,7 +1304,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#81e7b146-5761-4fe9-b1c5-5241138a49ed').DataTable(dt_args);
+                $('#f7ad0c2f-a088-4211-9126-55d7e40d2662').DataTable(dt_args);
             });
         })
     }
@@ -1099,7 +1345,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="ca5ad2cd-8f6c-4ead-84df-690192a8bf6f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="560868cf-ade0-4693-9f41-1d25a1bbb349" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>region</th>
@@ -1124,7 +1370,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#ca5ad2cd-8f6c-4ead-84df-690192a8bf6f').DataTable(dt_args);
+                $('#560868cf-ade0-4693-9f41-1d25a1bbb349').DataTable(dt_args);
             });
         })
     }
@@ -1165,7 +1411,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="10365aa6-a562-4cec-8b66-47e7dd0b8b11" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="92112fbe-e11b-437e-9a11-c8ba44c0d9df" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>capital</th>
@@ -1185,7 +1431,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#10365aa6-a562-4cec-8b66-47e7dd0b8b11').DataTable(dt_args);
+                $('#92112fbe-e11b-437e-9a11-c8ba44c0d9df').DataTable(dt_args);
             });
         })
     }
@@ -1226,7 +1472,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="8b2cf57a-b49a-4ca3-b4e6-1d4e937644ce" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="80dd47ea-d464-49c9-84d2-416e7d6a3bdc" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>('code', 'code')</th>
@@ -1250,7 +1496,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#8b2cf57a-b49a-4ca3-b4e6-1d4e937644ce').DataTable(dt_args);
+                $('#80dd47ea-d464-49c9-84d2-416e7d6a3bdc').DataTable(dt_args);
             });
         })
     }
@@ -1291,7 +1537,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="54031580-a783-4139-8cee-ddbd5e81aac8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="f0179e8e-509f-4ff2-b9ab-d81f9562e838" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1313,7 +1559,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#54031580-a783-4139-8cee-ddbd5e81aac8').DataTable(dt_args);
+                $('#f0179e8e-509f-4ff2-b9ab-d81f9562e838').DataTable(dt_args);
             });
         })
     }
@@ -1354,7 +1600,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="26228b27-c9b3-4b0c-a3eb-09ffb7be1d84" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="9b796216-5ee3-44c3-9359-6e02b8482364" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>column_0</th>
@@ -1473,7 +1719,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#26228b27-c9b3-4b0c-a3eb-09ffb7be1d84').DataTable(dt_args);
+                $('#9b796216-5ee3-44c3-9359-6e02b8482364').DataTable(dt_args);
             });
         })
     }
@@ -1514,7 +1760,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="b77e0250-d862-49fb-a549-683457e0694d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="7408d384-4213-437e-8334-da9463e55475" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>short name</th>
@@ -1539,7 +1785,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#b77e0250-d862-49fb-a549-683457e0694d').DataTable(dt_args);
+                $('#7408d384-4213-437e-8334-da9463e55475').DataTable(dt_args);
             });
         })
     }
@@ -1580,7 +1826,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="16863dcc-6493-4fd2-ae92-10662f03391e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="77e820e6-7618-476e-ace9-3fe4bc5823d7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -1600,7 +1846,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#16863dcc-6493-4fd2-ae92-10662f03391e').DataTable(dt_args);
+                $('#77e820e6-7618-476e-ace9-3fe4bc5823d7').DataTable(dt_args);
             });
         })
     }
@@ -1645,7 +1891,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="c9694cb3-e057-4ab6-9c6b-a1b6ce5b2426" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="674b02e8-c4c4-488e-819e-db6a33bafc58" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>bigint</th>
@@ -1666,7 +1912,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#c9694cb3-e057-4ab6-9c6b-a1b6ce5b2426').DataTable(dt_args);
+                $('#674b02e8-c4c4-488e-819e-db6a33bafc58').DataTable(dt_args);
             });
         })
     }
@@ -1745,6 +1991,10 @@ dataframes are displayed nicely with the default <code class="docutils literal n
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#empty">empty</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-rows">No rows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-rows-one-column">No rows one column</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-columns">No columns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-columns-one-row">No columns one row</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bool">bool</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nullable-boolean">Nullable boolean</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#int">int</a></li>

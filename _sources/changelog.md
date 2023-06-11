@@ -1,11 +1,12 @@
 ITables ChangeLog
 =================
 
-1.5.3-dev (2023-06-??)
+1.5.3 (2023-06-11)
 ------------------
 
 **Fixed**
 - We fixed an interaction issue with other ui elements in Shiny apps - use `from itables.shiny import DT` ([#181](https://github.com/mwouts/itables/issues/181))
+- We fixed the rendering of some empty dataframes
 
 
 1.5.2 (2023-03-26)

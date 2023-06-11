@@ -311,6 +311,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#empty">empty</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-rows">No rows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-rows-one-column">No rows one column</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-columns">No columns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-columns-one-row">No columns one row</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bool">bool</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nullable-boolean">Nullable boolean</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#int">int</a></li>
@@ -409,7 +413,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="1776b469-d361-4cb3-80d7-c3bf98e65856" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="3486770e-5e33-4dab-9f02-503610889986" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -428,7 +432,249 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#1776b469-d361-4cb3-80d7-c3bf98e65856').DataTable(dt_args);
+                $('#3486770e-5e33-4dab-9f02-503610889986').DataTable(dt_args);
+            });
+        })
+    }
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="no-rows">
+<h2>No rows<a class="headerlink" href="#no-rows" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_rows&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="93831abe-09c7-46e0-b59a-d4bd3a8d0040" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [];
+        // Display the table
+        $(document).ready(function () {
+            window.dataTablePromise.then(() => {
+                // Define the dt_args
+                let dt_args = {"order": [], "dom": "t"};
+                dt_args["data"] = data;
+
+                
+                $('#93831abe-09c7-46e0-b59a-d4bd3a8d0040').DataTable(dt_args);
+            });
+        })
+    }
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="no-rows-one-column">
+<h2>No rows one column<a class="headerlink" href="#no-rows-one-column" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_rows_one_column&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="9e52aa00-3905-4f6a-ad4d-a30683f2de95" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [];
+        // Display the table
+        $(document).ready(function () {
+            window.dataTablePromise.then(() => {
+                // Define the dt_args
+                let dt_args = {"order": [], "dom": "t"};
+                dt_args["data"] = data;
+
+                
+                $('#9e52aa00-3905-4f6a-ad4d-a30683f2de95').DataTable(dt_args);
+            });
+        })
+    }
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="no-columns">
+<h2>No columns<a class="headerlink" href="#no-columns" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_columns&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="e84d8f2a-4f22-4c00-9c26-39cd26163d9c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [["a"]];
+        // Display the table
+        $(document).ready(function () {
+            window.dataTablePromise.then(() => {
+                // Define the dt_args
+                let dt_args = {"order": [], "dom": "t"};
+                dt_args["data"] = data;
+
+                
+                $('#e84d8f2a-4f22-4c00-9c26-39cd26163d9c').DataTable(dt_args);
+            });
+        })
+    }
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="no-columns-one-row">
+<h2>No columns one row<a class="headerlink" href="#no-columns-one-row" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_columns_one_row&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="0da8c33a-b91d-482c-891c-37d2955e87ee" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<script>
+    // We use a namespace per table (= the next curly bracket)
+    // to avoid conflicts between the various tables' data & dt_args
+    {
+        // Define the table data
+        const data = [["a"]];
+        // Display the table
+        $(document).ready(function () {
+            window.dataTablePromise.then(() => {
+                // Define the dt_args
+                let dt_args = {"order": [], "dom": "t"};
+                dt_args["data"] = data;
+
+                
+                $('#0da8c33a-b91d-482c-891c-37d2955e87ee').DataTable(dt_args);
             });
         })
     }
@@ -469,7 +715,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="1d72241b-44e9-4194-8dec-2137aef1b0ae" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="59491531-8386-46fb-8790-5cd31fb93e7f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -492,7 +738,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#1d72241b-44e9-4194-8dec-2137aef1b0ae').DataTable(dt_args);
+                $('#59491531-8386-46fb-8790-5cd31fb93e7f').DataTable(dt_args);
             });
         })
     }
@@ -533,7 +779,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="f34c9bac-a470-4490-b6d3-dbb2f796d249" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d9448624-2608-42e1-ad45-59ab60902b71" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -556,7 +802,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#f34c9bac-a470-4490-b6d3-dbb2f796d249').DataTable(dt_args);
+                $('#d9448624-2608-42e1-ad45-59ab60902b71').DataTable(dt_args);
             });
         })
     }
@@ -597,7 +843,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="93508aa7-4449-4049-99c3-91898d2a3cf5" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="ae14d185-abb3-472a-91e6-c63c8b54c0bb" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -621,7 +867,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#93508aa7-4449-4049-99c3-91898d2a3cf5').DataTable(dt_args);
+                $('#ae14d185-abb3-472a-91e6-c63c8b54c0bb').DataTable(dt_args);
             });
         })
     }
@@ -662,7 +908,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="c5882966-033c-42b8-9598-bc1c6da1063e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="aa6d38c6-7472-4ef3-b145-0e6fd3e35bb2" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -684,7 +930,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#c5882966-033c-42b8-9598-bc1c6da1063e').DataTable(dt_args);
+                $('#aa6d38c6-7472-4ef3-b145-0e6fd3e35bb2').DataTable(dt_args);
             });
         })
     }
@@ -725,7 +971,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="cc34952d-a688-4471-9d5a-d4627a9502fd" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="7c8782ce-8ab6-4147-a4b5-5c4f002e6aa7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -748,7 +994,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#cc34952d-a688-4471-9d5a-d4627a9502fd').DataTable(dt_args);
+                $('#7c8782ce-8ab6-4147-a4b5-5c4f002e6aa7').DataTable(dt_args);
             });
         })
     }
@@ -789,7 +1035,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="fc0ec199-2f34-433c-8253-080355229465" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="0ea857f1-dbef-4009-b841-92ba93cbc047" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>text_column</th>
@@ -810,7 +1056,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#fc0ec199-2f34-433c-8253-080355229465').DataTable(dt_args);
+                $('#0ea857f1-dbef-4009-b841-92ba93cbc047').DataTable(dt_args);
             });
         })
     }
@@ -851,7 +1097,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="31c82f44-cf48-49fc-b441-a1da9bab2dfc" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c1c65b23-4df1-484d-b8f4-e62e477b4274" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>datetime</th>
@@ -873,7 +1119,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#31c82f44-cf48-49fc-b441-a1da9bab2dfc').DataTable(dt_args);
+                $('#c1c65b23-4df1-484d-b8f4-e62e477b4274').DataTable(dt_args);
             });
         })
     }
@@ -914,7 +1160,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="932bc590-5a98-4a30-bf70-961d6bacc2cc" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="26aaebe2-c273-4697-9ba3-2a7cd075456f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>dict</th>
@@ -935,7 +1181,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#932bc590-5a98-4a30-bf70-961d6bacc2cc').DataTable(dt_args);
+                $('#26aaebe2-c273-4697-9ba3-2a7cd075456f').DataTable(dt_args);
             });
         })
     }
@@ -976,7 +1222,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="dc39a499-583e-41a0-b354-383914167d87" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c46c0ace-fad5-48b0-a748-56b07594fee7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>int</th>
@@ -1000,7 +1246,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#dc39a499-583e-41a0-b354-383914167d87').DataTable(dt_args);
+                $('#c46c0ace-fad5-48b0-a748-56b07594fee7').DataTable(dt_args);
             });
         })
     }
@@ -1041,7 +1287,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="4d0b2820-e12a-48da-9c45-68c9cdabfc3f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e921dd8a-3f69-44bb-80fe-de739d0cdcd4" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -1067,7 +1313,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#4d0b2820-e12a-48da-9c45-68c9cdabfc3f').DataTable(dt_args);
+                $('#e921dd8a-3f69-44bb-80fe-de739d0cdcd4').DataTable(dt_args);
             });
         })
     }
@@ -1108,7 +1354,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="eabdd6f1-214a-479d-9470-5af22956fab8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="5c433b46-35e3-49fc-b6f0-e71cfbf6e5e4" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr>
       <th></th>
       <th></th>
@@ -1138,7 +1384,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#eabdd6f1-214a-479d-9470-5af22956fab8').DataTable(dt_args);
+                $('#5c433b46-35e3-49fc-b6f0-e71cfbf6e5e4').DataTable(dt_args);
             });
         })
     }
@@ -1179,7 +1425,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="7f267c14-5eda-46ab-8043-99e6925a2403" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="25935ece-8a2d-4178-9372-9a4bf88abf78" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -1213,7 +1459,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#7f267c14-5eda-46ab-8043-99e6925a2403').DataTable(dt_args);
+                $('#25935ece-8a2d-4178-9372-9a4bf88abf78').DataTable(dt_args);
             });
         })
     }
@@ -1254,7 +1500,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="e0bce3fb-9380-4b47-a3c4-6bb1d98c5ab6" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="6619851e-8fc9-4493-8e42-7d1eab5c167c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -1280,7 +1526,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#e0bce3fb-9380-4b47-a3c4-6bb1d98c5ab6').DataTable(dt_args);
+                $('#6619851e-8fc9-4493-8e42-7d1eab5c167c').DataTable(dt_args);
             });
         })
     }
@@ -1321,7 +1567,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="91b69cd6-3a98-4800-81b1-0d682cad94cc" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="8c876cc4-0cfe-4f4b-989b-8133d12f2930" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr>
       <th></th>
       <th>category</th>
@@ -1363,7 +1609,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#91b69cd6-3a98-4800-81b1-0d682cad94cc').DataTable(dt_args);
+                $('#8c876cc4-0cfe-4f4b-989b-8133d12f2930').DataTable(dt_args);
             });
         })
     }
@@ -1404,7 +1650,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="06b7fbe3-4260-4257-9307-c1bec23374d8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="76cf84ef-60c6-4a66-ac38-9858282bbfbd" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1426,7 +1672,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#06b7fbe3-4260-4257-9307-c1bec23374d8').DataTable(dt_args);
+                $('#76cf84ef-60c6-4a66-ac38-9858282bbfbd').DataTable(dt_args);
             });
         })
     }
@@ -1467,7 +1713,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="d1d2be6e-4956-4518-8d50-fdddc42a9bd8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c89362e9-5bdd-4fd1-9f1c-36e28b2b4c72" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>column_0</th>
@@ -1586,7 +1832,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#d1d2be6e-4956-4518-8d50-fdddc42a9bd8').DataTable(dt_args);
+                $('#c89362e9-5bdd-4fd1-9f1c-36e28b2b4c72').DataTable(dt_args);
             });
         })
     }
@@ -1627,7 +1873,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="e72cc4a1-00de-4bd9-b7b6-c7b29f908910" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="ccdfbd26-a439-45fb-94ca-d5c6f1fa4da5" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>short name</th>
@@ -1652,7 +1898,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#e72cc4a1-00de-4bd9-b7b6-c7b29f908910').DataTable(dt_args);
+                $('#ccdfbd26-a439-45fb-94ca-d5c6f1fa4da5').DataTable(dt_args);
             });
         })
     }
@@ -1693,7 +1939,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="3979e191-543c-4887-bb25-f2644b510afb" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e285d306-ff72-4869-8306-c367cd74baa0" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -1721,7 +1967,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#3979e191-543c-4887-bb25-f2644b510afb').DataTable(dt_args);
+                $('#e285d306-ff72-4869-8306-c367cd74baa0').DataTable(dt_args);
             });
         })
     }
@@ -1762,7 +2008,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="a38bf56c-0134-4b29-bd4b-bd0e60dd22b8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="f1b780fb-dc8b-4135-abf1-0ce7b814daa8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th>columns</th>
       <th>a</th>
@@ -1782,7 +2028,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#a38bf56c-0134-4b29-bd4b-bd0e60dd22b8').DataTable(dt_args);
+                $('#f1b780fb-dc8b-4135-abf1-0ce7b814daa8').DataTable(dt_args);
             });
         })
     }
@@ -1827,7 +2073,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="ed050896-c60a-427e-bdcf-fa110dca4e71" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="499d9f44-dd15-4e90-9029-750f028fa34b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>bigint</th>
@@ -1848,7 +2094,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#ed050896-c60a-427e-bdcf-fa110dca4e71').DataTable(dt_args);
+                $('#499d9f44-dd15-4e90-9029-750f028fa34b').DataTable(dt_args);
             });
         })
     }
@@ -1927,6 +2173,10 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#empty">empty</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-rows">No rows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-rows-one-column">No rows one column</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-columns">No columns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-columns-one-row">No columns one row</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bool">bool</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nullable-boolean">Nullable boolean</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#int">int</a></li>
