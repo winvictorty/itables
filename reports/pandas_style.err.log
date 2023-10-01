@@ -22,7 +22,7 @@ s.format("{:.3f}").format_index("{:.3f}")
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mAttributeError[0m                            Traceback (most recent call last)
-[0;32m/tmp/ipykernel_2019/3520185732.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/tmp/ipykernel_2116/3520185732.py[0m in [0;36m<module>[0;34m[0m
 [0;32m----> 1[0;31m [0ms[0m[0;34m.[0m[0mformat[0m[0;34m([0m[0;34m"{:.3f}"[0m[0;34m)[0m[0;34m.[0m[0mformat_index[0m[0;34m([0m[0;34m"{:.3f}"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m
 [0;31mAttributeError[0m: 'Styler' object has no attribute 'format_index'
