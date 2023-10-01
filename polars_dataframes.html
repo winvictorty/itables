@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -76,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -273,10 +283,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -284,7 +294,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -413,7 +423,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="1005a976-ec18-4822-8f89-1a0d84ab1ba6" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="b24f2247-03ee-4f05-8a2d-879b113be52c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -432,7 +442,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#1005a976-ec18-4822-8f89-1a0d84ab1ba6').DataTable(dt_args);
+                $('#b24f2247-03ee-4f05-8a2d-879b113be52c').DataTable(dt_args);
             });
         })
     }
@@ -473,7 +483,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="dec28a54-3763-4df7-b20c-91e08066d8f7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="595e5f5b-972e-423c-87b2-414d08af1997" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -493,7 +503,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#dec28a54-3763-4df7-b20c-91e08066d8f7').DataTable(dt_args);
+                $('#595e5f5b-972e-423c-87b2-414d08af1997').DataTable(dt_args);
             });
         })
     }
@@ -534,7 +544,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="b40c2b60-458e-4ff4-9b5c-c75b13b6777f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="85f8d1ec-9ee6-4b3d-b019-8c0f7017c508" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -554,7 +564,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#b40c2b60-458e-4ff4-9b5c-c75b13b6777f').DataTable(dt_args);
+                $('#85f8d1ec-9ee6-4b3d-b019-8c0f7017c508').DataTable(dt_args);
             });
         })
     }
@@ -595,7 +605,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="b9470828-eb14-4610-9d34-04b5592dcfb7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="1513d558-6ed9-4a14-b342-bdffc55b5094" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -614,7 +624,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#b9470828-eb14-4610-9d34-04b5592dcfb7').DataTable(dt_args);
+                $('#1513d558-6ed9-4a14-b342-bdffc55b5094').DataTable(dt_args);
             });
         })
     }
@@ -655,7 +665,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="3416f5d0-9de5-4f20-b931-08203206a584" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="195b8fec-fc70-4c7b-9367-0ff6162ea1b6" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -674,7 +684,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#3416f5d0-9de5-4f20-b931-08203206a584').DataTable(dt_args);
+                $('#195b8fec-fc70-4c7b-9367-0ff6162ea1b6').DataTable(dt_args);
             });
         })
     }
@@ -715,7 +725,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="537666db-cfb3-44b3-8652-139af3b25cf6" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c0ebfe10-ab66-454a-b967-9f3fcf4dc8b9" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -738,7 +748,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#537666db-cfb3-44b3-8652-139af3b25cf6').DataTable(dt_args);
+                $('#c0ebfe10-ab66-454a-b967-9f3fcf4dc8b9').DataTable(dt_args);
             });
         })
     }
@@ -779,7 +789,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="ec486e76-a357-4fed-9641-42195684290a" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="eb7b5cdc-4ee5-4be3-ae36-933670ea0f9b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -802,7 +812,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#ec486e76-a357-4fed-9641-42195684290a').DataTable(dt_args);
+                $('#eb7b5cdc-4ee5-4be3-ae36-933670ea0f9b').DataTable(dt_args);
             });
         })
     }
@@ -843,7 +853,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="0522c2e2-9746-4a30-b57f-0e1ad1e59c82" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="210f7804-8008-4aaa-bc0c-28d4447d915b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -867,7 +877,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#0522c2e2-9746-4a30-b57f-0e1ad1e59c82').DataTable(dt_args);
+                $('#210f7804-8008-4aaa-bc0c-28d4447d915b').DataTable(dt_args);
             });
         })
     }
@@ -908,7 +918,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="bc5c3605-3453-4cc2-8a6f-ef7c74e3a20e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="a5e03abe-3712-4373-91de-9b960a65ec11" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -930,7 +940,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#bc5c3605-3453-4cc2-8a6f-ef7c74e3a20e').DataTable(dt_args);
+                $('#a5e03abe-3712-4373-91de-9b960a65ec11').DataTable(dt_args);
             });
         })
     }
@@ -971,7 +981,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="26f06d52-626a-47a2-8aed-ad8b0e465313" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="0e7f2a32-8f5c-4141-82e4-19de8916bbce" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -994,7 +1004,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#26f06d52-626a-47a2-8aed-ad8b0e465313').DataTable(dt_args);
+                $('#0e7f2a32-8f5c-4141-82e4-19de8916bbce').DataTable(dt_args);
             });
         })
     }
@@ -1035,7 +1045,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="09fa0822-886c-4903-984b-113d1aa4e0a1" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c32a132f-4803-4b38-a31c-f094c74cbcda" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>text_column</th>
@@ -1056,7 +1066,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#09fa0822-886c-4903-984b-113d1aa4e0a1').DataTable(dt_args);
+                $('#c32a132f-4803-4b38-a31c-f094c74cbcda').DataTable(dt_args);
             });
         })
     }
@@ -1097,7 +1107,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="a644e64f-4a85-46b8-896a-6cce6426c37d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="edd5183e-b7f1-47e0-a214-d9aa5dd58b9f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>datetime</th>
@@ -1119,7 +1129,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#a644e64f-4a85-46b8-896a-6cce6426c37d').DataTable(dt_args);
+                $('#edd5183e-b7f1-47e0-a214-d9aa5dd58b9f').DataTable(dt_args);
             });
         })
     }
@@ -1160,7 +1170,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="a3175dcc-5912-4b25-ba3c-93fad9e9d910" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="3b91bfe9-63ec-4cda-b61f-6113cbf74e62" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1180,7 +1190,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#a3175dcc-5912-4b25-ba3c-93fad9e9d910').DataTable(dt_args);
+                $('#3b91bfe9-63ec-4cda-b61f-6113cbf74e62').DataTable(dt_args);
             });
         })
     }
@@ -1221,7 +1231,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="4a1173c7-0b79-4a27-b588-c0e136158e18" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="a1f2e5b2-d439-41ec-a9dd-db6b56118acd" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1241,7 +1251,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#4a1173c7-0b79-4a27-b588-c0e136158e18').DataTable(dt_args);
+                $('#a1f2e5b2-d439-41ec-a9dd-db6b56118acd').DataTable(dt_args);
             });
         })
     }
@@ -1282,7 +1292,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="f7df017d-cea8-4644-809a-14cdeb732bca" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="03c3ab04-33ec-43fd-990c-e4757f40323e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>('A', 1)</th>
@@ -1305,7 +1315,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#f7df017d-cea8-4644-809a-14cdeb732bca').DataTable(dt_args);
+                $('#03c3ab04-33ec-43fd-990c-e4757f40323e').DataTable(dt_args);
             });
         })
     }
@@ -1346,7 +1356,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="195ed780-bcbc-48bd-8342-90b18b0e6c59" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="0a61c32e-252e-4f4b-904b-9495d420a1d2" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>region</th>
@@ -1371,7 +1381,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#195ed780-bcbc-48bd-8342-90b18b0e6c59').DataTable(dt_args);
+                $('#0a61c32e-252e-4f4b-904b-9495d420a1d2').DataTable(dt_args);
             });
         })
     }
@@ -1412,7 +1422,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="b404eebf-4030-48e7-981e-c7fc2afb48fd" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="4b770d7e-c70b-449c-91b5-0308f176e565" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>capital</th>
@@ -1432,7 +1442,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#b404eebf-4030-48e7-981e-c7fc2afb48fd').DataTable(dt_args);
+                $('#4b770d7e-c70b-449c-91b5-0308f176e565').DataTable(dt_args);
             });
         })
     }
@@ -1473,7 +1483,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="9fc6f40c-20af-4f87-a075-0fa15cc6fab0" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="73d83b1c-7128-4164-8edd-c5b227889655" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>('code', 'code')</th>
@@ -1497,7 +1507,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#9fc6f40c-20af-4f87-a075-0fa15cc6fab0').DataTable(dt_args);
+                $('#73d83b1c-7128-4164-8edd-c5b227889655').DataTable(dt_args);
             });
         })
     }
@@ -1538,7 +1548,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="c95e9f41-b53c-484e-987a-4e563bb6d7d9" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="2cc90a0c-dcd1-470b-ad66-d188e0a9543f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1560,7 +1570,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#c95e9f41-b53c-484e-987a-4e563bb6d7d9').DataTable(dt_args);
+                $('#2cc90a0c-dcd1-470b-ad66-d188e0a9543f').DataTable(dt_args);
             });
         })
     }
@@ -1601,7 +1611,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="b36fc134-0f65-4e95-9ef4-b2ea2af8e8cf" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="1fb180b3-edcd-4ce1-a5f9-c47551fca644" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>column_0</th>
@@ -1720,7 +1730,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#b36fc134-0f65-4e95-9ef4-b2ea2af8e8cf').DataTable(dt_args);
+                $('#1fb180b3-edcd-4ce1-a5f9-c47551fca644').DataTable(dt_args);
             });
         })
     }
@@ -1761,7 +1771,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="8b4513fd-eb2f-4b02-8b61-15d5b785d4a0" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="8591008b-8eb6-4148-b766-552b15e38a58" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>short name</th>
@@ -1786,7 +1796,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#8b4513fd-eb2f-4b02-8b61-15d5b785d4a0').DataTable(dt_args);
+                $('#8591008b-8eb6-4148-b766-552b15e38a58').DataTable(dt_args);
             });
         })
     }
@@ -1827,7 +1837,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="b1afb407-dcfb-4ee6-b97b-cf343316f2ad" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="b40a7e41-7b5a-4686-8465-02f3d037aa78" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -1847,7 +1857,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#b1afb407-dcfb-4ee6-b97b-cf343316f2ad').DataTable(dt_args);
+                $('#b40a7e41-7b5a-4686-8465-02f3d037aa78').DataTable(dt_args);
             });
         })
     }
@@ -1892,7 +1902,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="da1ddf35-f326-4894-900a-a998c6561003" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="31851677-c204-44e1-b286-1de60a8cfc0a" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>bigint</th>
@@ -1913,7 +1923,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#da1ddf35-f326-4894-900a-a998c6561003').DataTable(dt_args);
+                $('#31851677-c204-44e1-b286-1de60a8cfc0a').DataTable(dt_args);
             });
         })
     }
@@ -1949,11 +1959,10 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="sample_dataframes.html"
@@ -1973,10 +1982,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -2061,8 +2067,8 @@ By Marc Wouts
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
