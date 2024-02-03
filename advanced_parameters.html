@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Advanced parameters &#8212; Interactive Tables</title>
   
@@ -19,49 +18,53 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'advanced_parameters';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -76,10 +79,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -120,11 +122,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -152,7 +157,18 @@ const thebe_selector_output = ".output, .cell_output"
     <p class="title logo__title">Interactive Tables</p>
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -358,10 +374,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="advanced-parameters">
-<h1>Advanced parameters<a class="headerlink" href="#advanced-parameters" title="Permalink to this heading">#</a></h1>
+<h1>Advanced parameters<a class="headerlink" href="#advanced-parameters" title="Link to this heading">#</a></h1>
 <p>The <code class="docutils literal notranslate"><span class="pre">itables</span></code> package is a wrapper for the Javascript <a class="reference external" href="https://datatables.net/">datatables.net</a> library, which has a great <a class="reference external" href="https://datatables.net/">documentation</a>, a huge collection of <a class="reference external" href="https://datatables.net/examples/index">examples</a>, and a useful <a class="reference external" href="https://datatables.net/forums/">forum</a>.</p>
 <p>Below we give a few examples of how the <a class="reference external" href="http://datatables.net">datatables.net</a> examples can be ported to Python with <code class="docutils literal notranslate"><span class="pre">itables</span></code>.</p>
 <p>As always, we initialize the <code class="docutils literal notranslate"><span class="pre">itables</span></code> library with</p>
@@ -408,7 +424,7 @@ document.write(`
 </div>
 </div>
 <section id="position-and-width">
-<h2>Position and width<a class="headerlink" href="#position-and-width" title="Permalink to this heading">#</a></h2>
+<h2>Position and width<a class="headerlink" href="#position-and-width" title="Link to this heading">#</a></h2>
 <p>The default value for the table CSS is <code class="docutils literal notranslate"><span class="pre">table-layout:auto;width:auto;margin:auto;caption-side:bottom</span></code>.
 Without <code class="docutils literal notranslate"><span class="pre">width:auto</span></code>, tables with few columns still take the full notebook width in Jupyter.
 Using <code class="docutils literal notranslate"><span class="pre">margin:auto</span></code> makes non-wide tables centered in Jupyter.</p>
@@ -443,7 +459,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="d5a1a3be-c704-4253-802a-029e5f2a928b" class="display nowrap"style="table-layout:auto;width:50%;float:right"><thead>
+<table id="d7468ab2-2cf4-41cb-96cd-07b9be686e90" class="display nowrap"style="table-layout:auto;width:50%;float:right"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -463,7 +479,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 dt_args["data"] = data;
 
                 
-                $('#d5a1a3be-c704-4253-802a-029e5f2a928b').DataTable(dt_args);
+                $('#d7468ab2-2cf4-41cb-96cd-07b9be686e90').DataTable(dt_args);
             });
         })
     }
@@ -479,7 +495,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 </div>
 </section>
 <section id="theme">
-<h2>Theme<a class="headerlink" href="#theme" title="Permalink to this heading">#</a></h2>
+<h2>Theme<a class="headerlink" href="#theme" title="Link to this heading">#</a></h2>
 <p>Select how your table looks like with the <code class="docutils literal notranslate"><span class="pre">classes</span></code> argument (defaults to <code class="docutils literal notranslate"><span class="pre">&quot;display</span> <span class="pre">nowrap&quot;</span></code>) of the <code class="docutils literal notranslate"><span class="pre">show</span></code> function, or by changing <code class="docutils literal notranslate"><span class="pre">itables.options.classes</span></code>.</p>
 <p>Add <code class="docutils literal notranslate"><span class="pre">&quot;compact&quot;</span></code> if you want a denser table:</p>
 <div class="cell tag_full-width docutils container">
@@ -512,7 +528,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="50bca00e-f7f7-4188-a978-0bd08185d354" class="display nowrap compact"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="190d66eb-96e7-4783-92f8-1a8cc33f9c55" class="display nowrap compact"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -546,7 +562,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 dt_args["data"] = data;
 
                 
-                $('#50bca00e-f7f7-4188-a978-0bd08185d354').DataTable(dt_args);
+                $('#190d66eb-96e7-4783-92f8-1a8cc33f9c55').DataTable(dt_args);
             });
         })
     }
@@ -585,7 +601,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="7487aae9-854e-45b5-8b06-58286b7b739b" class="display"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="a69be990-c531-4dcb-90e7-15888aae5734" class="display"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -619,7 +635,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 dt_args["data"] = data;
 
                 
-                $('#7487aae9-854e-45b5-8b06-58286b7b739b').DataTable(dt_args);
+                $('#a69be990-c531-4dcb-90e7-15888aae5734').DataTable(dt_args);
             });
         })
     }
@@ -658,7 +674,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="b79a3c67-ce97-47f9-ab88-220852afbf65" class="display nowrap cell-border"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="110a81b3-046f-49a2-b074-ab39a842b43e" class="display nowrap cell-border"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -692,7 +708,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 dt_args["data"] = data;
 
                 
-                $('#b79a3c67-ce97-47f9-ab88-220852afbf65').DataTable(dt_args);
+                $('#110a81b3-046f-49a2-b074-ab39a842b43e').DataTable(dt_args);
             });
         })
     }
@@ -702,7 +718,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 </div>
 </section>
 <section id="caption">
-<h2>Caption<a class="headerlink" href="#caption" title="Permalink to this heading">#</a></h2>
+<h2>Caption<a class="headerlink" href="#caption" title="Link to this heading">#</a></h2>
 <p>You can set additional <code class="docutils literal notranslate"><span class="pre">tags</span></code> on the table like e.g. a <a class="reference external" href="https://datatables.net/blog/2014-11-07">caption</a>:</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -734,7 +750,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
 }
 </style>
 <div class="itables">
-<table id="c03720e9-548e-4ae4-88cd-525a1ddaba82" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption style="white-space: nowrap; overflow: hidden">Countries from the World Bank Database</caption><thead>
+<table id="415a4c58-4682-484c-b8e0-1fbbc64c254f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption style="white-space: nowrap; overflow: hidden">Countries from the World Bank Database</caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -768,7 +784,7 @@ Using <code class="docutils literal notranslate"><span class="pre">margin:auto</
                 dt_args["data"] = data;
 
                 
-                $('#c03720e9-548e-4ae4-88cd-525a1ddaba82').DataTable(dt_args);
+                $('#415a4c58-4682-484c-b8e0-1fbbc64c254f').DataTable(dt_args);
             });
         })
     }
@@ -811,7 +827,7 @@ in the <code class="docutils literal notranslate"><span class="pre">style</span>
 }
 </style>
 <div class="itables">
-<table id="56d175d7-dfbd-462d-8059-75bc749e9c1d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption style="caption-side: top">Countries from the World Bank Database</caption><thead>
+<table id="645b8a33-a549-459e-a0d8-2f8ccf25c4a8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption style="caption-side: top">Countries from the World Bank Database</caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -845,7 +861,7 @@ in the <code class="docutils literal notranslate"><span class="pre">style</span>
                 dt_args["data"] = data;
 
                 
-                $('#56d175d7-dfbd-462d-8059-75bc749e9c1d').DataTable(dt_args);
+                $('#645b8a33-a549-459e-a0d8-2f8ccf25c4a8').DataTable(dt_args);
             });
         })
     }
@@ -857,7 +873,7 @@ in the <code class="docutils literal notranslate"><span class="pre">style</span>
 </div>
 </section>
 <section id="removing-the-search-box">
-<h2>Removing the search box<a class="headerlink" href="#removing-the-search-box" title="Permalink to this heading">#</a></h2>
+<h2>Removing the search box<a class="headerlink" href="#removing-the-search-box" title="Link to this heading">#</a></h2>
 <p>By default, datatables that don’t fit in one page come with a search box, a pagination control, a table summary, etc.
 You can select which elements are actually displayed using
 DataTables’ <a class="reference external" href="https://datatables.net/reference/option/dom"><code class="docutils literal notranslate"><span class="pre">dom</span></code> option</a> with e.g.:</p>
@@ -891,7 +907,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="de2dd27d-18c8-4b4a-9b16-a3153c72af27" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="9fd5bc1b-027a-4bc7-b01d-14b76be1fdd8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -911,7 +927,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 dt_args["data"] = data;
 
                 
-                $('#de2dd27d-18c8-4b4a-9b16-a3153c72af27').DataTable(dt_args);
+                $('#9fd5bc1b-027a-4bc7-b01d-14b76be1fdd8').DataTable(dt_args);
             });
         })
     }
@@ -936,9 +952,9 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </div>
 </section>
 <section id="pagination">
-<h2>Pagination<a class="headerlink" href="#pagination" title="Permalink to this heading">#</a></h2>
+<h2>Pagination<a class="headerlink" href="#pagination" title="Link to this heading">#</a></h2>
 <section id="how-many-rows-per-page">
-<h3>How many rows per page<a class="headerlink" href="#how-many-rows-per-page" title="Permalink to this heading">#</a></h3>
+<h3>How many rows per page<a class="headerlink" href="#how-many-rows-per-page" title="Link to this heading">#</a></h3>
 <p>Select <a class="reference external" href="https://datatables.net/examples/advanced_init/length_menu.html">how many entries</a> should appear at once in the table with either the <code class="docutils literal notranslate"><span class="pre">lengthMenu</span></code> argument of the <code class="docutils literal notranslate"><span class="pre">show</span></code> function, or with the global option <code class="docutils literal notranslate"><span class="pre">itables.options.lengthMenu</span></code>:</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -970,7 +986,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="7b9e09b5-bfd6-4f9b-9e8d-c2fc8ac48abb" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="ace171f7-8b2e-4b92-b6a9-9cb7f7c163fa" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -1004,7 +1020,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 dt_args["data"] = data;
 
                 
-                $('#7b9e09b5-bfd6-4f9b-9e8d-c2fc8ac48abb').DataTable(dt_args);
+                $('#ace171f7-8b2e-4b92-b6a9-9cb7f7c163fa').DataTable(dt_args);
             });
         })
     }
@@ -1014,7 +1030,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </div>
 </section>
 <section id="show-the-table-in-full">
-<h3>Show the table in full<a class="headerlink" href="#show-the-table-in-full" title="Permalink to this heading">#</a></h3>
+<h3>Show the table in full<a class="headerlink" href="#show-the-table-in-full" title="Link to this heading">#</a></h3>
 <p>Use <a class="reference external" href="https://datatables.net/reference/option/paging"><code class="docutils literal notranslate"><span class="pre">paging=False</span></code></a> to show the table in full:</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1046,7 +1062,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="915c6528-2557-415a-b4df-000ea9d2c782" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="15582583-7843-4867-8ea7-9a9ed6e923a5" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -1080,7 +1096,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 dt_args["data"] = data;
 
                 
-                $('#915c6528-2557-415a-b4df-000ea9d2c782').DataTable(dt_args);
+                $('#15582583-7843-4867-8ea7-9a9ed6e923a5').DataTable(dt_args);
             });
         })
     }
@@ -1090,7 +1106,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </div>
 </section>
 <section id="scroll">
-<h3>Scroll<a class="headerlink" href="#scroll" title="Permalink to this heading">#</a></h3>
+<h3>Scroll<a class="headerlink" href="#scroll" title="Link to this heading">#</a></h3>
 <p>You can replace the pagination with a <a class="reference external" href="https://datatables.net/examples/basic_init/scroll_y.html">vertical scroll</a>:</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1122,7 +1138,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="2138c25e-b0d6-4a2d-bc33-52af662d1de0" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="ce298779-f6ae-4728-8398-3b849eaefa00" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -1156,7 +1172,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 dt_args["data"] = data;
 
                 
-                $('#2138c25e-b0d6-4a2d-bc33-52af662d1de0').DataTable(dt_args);
+                $('#ce298779-f6ae-4728-8398-3b849eaefa00').DataTable(dt_args);
             });
         })
     }
@@ -1168,7 +1184,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </section>
 </section>
 <section id="table-footer">
-<h2>Table footer<a class="headerlink" href="#table-footer" title="Permalink to this heading">#</a></h2>
+<h2>Table footer<a class="headerlink" href="#table-footer" title="Link to this heading">#</a></h2>
 <p>Use <code class="docutils literal notranslate"><span class="pre">footer</span> <span class="pre">=</span> <span class="pre">True</span></code> if you wish to display a table footer.</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1200,7 +1216,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="aae988e7-d258-4c9d-9178-29df66a68b1a" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e1ce8f9f-88c0-40bd-801a-b1b00a08c62d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -1220,15 +1236,6 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
       <th></th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody><tfoot>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>region</th>
-      <th>country</th>
-      <th>capital</th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>flag</th>
-    </tr>
     <tr>
       <th>code</th>
       <th></th>
@@ -1238,7 +1245,16 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
       <th></th>
       <th></th>
     </tr>
-  </tfoot></table>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>region</th>
+      <th>country</th>
+      <th>capital</th>
+      <th>longitude</th>
+      <th>latitude</th>
+      <th>flag</th>
+    </tr>
+</tfoot></table>
 <script>
     // We use a namespace per table (= the next curly bracket)
     // to avoid conflicts between the various tables' data & dt_args
@@ -1253,7 +1269,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 dt_args["data"] = data;
 
                 
-                $('#aae988e7-d258-4c9d-9178-29df66a68b1a').DataTable(dt_args);
+                $('#e1ce8f9f-88c0-40bd-801a-b1b00a08c62d').DataTable(dt_args);
             });
         })
     }
@@ -1263,7 +1279,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 </div>
 </section>
 <section id="column-filters">
-<h2>Column filters<a class="headerlink" href="#column-filters" title="Permalink to this heading">#</a></h2>
+<h2>Column filters<a class="headerlink" href="#column-filters" title="Link to this heading">#</a></h2>
 <p>Use <code class="docutils literal notranslate"><span class="pre">column_filters</span> <span class="pre">=</span> <span class="pre">&quot;header&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;footer&quot;</span></code> if you wish to display individual column filters
 (remove the global search box with <a class="reference external" href="https://datatables.net/reference/option/dom"><code class="docutils literal notranslate"><span class="pre">dom='lrtip'</span></code></a> if desired).</p>
 <div class="cell docutils container">
@@ -1300,7 +1316,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
 }
 </style>
 <div class="itables">
-<table id="a9bb3a3e-2269-42ae-b049-9a314ac1ad6b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="2cb4105f-d64c-417b-8e88-b70edce038f9" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>string</th>
@@ -1335,7 +1351,7 @@ DataTables’ <a class="reference external" href="https://datatables.net/referen
                 dt_args["data"] = data;
 
                 // Setup - add a text input to each header or footer cell
-$('#a9bb3a3e-2269-42ae-b049-9a314ac1ad6b tfoot th').each(function () {
+$('#2cb4105f-d64c-417b-8e88-b70edce038f9 tfoot th').each(function () {
     let title = $(this).text();
     $(this).html('<input type="text" placeholder="Search ' +
         // We use encodeURI to avoid this LGTM error:
@@ -1344,7 +1360,7 @@ $('#a9bb3a3e-2269-42ae-b049-9a314ac1ad6b tfoot th').each(function () {
         '" />');
 });
 
-                $('#a9bb3a3e-2269-42ae-b049-9a314ac1ad6b').DataTable(dt_args);
+                $('#2cb4105f-d64c-417b-8e88-b70edce038f9').DataTable(dt_args);
             });
         })
     }
@@ -1393,7 +1409,7 @@ $('#a9bb3a3e-2269-42ae-b049-9a314ac1ad6b tfoot th').each(function () {
 }
 </style>
 <div class="itables">
-<table id="b61b2169-7a94-4550-9826-f74b20311cb8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="3deff54a-4895-42cf-b500-041c5cca33bc" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr>
       <th></th>
       <th></th>
@@ -1437,7 +1453,7 @@ $('#a9bb3a3e-2269-42ae-b049-9a314ac1ad6b tfoot th').each(function () {
                 dt_args["data"] = data;
 
                 // Setup - add a text input to each header or footer cell
-$('#b61b2169-7a94-4550-9826-f74b20311cb8 tfoot th').each(function () {
+$('#3deff54a-4895-42cf-b500-041c5cca33bc tfoot th').each(function () {
     let title = $(this).text();
     $(this).html('<input type="text" placeholder="Search ' +
         // We use encodeURI to avoid this LGTM error:
@@ -1446,7 +1462,7 @@ $('#b61b2169-7a94-4550-9826-f74b20311cb8 tfoot th').each(function () {
         '" />');
 });
 
-                $('#b61b2169-7a94-4550-9826-f74b20311cb8').DataTable(dt_args);
+                $('#3deff54a-4895-42cf-b500-041c5cca33bc').DataTable(dt_args);
             });
         })
     }
@@ -1456,7 +1472,7 @@ $('#b61b2169-7a94-4550-9826-f74b20311cb8 tfoot th').each(function () {
 </div>
 </section>
 <section id="pandas-formatting">
-<h2>Pandas formatting<a class="headerlink" href="#pandas-formatting" title="Permalink to this heading">#</a></h2>
+<h2>Pandas formatting<a class="headerlink" href="#pandas-formatting" title="Link to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">itables</span></code> builds the HTML representation of your Pandas dataframes using Pandas itself, so
 you can use <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html">Pandas’ formatting options</a>.
 For instance, you can change the precision used to display floating numbers:</p>
@@ -1494,7 +1510,7 @@ For instance, you can change the precision used to display floating numbers:</p>
 }
 </style>
 <div class="itables">
-<table id="a7860d10-e6f9-483b-9f3c-56d4453561de" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="52451a6f-7819-4887-8fe1-fb2633ac36a1" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>0</th>
@@ -1514,7 +1530,7 @@ For instance, you can change the precision used to display floating numbers:</p>
                 dt_args["data"] = data;
 
                 
-                $('#a7860d10-e6f9-483b-9f3c-56d4453561de').DataTable(dt_args);
+                $('#52451a6f-7819-4887-8fe1-fb2633ac36a1').DataTable(dt_args);
             });
         })
     }
@@ -1554,7 +1570,7 @@ For instance, you can change the precision used to display floating numbers:</p>
 }
 </style>
 <div class="itables">
-<table id="ee55d2a7-fe01-4afe-86cd-0aa314bcbc2d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="378b1c09-ddcb-47b0-8638-dc0078999a8b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>0</th>
@@ -1574,7 +1590,7 @@ For instance, you can change the precision used to display floating numbers:</p>
                 dt_args["data"] = data;
 
                 
-                $('#ee55d2a7-fe01-4afe-86cd-0aa314bcbc2d').DataTable(dt_args);
+                $('#378b1c09-ddcb-47b0-8638-dc0078999a8b').DataTable(dt_args);
             });
         })
     }
@@ -1589,11 +1605,11 @@ For instance, you can change the precision used to display floating numbers:</p>
 objects as interactive datatables.</p>
 <p>This way, you can easily add background color, and even
 tooltips to your dataframes, and still get them
-displayed using <a class="reference external" href="http://datatables.net">datatables.net</a> - see our <a class="reference internal" href="pandas_style.html"><span class="doc std std-doc">example</span></a>.</p>
+displayed using <a class="reference external" href="http://datatables.net">datatables.net</a> - see our <a class="reference internal" href="pandas_style.html"><span class="std std-doc">example</span></a>.</p>
 </div>
 </section>
 <section id="javascript-formatting">
-<h2>Javascript formatting<a class="headerlink" href="#javascript-formatting" title="Permalink to this heading">#</a></h2>
+<h2>Javascript formatting<a class="headerlink" href="#javascript-formatting" title="Link to this heading">#</a></h2>
 <p>Numbers are formatted using Pandas, then are converted back to float to ensure they come in the right order when sorted.
 Therefore, to achieve a particular formatting you might have to resort to the
 <a class="reference external" href="https://datatables.net/examples/advanced_init/column_render.html"><code class="docutils literal notranslate"><span class="pre">columns.render</span></code> option</a>
@@ -1641,7 +1657,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="66e7b26d-ecc1-4778-ae6e-ce24ce3889ed" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="bea7a67e-1c78-46c0-b37e-f2fa04dd2ca8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>0</th>
@@ -1661,7 +1677,7 @@ can be ported like this:</p>
                 dt_args["data"] = data;
 
                 
-                $('#66e7b26d-ecc1-4778-ae6e-ce24ce3889ed').DataTable(dt_args);
+                $('#bea7a67e-1c78-46c0-b37e-f2fa04dd2ca8').DataTable(dt_args);
             });
         })
     }
@@ -1671,7 +1687,7 @@ can be ported like this:</p>
 </div>
 </section>
 <section id="row-order">
-<h2>Row order<a class="headerlink" href="#row-order" title="Permalink to this heading">#</a></h2>
+<h2>Row order<a class="headerlink" href="#row-order" title="Link to this heading">#</a></h2>
 <p>Since <code class="docutils literal notranslate"><span class="pre">itables&gt;=1.3.0</span></code>, the interactive datatable shows the rows in the same order as the original dataframe:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1711,7 +1727,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="c173e78f-b654-4443-9374-448f907a222a" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Sorted Index</Caption><thead>
+<table id="0f80b7d0-48a2-4786-921f-eb7e6ea454bf" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Sorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -1737,7 +1753,7 @@ can be ported like this:</p>
                 dt_args["data"] = data;
 
                 
-                $('#c173e78f-b654-4443-9374-448f907a222a').DataTable(dt_args);
+                $('#0f80b7d0-48a2-4786-921f-eb7e6ea454bf').DataTable(dt_args);
             });
         })
     }
@@ -1766,7 +1782,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="e3c10430-1752-4560-86bc-bbbb4f697084" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Reverse Sorted Index</Caption><thead>
+<table id="f6dffce8-42ac-481b-ba86-b651c3242a87" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Reverse Sorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -1792,7 +1808,7 @@ can be ported like this:</p>
                 dt_args["data"] = data;
 
                 
-                $('#e3c10430-1752-4560-86bc-bbbb4f697084').DataTable(dt_args);
+                $('#f6dffce8-42ac-481b-ba86-b651c3242a87').DataTable(dt_args);
             });
         })
     }
@@ -1821,7 +1837,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="074e92a8-b08d-481e-a228-df05c137721c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Sorted Multiindex</Caption><thead>
+<table id="7f49d458-0ced-4654-b396-b1dfb4d99902" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Sorted Multiindex</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -1849,7 +1865,7 @@ can be ported like this:</p>
                 dt_args["data"] = data;
 
                 
-                $('#074e92a8-b08d-481e-a228-df05c137721c').DataTable(dt_args);
+                $('#7f49d458-0ced-4654-b396-b1dfb4d99902').DataTable(dt_args);
             });
         })
     }
@@ -1878,7 +1894,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="fa6f60f9-debe-4f18-8c81-2005ffa3b478" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Unsorted Index</Caption><thead>
+<table id="8fa897fd-8407-4ba6-aa71-4259b4a0390d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><Caption>Unsorted Index</Caption><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>x</th>
@@ -1904,7 +1920,7 @@ can be ported like this:</p>
                 dt_args["data"] = data;
 
                 
-                $('#fa6f60f9-debe-4f18-8c81-2005ffa3b478').DataTable(dt_args);
+                $('#8fa897fd-8407-4ba6-aa71-4259b4a0390d').DataTable(dt_args);
             });
         })
     }
@@ -1944,7 +1960,7 @@ can be ported like this:</p>
 }
 </style>
 <div class="itables">
-<table id="5a3e07ca-405c-40fc-bd25-2413ef461ab4" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="957288b3-db55-43be-bba8-1170121fc619" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>a</th>
@@ -1968,7 +1984,7 @@ can be ported like this:</p>
                 dt_args["data"] = data;
 
                 
-                $('#5a3e07ca-405c-40fc-bd25-2413ef461ab4').DataTable(dt_args);
+                $('#957288b3-db55-43be-bba8-1170121fc619').DataTable(dt_args);
             });
         })
     }
@@ -1978,7 +1994,7 @@ can be ported like this:</p>
 </div>
 </section>
 <section id="showing-the-index">
-<h2>Showing the index<a class="headerlink" href="#showing-the-index" title="Permalink to this heading">#</a></h2>
+<h2>Showing the index<a class="headerlink" href="#showing-the-index" title="Link to this heading">#</a></h2>
 <p>By default, the index of a Series/DataFrame is shown only when it is not trivial, i.e. when
 it has a name, or when it differs from a range index. If you prefer, you can change the value of
 <code class="docutils literal notranslate"><span class="pre">showIndex</span></code> to either <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> to always or never show the index (the default value being <code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code>).</p>
@@ -2020,7 +2036,7 @@ it has a name, or when it differs from a range index. If you prefer, you can cha
 }
 </style>
 <div class="itables">
-<table id="44a06103-5ffb-4265-baf0-283ce963d150" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="88b403ce-832d-493d-abac-0d36988726f7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>letter</th>
@@ -2040,7 +2056,7 @@ it has a name, or when it differs from a range index. If you prefer, you can cha
                 dt_args["data"] = data;
 
                 
-                $('#44a06103-5ffb-4265-baf0-283ce963d150').DataTable(dt_args);
+                $('#88b403ce-832d-493d-abac-0d36988726f7').DataTable(dt_args);
             });
         })
     }
@@ -2050,7 +2066,7 @@ it has a name, or when it differs from a range index. If you prefer, you can cha
 </div>
 </section>
 <section id="advanced-cell-formatting-with-js-callbacks">
-<h2>Advanced cell formatting with JS callbacks<a class="headerlink" href="#advanced-cell-formatting-with-js-callbacks" title="Permalink to this heading">#</a></h2>
+<h2>Advanced cell formatting with JS callbacks<a class="headerlink" href="#advanced-cell-formatting-with-js-callbacks" title="Link to this heading">#</a></h2>
 <p>You can use Javascript callbacks to set the cell or row style depending on the cell content.</p>
 <p>The example below, in which we color in red the cells with negative numbers, is directly inspired by the corresponding <a class="reference external" href="http://datatables.net">datatables.net</a> <a class="reference external" href="https://datatables.net/reference/option/columns.createdCell">example</a>.</p>
 <p>Note how the Javascript callback is declared as <code class="docutils literal notranslate"><span class="pre">JavascriptFunction</span></code> object below.</p>
@@ -2102,7 +2118,7 @@ it has a name, or when it differs from a range index. If you prefer, you can cha
 }
 </style>
 <div class="itables">
-<table id="9036bb1e-6b45-43a8-ba11-24412c58a0bc" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="63cb7245-d76c-4b9b-8534-19e35e273025" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -2132,7 +2148,7 @@ function (td, cellData, rowData, row, col) {
                 dt_args["data"] = data;
 
                 
-                $('#9036bb1e-6b45-43a8-ba11-24412c58a0bc').DataTable(dt_args);
+                $('#63cb7245-d76c-4b9b-8534-19e35e273025').DataTable(dt_args);
             });
         })
     }
@@ -2143,13 +2159,13 @@ function (td, cellData, rowData, row, col) {
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Since <code class="docutils literal notranslate"><span class="pre">itables==1.6.0</span></code>, you can also render
-<a class="reference internal" href="pandas_style.html"><span class="doc std std-doc">Pandas style</span></a> objects as interactive datatables -
+<a class="reference internal" href="pandas_style.html"><span class="std std-doc">Pandas style</span></a> objects as interactive datatables -
 that might be a simpler alternative to the JavaScript callbacks
 documented here.</p>
 </div>
 </section>
 <section id="column-width">
-<h2>Column width<a class="headerlink" href="#column-width" title="Permalink to this heading">#</a></h2>
+<h2>Column width<a class="headerlink" href="#column-width" title="Link to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://datatables.net/reference/option/columns.width"><code class="docutils literal notranslate"><span class="pre">columnDefs.width</span></code></a> argument let you adjust the column widths.</p>
 <p>Note that the default value of <code class="docutils literal notranslate"><span class="pre">style</span></code>, or of <code class="docutils literal notranslate"><span class="pre">autoWidth</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>), might override custom column widths,
 so you might have to change their values as in the examples below.</p>
@@ -2190,7 +2206,7 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="7271ab78-5914-435d-9afc-ff7fe6de19c7" class="display nowrap"style="width:1200px"><thead>
+<table id="ef1d6276-15b8-464c-978a-69c01515f842" class="display nowrap"style="width:1200px"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -2224,7 +2240,7 @@ so you might have to change their values as in the examples below.</p>
                 dt_args["data"] = data;
 
                 
-                $('#7271ab78-5914-435d-9afc-ff7fe6de19c7').DataTable(dt_args);
+                $('#ef1d6276-15b8-464c-978a-69c01515f842').DataTable(dt_args);
             });
         })
     }
@@ -2267,7 +2283,7 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="3a8105fc-780c-4371-9703-d3b0e6ab1364" class="display nowrap"style="width:100%;margin:auto"><thead>
+<table id="8e35fb15-9be1-4f6b-bc0b-92bd66845041" class="display nowrap"style="width:100%;margin:auto"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -2301,7 +2317,7 @@ so you might have to change their values as in the examples below.</p>
                 dt_args["data"] = data;
 
                 
-                $('#3a8105fc-780c-4371-9703-d3b0e6ab1364').DataTable(dt_args);
+                $('#8e35fb15-9be1-4f6b-bc0b-92bd66845041').DataTable(dt_args);
             });
         })
     }
@@ -2312,7 +2328,7 @@ so you might have to change their values as in the examples below.</p>
 <p>If you wish you can also set a value for <code class="docutils literal notranslate"><span class="pre">columnDefs</span></code> permanently in <code class="docutils literal notranslate"><span class="pre">itables.options</span></code> as demonstrated in the cell alignment example below.</p>
 </section>
 <section id="cell-alignment">
-<h2>Cell alignment<a class="headerlink" href="#cell-alignment" title="Permalink to this heading">#</a></h2>
+<h2>Cell alignment<a class="headerlink" href="#cell-alignment" title="Link to this heading">#</a></h2>
 <p>You can use the <a class="reference external" href="http://datatables.net">datatables.net</a> <a class="reference external" href="https://datatables.net/manual/styling/classes#Cell-classes">cell classes</a> like <code class="docutils literal notranslate"><span class="pre">dt-left</span></code>, <code class="docutils literal notranslate"><span class="pre">dt-center</span></code>, <code class="docutils literal notranslate"><span class="pre">dt-right</span></code> etc. to set the cell alignment. Specify it for one table by using the <code class="docutils literal notranslate"><span class="pre">columnDefs</span></code> argument of <code class="docutils literal notranslate"><span class="pre">show</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2344,7 +2360,7 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="7960f7fb-1701-4aad-93f6-ffdcfdb9ccad" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="ee70ec98-fc59-44b2-a12a-241eacc9660a" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -2378,7 +2394,7 @@ so you might have to change their values as in the examples below.</p>
                 dt_args["data"] = data;
 
                 
-                $('#7960f7fb-1701-4aad-93f6-ffdcfdb9ccad').DataTable(dt_args);
+                $('#ee70ec98-fc59-44b2-a12a-241eacc9660a').DataTable(dt_args);
             });
         })
     }
@@ -2418,7 +2434,7 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="1ef66eb2-fb9a-475c-8b9f-77d50e7d5ba8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="936ffea1-4923-4f8a-a299-a8e22602bbb3" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -2452,7 +2468,7 @@ so you might have to change their values as in the examples below.</p>
                 dt_args["data"] = data;
 
                 
-                $('#1ef66eb2-fb9a-475c-8b9f-77d50e7d5ba8').DataTable(dt_args);
+                $('#936ffea1-4923-4f8a-a299-a8e22602bbb3').DataTable(dt_args);
             });
         })
     }
@@ -2469,7 +2485,7 @@ so you might have to change their values as in the examples below.</p>
 </div>
 </section>
 <section id="html-in-cells">
-<h2>HTML in cells<a class="headerlink" href="#html-in-cells" title="Permalink to this heading">#</a></h2>
+<h2>HTML in cells<a class="headerlink" href="#html-in-cells" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
@@ -2507,7 +2523,7 @@ so you might have to change their values as in the examples below.</p>
 }
 </style>
 <div class="itables">
-<table id="85950637-1ba3-4c60-9d21-f8e694a52d6d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="59d5d35a-334d-46f6-99ac-b42ab25ed2e1" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>HTML</th>
@@ -2527,7 +2543,7 @@ so you might have to change their values as in the examples below.</p>
                 dt_args["data"] = data;
 
                 
-                $('#85950637-1ba3-4c60-9d21-f8e694a52d6d').DataTable(dt_args);
+                $('#59d5d35a-334d-46f6-99ac-b42ab25ed2e1').DataTable(dt_args);
             });
         })
     }
@@ -2537,7 +2553,7 @@ so you might have to change their values as in the examples below.</p>
 </div>
 </section>
 <section id="images-in-cells">
-<h2>Images in cells<a class="headerlink" href="#images-in-cells" title="Permalink to this heading">#</a></h2>
+<h2>Images in cells<a class="headerlink" href="#images-in-cells" title="Link to this heading">#</a></h2>
 <p>Since HTML is supported you can display images in your tables.
 You can use either</p>
 <ul class="simple">
@@ -2582,7 +2598,7 @@ You can use either</p>
 }
 </style>
 <div class="itables">
-<table id="8f3dc7b3-9bf1-41a0-8179-0e6a73092d79" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="95453480-1207-4a86-a939-5bee8d8d8cde" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>Images</th>
@@ -2602,7 +2618,7 @@ You can use either</p>
                 dt_args["data"] = data;
 
                 
-                $('#8f3dc7b3-9bf1-41a0-8179-0e6a73092d79').DataTable(dt_args);
+                $('#95453480-1207-4a86-a939-5bee8d8d8cde').DataTable(dt_args);
             });
         })
     }
@@ -2612,7 +2628,7 @@ You can use either</p>
 </div>
 </section>
 <section id="the-search-option">
-<h2>The search option<a class="headerlink" href="#the-search-option" title="Permalink to this heading">#</a></h2>
+<h2>The search option<a class="headerlink" href="#the-search-option" title="Link to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://datatables.net/reference/option/search">search option</a> let you control the initial value for the search field, and whether the query should be treated as a regular expression or not:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2644,7 +2660,7 @@ You can use either</p>
 }
 </style>
 <div class="itables">
-<table id="52579be2-9374-4152-b993-c62d36976354" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="f62e89c0-fc91-4451-ab08-965fd2e0d59d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -2678,7 +2694,7 @@ You can use either</p>
                 dt_args["data"] = data;
 
                 
-                $('#52579be2-9374-4152-b993-c62d36976354').DataTable(dt_args);
+                $('#f62e89c0-fc91-4451-ab08-965fd2e0d59d').DataTable(dt_args);
             });
         })
     }
@@ -2688,11 +2704,11 @@ You can use either</p>
 </div>
 </section>
 <section id="select-rows">
-<h2>Select rows<a class="headerlink" href="#select-rows" title="Permalink to this heading">#</a></h2>
+<h2>Select rows<a class="headerlink" href="#select-rows" title="Link to this heading">#</a></h2>
 <p>Not currently implemented. May be made available at a later stage using the <a class="reference external" href="https://datatables.net/extensions/select/">select</a> extension for datatables.</p>
 </section>
 <section id="copy-csv-pdf-and-excel-buttons">
-<h2>Copy, CSV, PDF and Excel buttons<a class="headerlink" href="#copy-csv-pdf-and-excel-buttons" title="Permalink to this heading">#</a></h2>
+<h2>Copy, CSV, PDF and Excel buttons<a class="headerlink" href="#copy-csv-pdf-and-excel-buttons" title="Link to this heading">#</a></h2>
 <p>Not currently implemented. May be made available at a later stage thanks to the <a class="reference external" href="https://datatables.net/extensions/buttons/">buttons</a> extension for datatable.</p>
 </section>
 </section>
@@ -2754,6 +2770,7 @@ You can use either</p>
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -2808,7 +2825,7 @@ By Marc Wouts
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -2832,8 +2849,8 @@ By Marc Wouts
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

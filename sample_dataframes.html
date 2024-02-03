@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Sample dataframes &#8212; Interactive Tables</title>
   
@@ -19,49 +18,53 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'sample_dataframes';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -76,10 +79,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -120,11 +122,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -152,7 +157,18 @@ const thebe_selector_output = ".output, .cell_output"
     <p class="title logo__title">Interactive Tables</p>
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -359,10 +375,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sample-dataframes">
-<h1>Sample dataframes<a class="headerlink" href="#sample-dataframes" title="Permalink to this heading">#</a></h1>
+<h1>Sample dataframes<a class="headerlink" href="#sample-dataframes" title="Link to this heading">#</a></h1>
 <p>In this notebook we make sure that our test dataframes are displayed nicely with the default <code class="docutils literal notranslate"><span class="pre">itables</span></code> settings.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -397,7 +413,7 @@ document.write(`
 </style></div></div>
 </div>
 <section id="empty">
-<h2>empty<a class="headerlink" href="#empty" title="Permalink to this heading">#</a></h2>
+<h2>empty<a class="headerlink" href="#empty" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;empty&quot;</span><span class="p">])</span>
@@ -428,7 +444,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="8c7f2240-b554-4ebb-94b2-472010d2af88" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="9f7989a0-140b-4a28-b2e9-fadc425dfcd8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -447,7 +463,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#8c7f2240-b554-4ebb-94b2-472010d2af88').DataTable(dt_args);
+                $('#9f7989a0-140b-4a28-b2e9-fadc425dfcd8').DataTable(dt_args);
             });
         })
     }
@@ -457,7 +473,7 @@ document.write(`
 </div>
 </section>
 <section id="no-rows">
-<h2>No rows<a class="headerlink" href="#no-rows" title="Permalink to this heading">#</a></h2>
+<h2>No rows<a class="headerlink" href="#no-rows" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_rows&quot;</span><span class="p">])</span>
@@ -488,7 +504,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="3f23f6a1-2687-4753-8dfb-37d2295f493b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="f78747a7-5220-4a09-a118-da5b4b943209" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -508,7 +524,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#3f23f6a1-2687-4753-8dfb-37d2295f493b').DataTable(dt_args);
+                $('#f78747a7-5220-4a09-a118-da5b4b943209').DataTable(dt_args);
             });
         })
     }
@@ -518,7 +534,7 @@ document.write(`
 </div>
 </section>
 <section id="no-rows-one-column">
-<h2>No rows one column<a class="headerlink" href="#no-rows-one-column" title="Permalink to this heading">#</a></h2>
+<h2>No rows one column<a class="headerlink" href="#no-rows-one-column" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_rows_one_column&quot;</span><span class="p">])</span>
@@ -549,7 +565,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="8b83d33a-0e7c-4114-b2fd-bdcb5dc8e566" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="08c842c7-ac56-4895-b9d7-0c4d48be57f7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>a</th>
@@ -569,7 +585,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#8b83d33a-0e7c-4114-b2fd-bdcb5dc8e566').DataTable(dt_args);
+                $('#08c842c7-ac56-4895-b9d7-0c4d48be57f7').DataTable(dt_args);
             });
         })
     }
@@ -579,7 +595,7 @@ document.write(`
 </div>
 </section>
 <section id="no-columns">
-<h2>No columns<a class="headerlink" href="#no-columns" title="Permalink to this heading">#</a></h2>
+<h2>No columns<a class="headerlink" href="#no-columns" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_columns&quot;</span><span class="p">])</span>
@@ -610,7 +626,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="41b80841-2b7f-4b8e-9f85-31f4ac127523" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c2c4dce2-2e09-493c-b7e7-f428265fc431" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -629,7 +645,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#41b80841-2b7f-4b8e-9f85-31f4ac127523').DataTable(dt_args);
+                $('#c2c4dce2-2e09-493c-b7e7-f428265fc431').DataTable(dt_args);
             });
         })
     }
@@ -639,7 +655,7 @@ document.write(`
 </div>
 </section>
 <section id="no-columns-one-row">
-<h2>No columns one row<a class="headerlink" href="#no-columns-one-row" title="Permalink to this heading">#</a></h2>
+<h2>No columns one row<a class="headerlink" href="#no-columns-one-row" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_columns_one_row&quot;</span><span class="p">])</span>
@@ -670,7 +686,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="6c0805db-423a-43a9-8722-6614fd6daea6" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="74574c02-348e-4cf6-912e-c0ab188c172e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -689,7 +705,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#6c0805db-423a-43a9-8722-6614fd6daea6').DataTable(dt_args);
+                $('#74574c02-348e-4cf6-912e-c0ab188c172e').DataTable(dt_args);
             });
         })
     }
@@ -699,7 +715,7 @@ document.write(`
 </div>
 </section>
 <section id="bool">
-<h2>bool<a class="headerlink" href="#bool" title="Permalink to this heading">#</a></h2>
+<h2>bool<a class="headerlink" href="#bool" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;bool&quot;</span><span class="p">])</span>
@@ -730,7 +746,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="c6e93a8a-f2a6-41ea-94e9-a1f66f642f5c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="77031c39-d4d0-431c-85cd-d4af15bbaf3b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -753,7 +769,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#c6e93a8a-f2a6-41ea-94e9-a1f66f642f5c').DataTable(dt_args);
+                $('#77031c39-d4d0-431c-85cd-d4af15bbaf3b').DataTable(dt_args);
             });
         })
     }
@@ -763,7 +779,7 @@ document.write(`
 </div>
 </section>
 <section id="nullable-boolean">
-<h2>Nullable boolean<a class="headerlink" href="#nullable-boolean" title="Permalink to this heading">#</a></h2>
+<h2>Nullable boolean<a class="headerlink" href="#nullable-boolean" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;nullable_boolean&quot;</span><span class="p">])</span>
@@ -794,7 +810,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="005f6cb0-0ba1-4483-9d60-a439f412b651" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="05a5077b-2a68-43c2-adf3-4e83c7ba3b42" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -817,7 +833,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#005f6cb0-0ba1-4483-9d60-a439f412b651').DataTable(dt_args);
+                $('#05a5077b-2a68-43c2-adf3-4e83c7ba3b42').DataTable(dt_args);
             });
         })
     }
@@ -827,7 +843,7 @@ document.write(`
 </div>
 </section>
 <section id="int">
-<h2>int<a class="headerlink" href="#int" title="Permalink to this heading">#</a></h2>
+<h2>int<a class="headerlink" href="#int" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;int&quot;</span><span class="p">])</span>
@@ -858,7 +874,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="b120773a-ed3e-4511-bcb4-fa5aa772dad3" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="377b4e7c-16ab-4f63-b7c6-5cf09ec8cc51" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -882,7 +898,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#b120773a-ed3e-4511-bcb4-fa5aa772dad3').DataTable(dt_args);
+                $('#377b4e7c-16ab-4f63-b7c6-5cf09ec8cc51').DataTable(dt_args);
             });
         })
     }
@@ -892,7 +908,7 @@ document.write(`
 </div>
 </section>
 <section id="nullable-integer">
-<h2>Nullable integer<a class="headerlink" href="#nullable-integer" title="Permalink to this heading">#</a></h2>
+<h2>Nullable integer<a class="headerlink" href="#nullable-integer" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;nullable_int&quot;</span><span class="p">])</span>
@@ -923,7 +939,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="10337ace-b715-4abc-8961-dbe37b926eeb" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="a3409fff-ee76-4bd5-94ab-93cfab7bc8e8" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -945,7 +961,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#10337ace-b715-4abc-8961-dbe37b926eeb').DataTable(dt_args);
+                $('#a3409fff-ee76-4bd5-94ab-93cfab7bc8e8').DataTable(dt_args);
             });
         })
     }
@@ -955,7 +971,7 @@ document.write(`
 </div>
 </section>
 <section id="float">
-<h2>float<a class="headerlink" href="#float" title="Permalink to this heading">#</a></h2>
+<h2>float<a class="headerlink" href="#float" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;float&quot;</span><span class="p">])</span>
@@ -986,7 +1002,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="63a77e5a-2ca8-4f47-9b34-161fd06dceed" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="6c43467c-369e-472e-805d-b85b7beb0a12" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1009,7 +1025,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#63a77e5a-2ca8-4f47-9b34-161fd06dceed').DataTable(dt_args);
+                $('#6c43467c-369e-472e-805d-b85b7beb0a12').DataTable(dt_args);
             });
         })
     }
@@ -1019,7 +1035,7 @@ document.write(`
 </div>
 </section>
 <section id="str">
-<h2>str<a class="headerlink" href="#str" title="Permalink to this heading">#</a></h2>
+<h2>str<a class="headerlink" href="#str" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;str&quot;</span><span class="p">])</span>
@@ -1050,7 +1066,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="e081caea-1e6c-436e-990c-fab887b1b720" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="aa82a7ba-00a5-43fa-b0c2-d45009e31667" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>text_column</th>
@@ -1071,7 +1087,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#e081caea-1e6c-436e-990c-fab887b1b720').DataTable(dt_args);
+                $('#aa82a7ba-00a5-43fa-b0c2-d45009e31667').DataTable(dt_args);
             });
         })
     }
@@ -1081,7 +1097,7 @@ document.write(`
 </div>
 </section>
 <section id="time">
-<h2>time<a class="headerlink" href="#time" title="Permalink to this heading">#</a></h2>
+<h2>time<a class="headerlink" href="#time" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">])</span>
@@ -1112,7 +1128,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="d2d90f8d-bf64-46c5-a05c-e17e10549155" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="158450fd-3111-4d99-8f7f-570f97e88328" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>datetime</th>
@@ -1134,7 +1150,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#d2d90f8d-bf64-46c5-a05c-e17e10549155').DataTable(dt_args);
+                $('#158450fd-3111-4d99-8f7f-570f97e88328').DataTable(dt_args);
             });
         })
     }
@@ -1144,7 +1160,7 @@ document.write(`
 </div>
 </section>
 <section id="object">
-<h2>object<a class="headerlink" href="#object" title="Permalink to this heading">#</a></h2>
+<h2>object<a class="headerlink" href="#object" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;object&quot;</span><span class="p">])</span>
@@ -1175,7 +1191,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="9fe6d5e4-7d93-4650-a09d-1cd9c846c873" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e96c6935-bdcd-4c4b-a1d4-2e07e1ce953e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>dict</th>
@@ -1196,7 +1212,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#9fe6d5e4-7d93-4650-a09d-1cd9c846c873').DataTable(dt_args);
+                $('#e96c6935-bdcd-4c4b-a1d4-2e07e1ce953e').DataTable(dt_args);
             });
         })
     }
@@ -1206,7 +1222,7 @@ document.write(`
 </div>
 </section>
 <section id="ordered-categories">
-<h2>ordered_categories<a class="headerlink" href="#ordered-categories" title="Permalink to this heading">#</a></h2>
+<h2>ordered_categories<a class="headerlink" href="#ordered-categories" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;ordered_categories&quot;</span><span class="p">])</span>
@@ -1237,7 +1253,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="544672ae-25dc-4c21-8b34-711e5e82b75c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="73ea9e5a-446b-4f0c-9fbe-a7418d3c290f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>int</th>
@@ -1261,7 +1277,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#544672ae-25dc-4c21-8b34-711e5e82b75c').DataTable(dt_args);
+                $('#73ea9e5a-446b-4f0c-9fbe-a7418d3c290f').DataTable(dt_args);
             });
         })
     }
@@ -1271,7 +1287,7 @@ document.write(`
 </div>
 </section>
 <section id="ordered-categories-in-multiindex">
-<h2>ordered_categories_in_multiindex<a class="headerlink" href="#ordered-categories-in-multiindex" title="Permalink to this heading">#</a></h2>
+<h2>ordered_categories_in_multiindex<a class="headerlink" href="#ordered-categories-in-multiindex" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;ordered_categories_in_multiindex&quot;</span><span class="p">])</span>
@@ -1302,7 +1318,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="6d9a287b-37e7-4a54-b36a-67a77958f135" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="50c189a8-e452-4c85-b5eb-c1258d0140c3" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -1328,7 +1344,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#6d9a287b-37e7-4a54-b36a-67a77958f135').DataTable(dt_args);
+                $('#50c189a8-e452-4c85-b5eb-c1258d0140c3').DataTable(dt_args);
             });
         })
     }
@@ -1338,7 +1354,7 @@ document.write(`
 </div>
 </section>
 <section id="multiindex">
-<h2>multiindex<a class="headerlink" href="#multiindex" title="Permalink to this heading">#</a></h2>
+<h2>multiindex<a class="headerlink" href="#multiindex" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;multiindex&quot;</span><span class="p">])</span>
@@ -1369,7 +1385,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="d9f9117d-ddf3-4565-ac7c-8460c45ade95" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="14db0ded-3f06-41f9-a1fa-127673e49b77" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr>
       <th></th>
       <th></th>
@@ -1399,7 +1415,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#d9f9117d-ddf3-4565-ac7c-8460c45ade95').DataTable(dt_args);
+                $('#14db0ded-3f06-41f9-a1fa-127673e49b77').DataTable(dt_args);
             });
         })
     }
@@ -1409,7 +1425,7 @@ document.write(`
 </div>
 </section>
 <section id="countries">
-<h2>countries<a class="headerlink" href="#countries" title="Permalink to this heading">#</a></h2>
+<h2>countries<a class="headerlink" href="#countries" title="Link to this heading">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;countries&quot;</span><span class="p">])</span>
@@ -1440,7 +1456,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="c19224ed-55df-4eb9-91e3-e45c6e746628" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="919b321a-e687-4a80-8d1d-247924c80b22" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>region</th>
@@ -1474,7 +1490,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#c19224ed-55df-4eb9-91e3-e45c6e746628').DataTable(dt_args);
+                $('#919b321a-e687-4a80-8d1d-247924c80b22').DataTable(dt_args);
             });
         })
     }
@@ -1484,7 +1500,7 @@ document.write(`
 </div>
 </section>
 <section id="capital">
-<h2>capital<a class="headerlink" href="#capital" title="Permalink to this heading">#</a></h2>
+<h2>capital<a class="headerlink" href="#capital" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;capital&quot;</span><span class="p">])</span>
@@ -1515,7 +1531,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="c0295067-5d35-4642-900a-7d94761d816e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="5e0ede79-e0fc-467e-93df-33de88b597b6" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -1541,7 +1557,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#c0295067-5d35-4642-900a-7d94761d816e').DataTable(dt_args);
+                $('#5e0ede79-e0fc-467e-93df-33de88b597b6').DataTable(dt_args);
             });
         })
     }
@@ -1551,7 +1567,7 @@ document.write(`
 </div>
 </section>
 <section id="complex-index">
-<h2>complex_index<a class="headerlink" href="#complex-index" title="Permalink to this heading">#</a></h2>
+<h2>complex_index<a class="headerlink" href="#complex-index" title="Link to this heading">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;complex_index&quot;</span><span class="p">])</span>
@@ -1582,7 +1598,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="438f5d76-80a5-4a53-894b-17442af21f52" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="c7b4244d-d3f9-4508-a723-5cab727bc154" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr>
       <th></th>
       <th>category</th>
@@ -1624,7 +1640,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#438f5d76-80a5-4a53-894b-17442af21f52').DataTable(dt_args);
+                $('#c7b4244d-d3f9-4508-a723-5cab727bc154').DataTable(dt_args);
             });
         })
     }
@@ -1634,7 +1650,7 @@ document.write(`
 </div>
 </section>
 <section id="int-float-str">
-<h2>int_float_str<a class="headerlink" href="#int-float-str" title="Permalink to this heading">#</a></h2>
+<h2>int_float_str<a class="headerlink" href="#int-float-str" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;int_float_str&quot;</span><span class="p">])</span>
@@ -1665,7 +1681,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="0838462f-b926-4294-a338-cf276986c8fb" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="9e36122b-f37d-41e4-958f-e4cac59563eb" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1687,7 +1703,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#0838462f-b926-4294-a338-cf276986c8fb').DataTable(dt_args);
+                $('#9e36122b-f37d-41e4-958f-e4cac59563eb').DataTable(dt_args);
             });
         })
     }
@@ -1697,7 +1713,7 @@ document.write(`
 </div>
 </section>
 <section id="wide">
-<h2>wide<a class="headerlink" href="#wide" title="Permalink to this heading">#</a></h2>
+<h2>wide<a class="headerlink" href="#wide" title="Link to this heading">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;wide&quot;</span><span class="p">],</span> <span class="n">maxBytes</span><span class="o">=</span><span class="mi">100000</span><span class="p">,</span> <span class="n">maxColumns</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">scrollX</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1728,7 +1744,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="3e46f957-af0e-4d94-a416-8369bc4d3ed6" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="83e6f8c3-b305-4c1b-a7e8-074d2ff92055" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th>column_0</th>
@@ -1847,7 +1863,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#3e46f957-af0e-4d94-a416-8369bc4d3ed6').DataTable(dt_args);
+                $('#83e6f8c3-b305-4c1b-a7e8-074d2ff92055').DataTable(dt_args);
             });
         })
     }
@@ -1857,7 +1873,7 @@ document.write(`
 </div>
 </section>
 <section id="long-column-names">
-<h2>long_column_names<a class="headerlink" href="#long-column-names" title="Permalink to this heading">#</a></h2>
+<h2>long_column_names<a class="headerlink" href="#long-column-names" title="Link to this heading">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;long_column_names&quot;</span><span class="p">],</span> <span class="n">scrollX</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1888,7 +1904,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="95d9cc99-1e55-44a2-b9be-1e76059255cf" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="5b0006d4-9b17-41a5-bc3d-781147bc9a17" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>short name</th>
@@ -1913,7 +1929,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#95d9cc99-1e55-44a2-b9be-1e76059255cf').DataTable(dt_args);
+                $('#5b0006d4-9b17-41a5-bc3d-781147bc9a17').DataTable(dt_args);
             });
         })
     }
@@ -1923,7 +1939,7 @@ document.write(`
 </div>
 </section>
 <section id="duplicated-columns">
-<h2>duplicated_columns<a class="headerlink" href="#duplicated-columns" title="Permalink to this heading">#</a></h2>
+<h2>duplicated_columns<a class="headerlink" href="#duplicated-columns" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;duplicated_columns&quot;</span><span class="p">])</span>
@@ -1954,7 +1970,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="0a72c9d5-f4e0-4ac6-b2e6-955c1d692fe1" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="805844f4-ae7f-4792-ba3b-814cb8ddb89f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
       <th></th>
@@ -1982,7 +1998,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#0a72c9d5-f4e0-4ac6-b2e6-955c1d692fe1').DataTable(dt_args);
+                $('#805844f4-ae7f-4792-ba3b-814cb8ddb89f').DataTable(dt_args);
             });
         })
     }
@@ -1992,7 +2008,7 @@ document.write(`
 </div>
 </section>
 <section id="named-column-index">
-<h2>named_column_index<a class="headerlink" href="#named-column-index" title="Permalink to this heading">#</a></h2>
+<h2>named_column_index<a class="headerlink" href="#named-column-index" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;named_column_index&quot;</span><span class="p">])</span>
@@ -2023,7 +2039,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="d457aca4-761f-4f60-8f34-746442088497" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="64039b5c-a203-4f98-93e1-1e4ec0030b2f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th>columns</th>
       <th>a</th>
@@ -2043,7 +2059,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#d457aca4-761f-4f60-8f34-746442088497').DataTable(dt_args);
+                $('#64039b5c-a203-4f98-93e1-1e4ec0030b2f').DataTable(dt_args);
             });
         })
     }
@@ -2053,7 +2069,7 @@ document.write(`
 </div>
 </section>
 <section id="big-integers">
-<h2>big_integers<a class="headerlink" href="#big-integers" title="Permalink to this heading">#</a></h2>
+<h2>big_integers<a class="headerlink" href="#big-integers" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itables.options</span> <span class="k">as</span> <span class="nn">opt</span>
@@ -2065,6 +2081,13 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/itables/datatables_format.py:81: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value &#39;0    1234567890123456789
+1    2345678901234567890
+2    3456789012345678901
+Name: bigint, dtype: object&#39; has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:, i] = x.astype(str)
+</pre></div>
+</div>
 <div class="output text_html"><style>.itables table td {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -2088,7 +2111,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="0497e9be-6486-4811-8114-3bd186074b05" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e8da8e30-cf6b-4a76-a354-0fe1241ba41f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>bigint</th>
@@ -2109,7 +2132,7 @@ document.write(`
                 dt_args["data"] = data;
 
                 
-                $('#0497e9be-6486-4811-8114-3bd186074b05').DataTable(dt_args);
+                $('#e8da8e30-cf6b-4a76-a354-0fe1241ba41f').DataTable(dt_args);
             });
         })
     }
@@ -2177,6 +2200,7 @@ document.write(`
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -2232,7 +2256,7 @@ By Marc Wouts
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -2256,8 +2280,8 @@ By Marc Wouts
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

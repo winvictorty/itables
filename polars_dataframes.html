@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Polars dataframes &#8212; Interactive Tables</title>
   
@@ -19,49 +18,53 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'polars_dataframes';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -76,10 +79,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -120,11 +122,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -152,7 +157,18 @@ const thebe_selector_output = ".output, .cell_output"
     <p class="title logo__title">Interactive Tables</p>
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -357,10 +373,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="polars-dataframes">
-<h1>Polars dataframes<a class="headerlink" href="#polars-dataframes" title="Permalink to this heading">#</a></h1>
+<h1>Polars dataframes<a class="headerlink" href="#polars-dataframes" title="Link to this heading">#</a></h1>
 <p>In this notebook we make sure that our test <a class="reference external" href="https://www.pola.rs/">Polars</a>
 dataframes are displayed nicely with the default <code class="docutils literal notranslate"><span class="pre">itables</span></code> settings.</p>
 <div class="cell docutils container">
@@ -396,7 +412,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </style></div></div>
 </div>
 <section id="empty">
-<h2>empty<a class="headerlink" href="#empty" title="Permalink to this heading">#</a></h2>
+<h2>empty<a class="headerlink" href="#empty" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;empty&quot;</span><span class="p">])</span>
@@ -427,7 +443,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="07badf89-d15b-47ef-a605-7f240529608d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="2b4928c7-10e6-4953-8230-c6070bfeb11d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -446,7 +462,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#07badf89-d15b-47ef-a605-7f240529608d').DataTable(dt_args);
+                $('#2b4928c7-10e6-4953-8230-c6070bfeb11d').DataTable(dt_args);
             });
         })
     }
@@ -456,7 +472,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="no-rows">
-<h2>No rows<a class="headerlink" href="#no-rows" title="Permalink to this heading">#</a></h2>
+<h2>No rows<a class="headerlink" href="#no-rows" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_rows&quot;</span><span class="p">])</span>
@@ -487,7 +503,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="f3b65a09-67de-4998-a34d-56e12aa9276c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="9f0617cb-dfa5-4b51-9e75-2ae3b2d66e3b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -507,7 +523,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#f3b65a09-67de-4998-a34d-56e12aa9276c').DataTable(dt_args);
+                $('#9f0617cb-dfa5-4b51-9e75-2ae3b2d66e3b').DataTable(dt_args);
             });
         })
     }
@@ -517,7 +533,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="no-rows-one-column">
-<h2>No rows one column<a class="headerlink" href="#no-rows-one-column" title="Permalink to this heading">#</a></h2>
+<h2>No rows one column<a class="headerlink" href="#no-rows-one-column" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_rows_one_column&quot;</span><span class="p">])</span>
@@ -548,7 +564,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="2a9ffec7-9969-4fb5-afbf-3ddbbde15c4f" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e4b8513b-6218-4a43-9a26-c9796a24817b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -568,7 +584,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#2a9ffec7-9969-4fb5-afbf-3ddbbde15c4f').DataTable(dt_args);
+                $('#e4b8513b-6218-4a43-9a26-c9796a24817b').DataTable(dt_args);
             });
         })
     }
@@ -578,7 +594,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="no-columns">
-<h2>No columns<a class="headerlink" href="#no-columns" title="Permalink to this heading">#</a></h2>
+<h2>No columns<a class="headerlink" href="#no-columns" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_columns&quot;</span><span class="p">])</span>
@@ -609,7 +625,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="41520210-558a-4051-9a0b-2aca1429e53a" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="f199362d-0ab6-47e8-a4f6-dbc18eb99b2b" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -628,7 +644,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#41520210-558a-4051-9a0b-2aca1429e53a').DataTable(dt_args);
+                $('#f199362d-0ab6-47e8-a4f6-dbc18eb99b2b').DataTable(dt_args);
             });
         })
     }
@@ -638,7 +654,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="no-columns-one-row">
-<h2>No columns one row<a class="headerlink" href="#no-columns-one-row" title="Permalink to this heading">#</a></h2>
+<h2>No columns one row<a class="headerlink" href="#no-columns-one-row" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;no_columns_one_row&quot;</span><span class="p">])</span>
@@ -669,7 +685,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="c371ff52-a0ac-4cdb-b164-6daf63719791" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d09c4210-f25b-47f4-8dcb-13af8283aae4" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       <th></th>
     </tr>
@@ -688,7 +704,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#c371ff52-a0ac-4cdb-b164-6daf63719791').DataTable(dt_args);
+                $('#d09c4210-f25b-47f4-8dcb-13af8283aae4').DataTable(dt_args);
             });
         })
     }
@@ -698,7 +714,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="bool">
-<h2>bool<a class="headerlink" href="#bool" title="Permalink to this heading">#</a></h2>
+<h2>bool<a class="headerlink" href="#bool" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;bool&quot;</span><span class="p">])</span>
@@ -729,7 +745,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="9e08e39e-076d-4260-8edf-1b680415e677" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e56b7d7b-96aa-4baa-a0eb-27a4ec9b87de" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -752,7 +768,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#9e08e39e-076d-4260-8edf-1b680415e677').DataTable(dt_args);
+                $('#e56b7d7b-96aa-4baa-a0eb-27a4ec9b87de').DataTable(dt_args);
             });
         })
     }
@@ -762,7 +778,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="nullable-boolean">
-<h2>Nullable boolean<a class="headerlink" href="#nullable-boolean" title="Permalink to this heading">#</a></h2>
+<h2>Nullable boolean<a class="headerlink" href="#nullable-boolean" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;nullable_boolean&quot;</span><span class="p">])</span>
@@ -793,7 +809,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="9ff6698f-da49-4236-bd8f-ee681c121d2e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="54560933-471f-4e1b-acb0-3a1134449436" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -816,7 +832,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#9ff6698f-da49-4236-bd8f-ee681c121d2e').DataTable(dt_args);
+                $('#54560933-471f-4e1b-acb0-3a1134449436').DataTable(dt_args);
             });
         })
     }
@@ -826,7 +842,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="int">
-<h2>int<a class="headerlink" href="#int" title="Permalink to this heading">#</a></h2>
+<h2>int<a class="headerlink" href="#int" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;int&quot;</span><span class="p">])</span>
@@ -857,7 +873,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="f86bda33-a192-4ddb-a8e3-4c6d1d9197ee" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="790c777d-377c-4e3b-8125-833f51f3512e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -881,7 +897,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#f86bda33-a192-4ddb-a8e3-4c6d1d9197ee').DataTable(dt_args);
+                $('#790c777d-377c-4e3b-8125-833f51f3512e').DataTable(dt_args);
             });
         })
     }
@@ -891,7 +907,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="nullable-integer">
-<h2>Nullable integer<a class="headerlink" href="#nullable-integer" title="Permalink to this heading">#</a></h2>
+<h2>Nullable integer<a class="headerlink" href="#nullable-integer" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;nullable_int&quot;</span><span class="p">])</span>
@@ -922,7 +938,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="980f15f9-1bbc-47bc-afe2-de0d2d0179bf" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="7cc5a91a-9c33-4401-805f-c6543eba5e3e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -944,7 +960,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#980f15f9-1bbc-47bc-afe2-de0d2d0179bf').DataTable(dt_args);
+                $('#7cc5a91a-9c33-4401-805f-c6543eba5e3e').DataTable(dt_args);
             });
         })
     }
@@ -954,7 +970,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="float">
-<h2>float<a class="headerlink" href="#float" title="Permalink to this heading">#</a></h2>
+<h2>float<a class="headerlink" href="#float" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;float&quot;</span><span class="p">])</span>
@@ -985,7 +1001,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="43d1c7d9-f0e9-4f73-be78-8ce5b5c2ea85" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="5039e147-c2a5-4cdc-a356-4f19f832c457" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1008,7 +1024,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#43d1c7d9-f0e9-4f73-be78-8ce5b5c2ea85').DataTable(dt_args);
+                $('#5039e147-c2a5-4cdc-a356-4f19f832c457').DataTable(dt_args);
             });
         })
     }
@@ -1018,7 +1034,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="str">
-<h2>str<a class="headerlink" href="#str" title="Permalink to this heading">#</a></h2>
+<h2>str<a class="headerlink" href="#str" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;str&quot;</span><span class="p">])</span>
@@ -1049,7 +1065,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="79dc39cb-d979-40d0-95bf-d7bec20f6fc1" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="e6d236e8-5903-4a19-8ec4-4b634fe0abad" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>text_column</th>
@@ -1070,7 +1086,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#79dc39cb-d979-40d0-95bf-d7bec20f6fc1').DataTable(dt_args);
+                $('#e6d236e8-5903-4a19-8ec4-4b634fe0abad').DataTable(dt_args);
             });
         })
     }
@@ -1080,7 +1096,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="time">
-<h2>time<a class="headerlink" href="#time" title="Permalink to this heading">#</a></h2>
+<h2>time<a class="headerlink" href="#time" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">])</span>
@@ -1111,7 +1127,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="6d2856a6-f0cb-4ee7-99c3-41f520255dd7" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="2291991c-b7f7-4b1b-b1de-5200f9f8637c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>datetime</th>
@@ -1133,7 +1149,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#6d2856a6-f0cb-4ee7-99c3-41f520255dd7').DataTable(dt_args);
+                $('#2291991c-b7f7-4b1b-b1de-5200f9f8637c').DataTable(dt_args);
             });
         })
     }
@@ -1143,7 +1159,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="ordered-categories">
-<h2>ordered_categories<a class="headerlink" href="#ordered-categories" title="Permalink to this heading">#</a></h2>
+<h2>ordered_categories<a class="headerlink" href="#ordered-categories" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;ordered_categories&quot;</span><span class="p">])</span>
@@ -1174,7 +1190,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="cd87604b-ef8d-4a97-986f-12c556756126" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="9ae0e3d7-6d43-4d18-9ca0-a67d98b00654" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1194,7 +1210,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#cd87604b-ef8d-4a97-986f-12c556756126').DataTable(dt_args);
+                $('#9ae0e3d7-6d43-4d18-9ca0-a67d98b00654').DataTable(dt_args);
             });
         })
     }
@@ -1204,7 +1220,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="ordered-categories-in-multiindex">
-<h2>ordered_categories_in_multiindex<a class="headerlink" href="#ordered-categories-in-multiindex" title="Permalink to this heading">#</a></h2>
+<h2>ordered_categories_in_multiindex<a class="headerlink" href="#ordered-categories-in-multiindex" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;ordered_categories_in_multiindex&quot;</span><span class="p">])</span>
@@ -1235,7 +1251,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="4173d3c5-af38-4778-8075-0ba9fbd51fc2" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="0eae382a-e578-4cbd-9e74-02e7b4fff330" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1255,7 +1271,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#4173d3c5-af38-4778-8075-0ba9fbd51fc2').DataTable(dt_args);
+                $('#0eae382a-e578-4cbd-9e74-02e7b4fff330').DataTable(dt_args);
             });
         })
     }
@@ -1265,7 +1281,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="multiindex">
-<h2>multiindex<a class="headerlink" href="#multiindex" title="Permalink to this heading">#</a></h2>
+<h2>multiindex<a class="headerlink" href="#multiindex" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;multiindex&quot;</span><span class="p">])</span>
@@ -1296,7 +1312,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="660ae441-8af9-4858-ab1c-0e05a97a2181" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="6b65e93c-8837-4a19-9f6d-f2aadca6aa4d" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>('A', 1)</th>
@@ -1319,7 +1335,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#660ae441-8af9-4858-ab1c-0e05a97a2181').DataTable(dt_args);
+                $('#6b65e93c-8837-4a19-9f6d-f2aadca6aa4d').DataTable(dt_args);
             });
         })
     }
@@ -1329,7 +1345,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="countries">
-<h2>countries<a class="headerlink" href="#countries" title="Permalink to this heading">#</a></h2>
+<h2>countries<a class="headerlink" href="#countries" title="Link to this heading">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;countries&quot;</span><span class="p">])</span>
@@ -1360,14 +1376,10 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="23b0ca2f-e135-42f7-8ea8-75ee97ede8dd" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="62f36f73-3e95-42b1-bd71-18ac54d7793e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>region</th>
-      <th>country</th>
-      <th>capital</th>
-      <th>longitude</th>
-      <th>latitude</th>
       <th>flag</th>
     </tr>
   </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
@@ -1376,16 +1388,16 @@ dataframes are displayed nicely with the default <code class="docutils literal n
     // to avoid conflicts between the various tables' data & dt_args
     {
         // Define the table data
-        const data = [["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Aruba\">Aruba</a>", "<a href=\"https://en.wikipedia.org/wiki/Oranjestad\">Oranjestad</a>", -70.0167, 12.5167, "<a href=\"https://flagpedia.net/aw\"><img src=\"https://flagpedia.net/data/flags/h80/aw.webp\" alt=\"Flag of Aruba\"></a>"], ["South Asia", "<a href=\"https://en.wikipedia.org/wiki/Afghanistan\">Afghanistan</a>", "<a href=\"https://en.wikipedia.org/wiki/Kabul\">Kabul</a>", 69.1761, 34.5228, "<a href=\"https://flagpedia.net/af\"><img src=\"https://flagpedia.net/data/flags/h80/af.webp\" alt=\"Flag of Afghanistan\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Angola\">Angola</a>", "<a href=\"https://en.wikipedia.org/wiki/Luanda\">Luanda</a>", 13.242, -8.81155, "<a href=\"https://flagpedia.net/ao\"><img src=\"https://flagpedia.net/data/flags/h80/ao.webp\" alt=\"Flag of Angola\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Albania\">Albania</a>", "<a href=\"https://en.wikipedia.org/wiki/Tirane\">Tirane</a>", 19.8172, 41.3317, "<a href=\"https://flagpedia.net/al\"><img src=\"https://flagpedia.net/data/flags/h80/al.webp\" alt=\"Flag of Albania\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Andorra\">Andorra</a>", "<a href=\"https://en.wikipedia.org/wiki/Andorra la Vella\">Andorra la Vella</a>", 1.5218, 42.5075, "<a href=\"https://flagpedia.net/ad\"><img src=\"https://flagpedia.net/data/flags/h80/ad.webp\" alt=\"Flag of Andorra\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/United Arab Emirates\">United Arab Emirates</a>", "<a href=\"https://en.wikipedia.org/wiki/Abu Dhabi\">Abu Dhabi</a>", 54.3705, 24.4764, "<a href=\"https://flagpedia.net/ae\"><img src=\"https://flagpedia.net/data/flags/h80/ae.webp\" alt=\"Flag of United Arab Emirates\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Argentina\">Argentina</a>", "<a href=\"https://en.wikipedia.org/wiki/Buenos Aires\">Buenos Aires</a>", -58.4173, -34.6118, "<a href=\"https://flagpedia.net/ar\"><img src=\"https://flagpedia.net/data/flags/h80/ar.webp\" alt=\"Flag of Argentina\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Armenia\">Armenia</a>", "<a href=\"https://en.wikipedia.org/wiki/Yerevan\">Yerevan</a>", 44.509, 40.1596, "<a href=\"https://flagpedia.net/am\"><img src=\"https://flagpedia.net/data/flags/h80/am.webp\" alt=\"Flag of Armenia\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/American Samoa\">American Samoa</a>", "<a href=\"https://en.wikipedia.org/wiki/Pago Pago\">Pago Pago</a>", -170.691, -14.2846, "<a href=\"https://flagpedia.net/as\"><img src=\"https://flagpedia.net/data/flags/h80/as.webp\" alt=\"Flag of American Samoa\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Antigua and Barbuda\">Antigua and Barbuda</a>", "<a href=\"https://en.wikipedia.org/wiki/Saint John's\">Saint John's</a>", -61.8456, 17.1175, "<a href=\"https://flagpedia.net/ag\"><img src=\"https://flagpedia.net/data/flags/h80/ag.webp\" alt=\"Flag of Antigua and Barbuda\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Australia\">Australia</a>", "<a href=\"https://en.wikipedia.org/wiki/Canberra\">Canberra</a>", 149.129, -35.282, "<a href=\"https://flagpedia.net/au\"><img src=\"https://flagpedia.net/data/flags/h80/au.webp\" alt=\"Flag of Australia\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Austria\">Austria</a>", "<a href=\"https://en.wikipedia.org/wiki/Vienna\">Vienna</a>", 16.3798, 48.2201, "<a href=\"https://flagpedia.net/at\"><img src=\"https://flagpedia.net/data/flags/h80/at.webp\" alt=\"Flag of Austria\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Azerbaijan\">Azerbaijan</a>", "<a href=\"https://en.wikipedia.org/wiki/Baku\">Baku</a>", 49.8932, 40.3834, "<a href=\"https://flagpedia.net/az\"><img src=\"https://flagpedia.net/data/flags/h80/az.webp\" alt=\"Flag of Azerbaijan\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Burundi\">Burundi</a>", "<a href=\"https://en.wikipedia.org/wiki/Bujumbura\">Bujumbura</a>", 29.3639, -3.3784, "<a href=\"https://flagpedia.net/bi\"><img src=\"https://flagpedia.net/data/flags/h80/bi.webp\" alt=\"Flag of Burundi\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Belgium\">Belgium</a>", "<a href=\"https://en.wikipedia.org/wiki/Brussels\">Brussels</a>", 4.36761, 50.8371, "<a href=\"https://flagpedia.net/be\"><img src=\"https://flagpedia.net/data/flags/h80/be.webp\" alt=\"Flag of Belgium\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Benin\">Benin</a>", "<a href=\"https://en.wikipedia.org/wiki/Porto-Novo\">Porto-Novo</a>", 2.6323, 6.4779, "<a href=\"https://flagpedia.net/bj\"><img src=\"https://flagpedia.net/data/flags/h80/bj.webp\" alt=\"Flag of Benin\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Burkina Faso\">Burkina Faso</a>", "<a href=\"https://en.wikipedia.org/wiki/Ouagadougou\">Ouagadougou</a>", -1.53395, 12.3605, "<a href=\"https://flagpedia.net/bf\"><img src=\"https://flagpedia.net/data/flags/h80/bf.webp\" alt=\"Flag of Burkina Faso\"></a>"], ["South Asia", "<a href=\"https://en.wikipedia.org/wiki/Bangladesh\">Bangladesh</a>", "<a href=\"https://en.wikipedia.org/wiki/Dhaka\">Dhaka</a>", 90.4113, 23.7055, "<a href=\"https://flagpedia.net/bd\"><img src=\"https://flagpedia.net/data/flags/h80/bd.webp\" alt=\"Flag of Bangladesh\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Bulgaria\">Bulgaria</a>", "<a href=\"https://en.wikipedia.org/wiki/Sofia\">Sofia</a>", 23.3238, 42.7105, "<a href=\"https://flagpedia.net/bg\"><img src=\"https://flagpedia.net/data/flags/h80/bg.webp\" alt=\"Flag of Bulgaria\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Bahrain\">Bahrain</a>", "<a href=\"https://en.wikipedia.org/wiki/Manama\">Manama</a>", 50.5354, 26.1921, "<a href=\"https://flagpedia.net/bh\"><img src=\"https://flagpedia.net/data/flags/h80/bh.webp\" alt=\"Flag of Bahrain\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Bahamas, The\">Bahamas, The</a>", "<a href=\"https://en.wikipedia.org/wiki/Nassau\">Nassau</a>", -77.339, 25.0661, "<a href=\"https://flagpedia.net/bs\"><img src=\"https://flagpedia.net/data/flags/h80/bs.webp\" alt=\"Flag of Bahamas, The\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Bosnia and Herzegovina\">Bosnia and Herzegovina</a>", "<a href=\"https://en.wikipedia.org/wiki/Sarajevo\">Sarajevo</a>", 18.4214, 43.8607, "<a href=\"https://flagpedia.net/ba\"><img src=\"https://flagpedia.net/data/flags/h80/ba.webp\" alt=\"Flag of Bosnia and Herzegovina\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Belarus\">Belarus</a>", "<a href=\"https://en.wikipedia.org/wiki/Minsk\">Minsk</a>", 27.5766, 53.9678, "<a href=\"https://flagpedia.net/by\"><img src=\"https://flagpedia.net/data/flags/h80/by.webp\" alt=\"Flag of Belarus\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Belize\">Belize</a>", "<a href=\"https://en.wikipedia.org/wiki/Belmopan\">Belmopan</a>", -88.7713, 17.2534, "<a href=\"https://flagpedia.net/bz\"><img src=\"https://flagpedia.net/data/flags/h80/bz.webp\" alt=\"Flag of Belize\"></a>"], ["North America", "<a href=\"https://en.wikipedia.org/wiki/Bermuda\">Bermuda</a>", "<a href=\"https://en.wikipedia.org/wiki/Hamilton\">Hamilton</a>", -64.706, 32.3293, "<a href=\"https://flagpedia.net/bm\"><img src=\"https://flagpedia.net/data/flags/h80/bm.webp\" alt=\"Flag of Bermuda\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Bolivia\">Bolivia</a>", "<a href=\"https://en.wikipedia.org/wiki/La Paz\">La Paz</a>", -66.1936, -13.9908, "<a href=\"https://flagpedia.net/bo\"><img src=\"https://flagpedia.net/data/flags/h80/bo.webp\" alt=\"Flag of Bolivia\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Brazil\">Brazil</a>", "<a href=\"https://en.wikipedia.org/wiki/Brasilia\">Brasilia</a>", -47.9292, -15.7801, "<a href=\"https://flagpedia.net/br\"><img src=\"https://flagpedia.net/data/flags/h80/br.webp\" alt=\"Flag of Brazil\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Barbados\">Barbados</a>", "<a href=\"https://en.wikipedia.org/wiki/Bridgetown\">Bridgetown</a>", -59.6105, 13.0935, "<a href=\"https://flagpedia.net/bb\"><img src=\"https://flagpedia.net/data/flags/h80/bb.webp\" alt=\"Flag of Barbados\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Brunei Darussalam\">Brunei Darussalam</a>", "<a href=\"https://en.wikipedia.org/wiki/Bandar Seri Begawan\">Bandar Seri Begawan</a>", 114.946, 4.94199, "<a href=\"https://flagpedia.net/bn\"><img src=\"https://flagpedia.net/data/flags/h80/bn.webp\" alt=\"Flag of Brunei Darussalam\"></a>"], ["South Asia", "<a href=\"https://en.wikipedia.org/wiki/Bhutan\">Bhutan</a>", "<a href=\"https://en.wikipedia.org/wiki/Thimphu\">Thimphu</a>", 89.6177, 27.5768, "<a href=\"https://flagpedia.net/bt\"><img src=\"https://flagpedia.net/data/flags/h80/bt.webp\" alt=\"Flag of Bhutan\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Botswana\">Botswana</a>", "<a href=\"https://en.wikipedia.org/wiki/Gaborone\">Gaborone</a>", 25.9201, -24.6544, "<a href=\"https://flagpedia.net/bw\"><img src=\"https://flagpedia.net/data/flags/h80/bw.webp\" alt=\"Flag of Botswana\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Central African Republic\">Central African Republic</a>", "<a href=\"https://en.wikipedia.org/wiki/Bangui\">Bangui</a>", 21.6407, 5.63056, "<a href=\"https://flagpedia.net/cf\"><img src=\"https://flagpedia.net/data/flags/h80/cf.webp\" alt=\"Flag of Central African Republic\"></a>"], ["North America", "<a href=\"https://en.wikipedia.org/wiki/Canada\">Canada</a>", "<a href=\"https://en.wikipedia.org/wiki/Ottawa\">Ottawa</a>", -75.6919, 45.4215, "<a href=\"https://flagpedia.net/ca\"><img src=\"https://flagpedia.net/data/flags/h80/ca.webp\" alt=\"Flag of Canada\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Switzerland\">Switzerland</a>", "<a href=\"https://en.wikipedia.org/wiki/Bern\">Bern</a>", 7.44821, 46.948, "<a href=\"https://flagpedia.net/ch\"><img src=\"https://flagpedia.net/data/flags/h80/ch.webp\" alt=\"Flag of Switzerland\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Chile\">Chile</a>", "<a href=\"https://en.wikipedia.org/wiki/Santiago\">Santiago</a>", -70.6475, -33.475, "<a href=\"https://flagpedia.net/cl\"><img src=\"https://flagpedia.net/data/flags/h80/cl.webp\" alt=\"Flag of Chile\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/China\">China</a>", "<a href=\"https://en.wikipedia.org/wiki/Beijing\">Beijing</a>", 116.286, 40.0495, "<a href=\"https://flagpedia.net/cn\"><img src=\"https://flagpedia.net/data/flags/h80/cn.webp\" alt=\"Flag of China\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Cote d'Ivoire\">Cote d'Ivoire</a>", "<a href=\"https://en.wikipedia.org/wiki/Yamoussoukro\">Yamoussoukro</a>", -4.0305, 5.332, "<a href=\"https://flagpedia.net/ci\"><img src=\"https://flagpedia.net/data/flags/h80/ci.webp\" alt=\"Flag of Cote d'Ivoire\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Cameroon\">Cameroon</a>", "<a href=\"https://en.wikipedia.org/wiki/Yaounde\">Yaounde</a>", 11.5174, 3.8721, "<a href=\"https://flagpedia.net/cm\"><img src=\"https://flagpedia.net/data/flags/h80/cm.webp\" alt=\"Flag of Cameroon\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Congo, Dem. Rep.\">Congo, Dem. Rep.</a>", "<a href=\"https://en.wikipedia.org/wiki/Kinshasa\">Kinshasa</a>", 15.3222, -4.325, "<a href=\"https://flagpedia.net/cd\"><img src=\"https://flagpedia.net/data/flags/h80/cd.webp\" alt=\"Flag of Congo, Dem. Rep.\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Congo, Rep.\">Congo, Rep.</a>", "<a href=\"https://en.wikipedia.org/wiki/Brazzaville\">Brazzaville</a>", 15.2662, -4.2767, "<a href=\"https://flagpedia.net/cg\"><img src=\"https://flagpedia.net/data/flags/h80/cg.webp\" alt=\"Flag of Congo, Rep.\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Colombia\">Colombia</a>", "<a href=\"https://en.wikipedia.org/wiki/Bogota\">Bogota</a>", -74.082, 4.60987, "<a href=\"https://flagpedia.net/co\"><img src=\"https://flagpedia.net/data/flags/h80/co.webp\" alt=\"Flag of Colombia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Comoros\">Comoros</a>", "<a href=\"https://en.wikipedia.org/wiki/Moroni\">Moroni</a>", 43.2418, -11.6986, "<a href=\"https://flagpedia.net/km\"><img src=\"https://flagpedia.net/data/flags/h80/km.webp\" alt=\"Flag of Comoros\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Cabo Verde\">Cabo Verde</a>", "<a href=\"https://en.wikipedia.org/wiki/Praia\">Praia</a>", -23.5087, 14.9218, "<a href=\"https://flagpedia.net/cv\"><img src=\"https://flagpedia.net/data/flags/h80/cv.webp\" alt=\"Flag of Cabo Verde\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Costa Rica\">Costa Rica</a>", "<a href=\"https://en.wikipedia.org/wiki/San Jose\">San Jose</a>", -84.0089, 9.63701, "<a href=\"https://flagpedia.net/cr\"><img src=\"https://flagpedia.net/data/flags/h80/cr.webp\" alt=\"Flag of Costa Rica\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Cuba\">Cuba</a>", "<a href=\"https://en.wikipedia.org/wiki/Havana\">Havana</a>", -82.3667, 23.1333, "<a href=\"https://flagpedia.net/cu\"><img src=\"https://flagpedia.net/data/flags/h80/cu.webp\" alt=\"Flag of Cuba\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Cayman Islands\">Cayman Islands</a>", "<a href=\"https://en.wikipedia.org/wiki/George Town\">George Town</a>", -81.3857, 19.3022, "<a href=\"https://flagpedia.net/ky\"><img src=\"https://flagpedia.net/data/flags/h80/ky.webp\" alt=\"Flag of Cayman Islands\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Cyprus\">Cyprus</a>", "<a href=\"https://en.wikipedia.org/wiki/Nicosia\">Nicosia</a>", 33.3736, 35.1676, "<a href=\"https://flagpedia.net/cy\"><img src=\"https://flagpedia.net/data/flags/h80/cy.webp\" alt=\"Flag of Cyprus\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Czech Republic\">Czech Republic</a>", "<a href=\"https://en.wikipedia.org/wiki/Prague\">Prague</a>", 14.4205, 50.0878, "<a href=\"https://flagpedia.net/cz\"><img src=\"https://flagpedia.net/data/flags/h80/cz.webp\" alt=\"Flag of Czech Republic\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Germany\">Germany</a>", "<a href=\"https://en.wikipedia.org/wiki/Berlin\">Berlin</a>", 13.4115, 52.5235, "<a href=\"https://flagpedia.net/de\"><img src=\"https://flagpedia.net/data/flags/h80/de.webp\" alt=\"Flag of Germany\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Djibouti\">Djibouti</a>", "<a href=\"https://en.wikipedia.org/wiki/Djibouti\">Djibouti</a>", 43.1425, 11.5806, "<a href=\"https://flagpedia.net/dj\"><img src=\"https://flagpedia.net/data/flags/h80/dj.webp\" alt=\"Flag of Djibouti\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Dominica\">Dominica</a>", "<a href=\"https://en.wikipedia.org/wiki/Roseau\">Roseau</a>", -61.39, 15.2976, "<a href=\"https://flagpedia.net/dm\"><img src=\"https://flagpedia.net/data/flags/h80/dm.webp\" alt=\"Flag of Dominica\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Denmark\">Denmark</a>", "<a href=\"https://en.wikipedia.org/wiki/Copenhagen\">Copenhagen</a>", 12.5681, 55.6763, "<a href=\"https://flagpedia.net/dk\"><img src=\"https://flagpedia.net/data/flags/h80/dk.webp\" alt=\"Flag of Denmark\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Dominican Republic\">Dominican Republic</a>", "<a href=\"https://en.wikipedia.org/wiki/Santo Domingo\">Santo Domingo</a>", -69.8908, 18.479, "<a href=\"https://flagpedia.net/do\"><img src=\"https://flagpedia.net/data/flags/h80/do.webp\" alt=\"Flag of Dominican Republic\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Algeria\">Algeria</a>", "<a href=\"https://en.wikipedia.org/wiki/Algiers\">Algiers</a>", 3.05097, 36.7397, "<a href=\"https://flagpedia.net/dz\"><img src=\"https://flagpedia.net/data/flags/h80/dz.webp\" alt=\"Flag of Algeria\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Ecuador\">Ecuador</a>", "<a href=\"https://en.wikipedia.org/wiki/Quito\">Quito</a>", -78.5243, -0.229498, "<a href=\"https://flagpedia.net/ec\"><img src=\"https://flagpedia.net/data/flags/h80/ec.webp\" alt=\"Flag of Ecuador\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Egypt, Arab Rep.\">Egypt, Arab Rep.</a>", "<a href=\"https://en.wikipedia.org/wiki/Cairo\">Cairo</a>", 31.2461, 30.0982, "<a href=\"https://flagpedia.net/eg\"><img src=\"https://flagpedia.net/data/flags/h80/eg.webp\" alt=\"Flag of Egypt, Arab Rep.\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Eritrea\">Eritrea</a>", "<a href=\"https://en.wikipedia.org/wiki/Asmara\">Asmara</a>", 38.9183, 15.3315, "<a href=\"https://flagpedia.net/er\"><img src=\"https://flagpedia.net/data/flags/h80/er.webp\" alt=\"Flag of Eritrea\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Spain\">Spain</a>", "<a href=\"https://en.wikipedia.org/wiki/Madrid\">Madrid</a>", -3.70327, 40.4167, "<a href=\"https://flagpedia.net/es\"><img src=\"https://flagpedia.net/data/flags/h80/es.webp\" alt=\"Flag of Spain\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Estonia\">Estonia</a>", "<a href=\"https://en.wikipedia.org/wiki/Tallinn\">Tallinn</a>", 24.7586, 59.4392, "<a href=\"https://flagpedia.net/ee\"><img src=\"https://flagpedia.net/data/flags/h80/ee.webp\" alt=\"Flag of Estonia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Ethiopia\">Ethiopia</a>", "<a href=\"https://en.wikipedia.org/wiki/Addis Ababa\">Addis Ababa</a>", 38.7468, 9.02274, "<a href=\"https://flagpedia.net/et\"><img src=\"https://flagpedia.net/data/flags/h80/et.webp\" alt=\"Flag of Ethiopia\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Finland\">Finland</a>", "<a href=\"https://en.wikipedia.org/wiki/Helsinki\">Helsinki</a>", 24.9525, 60.1608, "<a href=\"https://flagpedia.net/fi\"><img src=\"https://flagpedia.net/data/flags/h80/fi.webp\" alt=\"Flag of Finland\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Fiji\">Fiji</a>", "<a href=\"https://en.wikipedia.org/wiki/Suva\">Suva</a>", 178.399, -18.1149, "<a href=\"https://flagpedia.net/fj\"><img src=\"https://flagpedia.net/data/flags/h80/fj.webp\" alt=\"Flag of Fiji\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/France\">France</a>", "<a href=\"https://en.wikipedia.org/wiki/Paris\">Paris</a>", 2.35097, 48.8566, "<a href=\"https://flagpedia.net/fr\"><img src=\"https://flagpedia.net/data/flags/h80/fr.webp\" alt=\"Flag of France\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Faroe Islands\">Faroe Islands</a>", "<a href=\"https://en.wikipedia.org/wiki/Torshavn\">Torshavn</a>", -6.91181, 61.8926, "<a href=\"https://flagpedia.net/fo\"><img src=\"https://flagpedia.net/data/flags/h80/fo.webp\" alt=\"Flag of Faroe Islands\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Micronesia, Fed. Sts.\">Micronesia, Fed. Sts.</a>", "<a href=\"https://en.wikipedia.org/wiki/Palikir\">Palikir</a>", 158.185, 6.91771, "<a href=\"https://flagpedia.net/fm\"><img src=\"https://flagpedia.net/data/flags/h80/fm.webp\" alt=\"Flag of Micronesia, Fed. Sts.\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Gabon\">Gabon</a>", "<a href=\"https://en.wikipedia.org/wiki/Libreville\">Libreville</a>", 9.45162, 0.38832, "<a href=\"https://flagpedia.net/ga\"><img src=\"https://flagpedia.net/data/flags/h80/ga.webp\" alt=\"Flag of Gabon\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/United Kingdom\">United Kingdom</a>", "<a href=\"https://en.wikipedia.org/wiki/London\">London</a>", -0.126236, 51.5002, "<a href=\"https://flagpedia.net/gb\"><img src=\"https://flagpedia.net/data/flags/h80/gb.webp\" alt=\"Flag of United Kingdom\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Georgia\">Georgia</a>", "<a href=\"https://en.wikipedia.org/wiki/Tbilisi\">Tbilisi</a>", 44.793, 41.71, "<a href=\"https://flagpedia.net/ge\"><img src=\"https://flagpedia.net/data/flags/h80/ge.webp\" alt=\"Flag of Georgia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Ghana\">Ghana</a>", "<a href=\"https://en.wikipedia.org/wiki/Accra\">Accra</a>", -0.20795, 5.57045, "<a href=\"https://flagpedia.net/gh\"><img src=\"https://flagpedia.net/data/flags/h80/gh.webp\" alt=\"Flag of Ghana\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Guinea\">Guinea</a>", "<a href=\"https://en.wikipedia.org/wiki/Conakry\">Conakry</a>", -13.7, 9.51667, "<a href=\"https://flagpedia.net/gn\"><img src=\"https://flagpedia.net/data/flags/h80/gn.webp\" alt=\"Flag of Guinea\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Gambia, The\">Gambia, The</a>", "<a href=\"https://en.wikipedia.org/wiki/Banjul\">Banjul</a>", -16.5885, 13.4495, "<a href=\"https://flagpedia.net/gm\"><img src=\"https://flagpedia.net/data/flags/h80/gm.webp\" alt=\"Flag of Gambia, The\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Guinea-Bissau\">Guinea-Bissau</a>", "<a href=\"https://en.wikipedia.org/wiki/Bissau\">Bissau</a>", -15.1804, 11.8037, "<a href=\"https://flagpedia.net/gw\"><img src=\"https://flagpedia.net/data/flags/h80/gw.webp\" alt=\"Flag of Guinea-Bissau\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Equatorial Guinea\">Equatorial Guinea</a>", "<a href=\"https://en.wikipedia.org/wiki/Malabo\">Malabo</a>", 8.7741, 3.7523, "<a href=\"https://flagpedia.net/gq\"><img src=\"https://flagpedia.net/data/flags/h80/gq.webp\" alt=\"Flag of Equatorial Guinea\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Greece\">Greece</a>", "<a href=\"https://en.wikipedia.org/wiki/Athens\">Athens</a>", 23.7166, 37.9792, "<a href=\"https://flagpedia.net/gr\"><img src=\"https://flagpedia.net/data/flags/h80/gr.webp\" alt=\"Flag of Greece\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Grenada\">Grenada</a>", "<a href=\"https://en.wikipedia.org/wiki/Saint George's\">Saint George's</a>", -61.7449, 12.0653, "<a href=\"https://flagpedia.net/gd\"><img src=\"https://flagpedia.net/data/flags/h80/gd.webp\" alt=\"Flag of Grenada\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Greenland\">Greenland</a>", "<a href=\"https://en.wikipedia.org/wiki/Nuuk\">Nuuk</a>", -51.7214, 64.1836, "<a href=\"https://flagpedia.net/gl\"><img src=\"https://flagpedia.net/data/flags/h80/gl.webp\" alt=\"Flag of Greenland\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Guatemala\">Guatemala</a>", "<a href=\"https://en.wikipedia.org/wiki/Guatemala City\">Guatemala City</a>", -90.5328, 14.6248, "<a href=\"https://flagpedia.net/gt\"><img src=\"https://flagpedia.net/data/flags/h80/gt.webp\" alt=\"Flag of Guatemala\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Guam\">Guam</a>", "<a href=\"https://en.wikipedia.org/wiki/Agana\">Agana</a>", 144.794, 13.4443, "<a href=\"https://flagpedia.net/gu\"><img src=\"https://flagpedia.net/data/flags/h80/gu.webp\" alt=\"Flag of Guam\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Guyana\">Guyana</a>", "<a href=\"https://en.wikipedia.org/wiki/Georgetown\">Georgetown</a>", -58.1548, 6.80461, "<a href=\"https://flagpedia.net/gy\"><img src=\"https://flagpedia.net/data/flags/h80/gy.webp\" alt=\"Flag of Guyana\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Honduras\">Honduras</a>", "<a href=\"https://en.wikipedia.org/wiki/Tegucigalpa\">Tegucigalpa</a>", -87.4667, 15.1333, "<a href=\"https://flagpedia.net/hn\"><img src=\"https://flagpedia.net/data/flags/h80/hn.webp\" alt=\"Flag of Honduras\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Croatia\">Croatia</a>", "<a href=\"https://en.wikipedia.org/wiki/Zagreb\">Zagreb</a>", 15.9614, 45.8069, "<a href=\"https://flagpedia.net/hr\"><img src=\"https://flagpedia.net/data/flags/h80/hr.webp\" alt=\"Flag of Croatia\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Haiti\">Haiti</a>", "<a href=\"https://en.wikipedia.org/wiki/Port-au-Prince\">Port-au-Prince</a>", -72.3288, 18.5392, "<a href=\"https://flagpedia.net/ht\"><img src=\"https://flagpedia.net/data/flags/h80/ht.webp\" alt=\"Flag of Haiti\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Hungary\">Hungary</a>", "<a href=\"https://en.wikipedia.org/wiki/Budapest\">Budapest</a>", 19.0408, 47.4984, "<a href=\"https://flagpedia.net/hu\"><img src=\"https://flagpedia.net/data/flags/h80/hu.webp\" alt=\"Flag of Hungary\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Indonesia\">Indonesia</a>", "<a href=\"https://en.wikipedia.org/wiki/Jakarta\">Jakarta</a>", 106.83, -6.19752, "<a href=\"https://flagpedia.net/id\"><img src=\"https://flagpedia.net/data/flags/h80/id.webp\" alt=\"Flag of Indonesia\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Isle of Man\">Isle of Man</a>", "<a href=\"https://en.wikipedia.org/wiki/Douglas\">Douglas</a>", -4.47928, 54.1509, "<a href=\"https://flagpedia.net/im\"><img src=\"https://flagpedia.net/data/flags/h80/im.webp\" alt=\"Flag of Isle of Man\"></a>"], ["South Asia", "<a href=\"https://en.wikipedia.org/wiki/India\">India</a>", "<a href=\"https://en.wikipedia.org/wiki/New Delhi\">New Delhi</a>", 77.225, 28.6353, "<a href=\"https://flagpedia.net/in\"><img src=\"https://flagpedia.net/data/flags/h80/in.webp\" alt=\"Flag of India\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Ireland\">Ireland</a>", "<a href=\"https://en.wikipedia.org/wiki/Dublin\">Dublin</a>", -6.26749, 53.3441, "<a href=\"https://flagpedia.net/ie\"><img src=\"https://flagpedia.net/data/flags/h80/ie.webp\" alt=\"Flag of Ireland\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Iran, Islamic Rep.\">Iran, Islamic Rep.</a>", "<a href=\"https://en.wikipedia.org/wiki/Tehran\">Tehran</a>", 51.4447, 35.6878, "<a href=\"https://flagpedia.net/ir\"><img src=\"https://flagpedia.net/data/flags/h80/ir.webp\" alt=\"Flag of Iran, Islamic Rep.\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Iraq\">Iraq</a>", "<a href=\"https://en.wikipedia.org/wiki/Baghdad\">Baghdad</a>", 44.394, 33.3302, "<a href=\"https://flagpedia.net/iq\"><img src=\"https://flagpedia.net/data/flags/h80/iq.webp\" alt=\"Flag of Iraq\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Iceland\">Iceland</a>", "<a href=\"https://en.wikipedia.org/wiki/Reykjavik\">Reykjavik</a>", -21.8952, 64.1353, "<a href=\"https://flagpedia.net/is\"><img src=\"https://flagpedia.net/data/flags/h80/is.webp\" alt=\"Flag of Iceland\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Italy\">Italy</a>", "<a href=\"https://en.wikipedia.org/wiki/Rome\">Rome</a>", 12.4823, 41.8955, "<a href=\"https://flagpedia.net/it\"><img src=\"https://flagpedia.net/data/flags/h80/it.webp\" alt=\"Flag of Italy\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Jamaica\">Jamaica</a>", "<a href=\"https://en.wikipedia.org/wiki/Kingston\">Kingston</a>", -76.792, 17.9927, "<a href=\"https://flagpedia.net/jm\"><img src=\"https://flagpedia.net/data/flags/h80/jm.webp\" alt=\"Flag of Jamaica\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Jordan\">Jordan</a>", "<a href=\"https://en.wikipedia.org/wiki/Amman\">Amman</a>", 35.9263, 31.9497, "<a href=\"https://flagpedia.net/jo\"><img src=\"https://flagpedia.net/data/flags/h80/jo.webp\" alt=\"Flag of Jordan\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Japan\">Japan</a>", "<a href=\"https://en.wikipedia.org/wiki/Tokyo\">Tokyo</a>", 139.77, 35.67, "<a href=\"https://flagpedia.net/jp\"><img src=\"https://flagpedia.net/data/flags/h80/jp.webp\" alt=\"Flag of Japan\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Kazakhstan\">Kazakhstan</a>", "<a href=\"https://en.wikipedia.org/wiki/Astana\">Astana</a>", 71.4382, 51.1879, "<a href=\"https://flagpedia.net/kz\"><img src=\"https://flagpedia.net/data/flags/h80/kz.webp\" alt=\"Flag of Kazakhstan\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Kenya\">Kenya</a>", "<a href=\"https://en.wikipedia.org/wiki/Nairobi\">Nairobi</a>", 36.8126, -1.27975, "<a href=\"https://flagpedia.net/ke\"><img src=\"https://flagpedia.net/data/flags/h80/ke.webp\" alt=\"Flag of Kenya\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Kyrgyz Republic\">Kyrgyz Republic</a>", "<a href=\"https://en.wikipedia.org/wiki/Bishkek\">Bishkek</a>", 74.6057, 42.8851, "<a href=\"https://flagpedia.net/kg\"><img src=\"https://flagpedia.net/data/flags/h80/kg.webp\" alt=\"Flag of Kyrgyz Republic\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Cambodia\">Cambodia</a>", "<a href=\"https://en.wikipedia.org/wiki/Phnom Penh\">Phnom Penh</a>", 104.874, 11.5556, "<a href=\"https://flagpedia.net/kh\"><img src=\"https://flagpedia.net/data/flags/h80/kh.webp\" alt=\"Flag of Cambodia\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Kiribati\">Kiribati</a>", "<a href=\"https://en.wikipedia.org/wiki/Tarawa\">Tarawa</a>", 172.979, 1.32905, "<a href=\"https://flagpedia.net/ki\"><img src=\"https://flagpedia.net/data/flags/h80/ki.webp\" alt=\"Flag of Kiribati\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/St. Kitts and Nevis\">St. Kitts and Nevis</a>", "<a href=\"https://en.wikipedia.org/wiki/Basseterre\">Basseterre</a>", -62.7309, 17.3, "<a href=\"https://flagpedia.net/kn\"><img src=\"https://flagpedia.net/data/flags/h80/kn.webp\" alt=\"Flag of St. Kitts and Nevis\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Korea, Rep.\">Korea, Rep.</a>", "<a href=\"https://en.wikipedia.org/wiki/Seoul\">Seoul</a>", 126.957, 37.5323, "<a href=\"https://flagpedia.net/kr\"><img src=\"https://flagpedia.net/data/flags/h80/kr.webp\" alt=\"Flag of Korea, Rep.\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Kuwait\">Kuwait</a>", "<a href=\"https://en.wikipedia.org/wiki/Kuwait City\">Kuwait City</a>", 47.9824, 29.3721, "<a href=\"https://flagpedia.net/kw\"><img src=\"https://flagpedia.net/data/flags/h80/kw.webp\" alt=\"Flag of Kuwait\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Lao PDR\">Lao PDR</a>", "<a href=\"https://en.wikipedia.org/wiki/Vientiane\">Vientiane</a>", 102.177, 18.5826, "<a href=\"https://flagpedia.net/la\"><img src=\"https://flagpedia.net/data/flags/h80/la.webp\" alt=\"Flag of Lao PDR\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Lebanon\">Lebanon</a>", "<a href=\"https://en.wikipedia.org/wiki/Beirut\">Beirut</a>", 35.5134, 33.8872, "<a href=\"https://flagpedia.net/lb\"><img src=\"https://flagpedia.net/data/flags/h80/lb.webp\" alt=\"Flag of Lebanon\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Liberia\">Liberia</a>", "<a href=\"https://en.wikipedia.org/wiki/Monrovia\">Monrovia</a>", -10.7957, 6.30039, "<a href=\"https://flagpedia.net/lr\"><img src=\"https://flagpedia.net/data/flags/h80/lr.webp\" alt=\"Flag of Liberia\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Libya\">Libya</a>", "<a href=\"https://en.wikipedia.org/wiki/Tripoli\">Tripoli</a>", 13.1072, 32.8578, "<a href=\"https://flagpedia.net/ly\"><img src=\"https://flagpedia.net/data/flags/h80/ly.webp\" alt=\"Flag of Libya\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/St. Lucia\">St. Lucia</a>", "<a href=\"https://en.wikipedia.org/wiki/Castries\">Castries</a>", -60.9832, 14.0, "<a href=\"https://flagpedia.net/lc\"><img src=\"https://flagpedia.net/data/flags/h80/lc.webp\" alt=\"Flag of St. Lucia\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Liechtenstein\">Liechtenstein</a>", "<a href=\"https://en.wikipedia.org/wiki/Vaduz\">Vaduz</a>", 9.52148, 47.1411, "<a href=\"https://flagpedia.net/li\"><img src=\"https://flagpedia.net/data/flags/h80/li.webp\" alt=\"Flag of Liechtenstein\"></a>"], ["South Asia", "<a href=\"https://en.wikipedia.org/wiki/Sri Lanka\">Sri Lanka</a>", "<a href=\"https://en.wikipedia.org/wiki/Colombo\">Colombo</a>", 79.8528, 6.92148, "<a href=\"https://flagpedia.net/lk\"><img src=\"https://flagpedia.net/data/flags/h80/lk.webp\" alt=\"Flag of Sri Lanka\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Lesotho\">Lesotho</a>", "<a href=\"https://en.wikipedia.org/wiki/Maseru\">Maseru</a>", 27.7167, -29.5208, "<a href=\"https://flagpedia.net/ls\"><img src=\"https://flagpedia.net/data/flags/h80/ls.webp\" alt=\"Flag of Lesotho\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Lithuania\">Lithuania</a>", "<a href=\"https://en.wikipedia.org/wiki/Vilnius\">Vilnius</a>", 25.2799, 54.6896, "<a href=\"https://flagpedia.net/lt\"><img src=\"https://flagpedia.net/data/flags/h80/lt.webp\" alt=\"Flag of Lithuania\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Luxembourg\">Luxembourg</a>", "<a href=\"https://en.wikipedia.org/wiki/Luxembourg\">Luxembourg</a>", 6.1296, 49.61, "<a href=\"https://flagpedia.net/lu\"><img src=\"https://flagpedia.net/data/flags/h80/lu.webp\" alt=\"Flag of Luxembourg\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Latvia\">Latvia</a>", "<a href=\"https://en.wikipedia.org/wiki/Riga\">Riga</a>", 24.1048, 56.9465, "<a href=\"https://flagpedia.net/lv\"><img src=\"https://flagpedia.net/data/flags/h80/lv.webp\" alt=\"Flag of Latvia\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Morocco\">Morocco</a>", "<a href=\"https://en.wikipedia.org/wiki/Rabat\">Rabat</a>", -6.8704, 33.9905, "<a href=\"https://flagpedia.net/ma\"><img src=\"https://flagpedia.net/data/flags/h80/ma.webp\" alt=\"Flag of Morocco\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Monaco\">Monaco</a>", "<a href=\"https://en.wikipedia.org/wiki/Monaco\">Monaco</a>", 7.41891, 43.7325, "<a href=\"https://flagpedia.net/mc\"><img src=\"https://flagpedia.net/data/flags/h80/mc.webp\" alt=\"Flag of Monaco\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Moldova\">Moldova</a>", "<a href=\"https://en.wikipedia.org/wiki/Chisinau\">Chisinau</a>", 28.8497, 47.0167, "<a href=\"https://flagpedia.net/md\"><img src=\"https://flagpedia.net/data/flags/h80/md.webp\" alt=\"Flag of Moldova\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Madagascar\">Madagascar</a>", "<a href=\"https://en.wikipedia.org/wiki/Antananarivo\">Antananarivo</a>", 45.7167, -20.4667, "<a href=\"https://flagpedia.net/mg\"><img src=\"https://flagpedia.net/data/flags/h80/mg.webp\" alt=\"Flag of Madagascar\"></a>"], ["South Asia", "<a href=\"https://en.wikipedia.org/wiki/Maldives\">Maldives</a>", "<a href=\"https://en.wikipedia.org/wiki/Male\">Male</a>", 73.5109, 4.1742, "<a href=\"https://flagpedia.net/mv\"><img src=\"https://flagpedia.net/data/flags/h80/mv.webp\" alt=\"Flag of Maldives\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Mexico\">Mexico</a>", "<a href=\"https://en.wikipedia.org/wiki/Mexico City\">Mexico City</a>", -99.1276, 19.427, "<a href=\"https://flagpedia.net/mx\"><img src=\"https://flagpedia.net/data/flags/h80/mx.webp\" alt=\"Flag of Mexico\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Marshall Islands\">Marshall Islands</a>", "<a href=\"https://en.wikipedia.org/wiki/Majuro\">Majuro</a>", 171.135, 7.11046, "<a href=\"https://flagpedia.net/mh\"><img src=\"https://flagpedia.net/data/flags/h80/mh.webp\" alt=\"Flag of Marshall Islands\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/North Macedonia\">North Macedonia</a>", "<a href=\"https://en.wikipedia.org/wiki/Skopje\">Skopje</a>", 21.4361, 42.0024, "<a href=\"https://flagpedia.net/mk\"><img src=\"https://flagpedia.net/data/flags/h80/mk.webp\" alt=\"Flag of North Macedonia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Mali\">Mali</a>", "<a href=\"https://en.wikipedia.org/wiki/Bamako\">Bamako</a>", -7.50034, 13.5667, "<a href=\"https://flagpedia.net/ml\"><img src=\"https://flagpedia.net/data/flags/h80/ml.webp\" alt=\"Flag of Mali\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Malta\">Malta</a>", "<a href=\"https://en.wikipedia.org/wiki/Valletta\">Valletta</a>", 14.5189, 35.9042, "<a href=\"https://flagpedia.net/mt\"><img src=\"https://flagpedia.net/data/flags/h80/mt.webp\" alt=\"Flag of Malta\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Myanmar\">Myanmar</a>", "<a href=\"https://en.wikipedia.org/wiki/Naypyidaw\">Naypyidaw</a>", 95.9562, 21.914, "<a href=\"https://flagpedia.net/mm\"><img src=\"https://flagpedia.net/data/flags/h80/mm.webp\" alt=\"Flag of Myanmar\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Montenegro\">Montenegro</a>", "<a href=\"https://en.wikipedia.org/wiki/Podgorica\">Podgorica</a>", 19.2595, 42.4602, "<a href=\"https://flagpedia.net/me\"><img src=\"https://flagpedia.net/data/flags/h80/me.webp\" alt=\"Flag of Montenegro\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Mongolia\">Mongolia</a>", "<a href=\"https://en.wikipedia.org/wiki/Ulaanbaatar\">Ulaanbaatar</a>", 106.937, 47.9129, "<a href=\"https://flagpedia.net/mn\"><img src=\"https://flagpedia.net/data/flags/h80/mn.webp\" alt=\"Flag of Mongolia\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Northern Mariana Islands\">Northern Mariana Islands</a>", "<a href=\"https://en.wikipedia.org/wiki/Saipan\">Saipan</a>", 145.765, 15.1935, "<a href=\"https://flagpedia.net/mp\"><img src=\"https://flagpedia.net/data/flags/h80/mp.webp\" alt=\"Flag of Northern Mariana Islands\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Mozambique\">Mozambique</a>", "<a href=\"https://en.wikipedia.org/wiki/Maputo\">Maputo</a>", 32.5713, -25.9664, "<a href=\"https://flagpedia.net/mz\"><img src=\"https://flagpedia.net/data/flags/h80/mz.webp\" alt=\"Flag of Mozambique\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Mauritania\">Mauritania</a>", "<a href=\"https://en.wikipedia.org/wiki/Nouakchott\">Nouakchott</a>", -15.9824, 18.2367, "<a href=\"https://flagpedia.net/mr\"><img src=\"https://flagpedia.net/data/flags/h80/mr.webp\" alt=\"Flag of Mauritania\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Mauritius\">Mauritius</a>", "<a href=\"https://en.wikipedia.org/wiki/Port Louis\">Port Louis</a>", 57.4977, -20.1605, "<a href=\"https://flagpedia.net/mu\"><img src=\"https://flagpedia.net/data/flags/h80/mu.webp\" alt=\"Flag of Mauritius\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Malawi\">Malawi</a>", "<a href=\"https://en.wikipedia.org/wiki/Lilongwe\">Lilongwe</a>", 33.7703, -13.9899, "<a href=\"https://flagpedia.net/mw\"><img src=\"https://flagpedia.net/data/flags/h80/mw.webp\" alt=\"Flag of Malawi\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Malaysia\">Malaysia</a>", "<a href=\"https://en.wikipedia.org/wiki/Kuala Lumpur\">Kuala Lumpur</a>", 101.684, 3.12433, "<a href=\"https://flagpedia.net/my\"><img src=\"https://flagpedia.net/data/flags/h80/my.webp\" alt=\"Flag of Malaysia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Namibia\">Namibia</a>", "<a href=\"https://en.wikipedia.org/wiki/Windhoek\">Windhoek</a>", 17.0931, -22.5648, "<a href=\"https://flagpedia.net/na\"><img src=\"https://flagpedia.net/data/flags/h80/na.webp\" alt=\"Flag of Namibia\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/New Caledonia\">New Caledonia</a>", "<a href=\"https://en.wikipedia.org/wiki/Noum'ea\">Noum'ea</a>", 166.464, -22.2677, "<a href=\"https://flagpedia.net/nc\"><img src=\"https://flagpedia.net/data/flags/h80/nc.webp\" alt=\"Flag of New Caledonia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Niger\">Niger</a>", "<a href=\"https://en.wikipedia.org/wiki/Niamey\">Niamey</a>", 2.1073, 13.514, "<a href=\"https://flagpedia.net/ne\"><img src=\"https://flagpedia.net/data/flags/h80/ne.webp\" alt=\"Flag of Niger\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Nigeria\">Nigeria</a>", "<a href=\"https://en.wikipedia.org/wiki/Abuja\">Abuja</a>", 7.48906, 9.05804, "<a href=\"https://flagpedia.net/ng\"><img src=\"https://flagpedia.net/data/flags/h80/ng.webp\" alt=\"Flag of Nigeria\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Nicaragua\">Nicaragua</a>", "<a href=\"https://en.wikipedia.org/wiki/Managua\">Managua</a>", -86.2734, 12.1475, "<a href=\"https://flagpedia.net/ni\"><img src=\"https://flagpedia.net/data/flags/h80/ni.webp\" alt=\"Flag of Nicaragua\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Netherlands\">Netherlands</a>", "<a href=\"https://en.wikipedia.org/wiki/Amsterdam\">Amsterdam</a>", 4.89095, 52.3738, "<a href=\"https://flagpedia.net/nl\"><img src=\"https://flagpedia.net/data/flags/h80/nl.webp\" alt=\"Flag of Netherlands\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Norway\">Norway</a>", "<a href=\"https://en.wikipedia.org/wiki/Oslo\">Oslo</a>", 10.7387, 59.9138, "<a href=\"https://flagpedia.net/no\"><img src=\"https://flagpedia.net/data/flags/h80/no.webp\" alt=\"Flag of Norway\"></a>"], ["South Asia", "<a href=\"https://en.wikipedia.org/wiki/Nepal\">Nepal</a>", "<a href=\"https://en.wikipedia.org/wiki/Kathmandu\">Kathmandu</a>", 85.3157, 27.6939, "<a href=\"https://flagpedia.net/np\"><img src=\"https://flagpedia.net/data/flags/h80/np.webp\" alt=\"Flag of Nepal\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Nauru\">Nauru</a>", "<a href=\"https://en.wikipedia.org/wiki/Yaren District\">Yaren District</a>", 166.920867, -0.5477, "<a href=\"https://flagpedia.net/nr\"><img src=\"https://flagpedia.net/data/flags/h80/nr.webp\" alt=\"Flag of Nauru\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/New Zealand\">New Zealand</a>", "<a href=\"https://en.wikipedia.org/wiki/Wellington\">Wellington</a>", 174.776, -41.2865, "<a href=\"https://flagpedia.net/nz\"><img src=\"https://flagpedia.net/data/flags/h80/nz.webp\" alt=\"Flag of New Zealand\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Oman\">Oman</a>", "<a href=\"https://en.wikipedia.org/wiki/Muscat\">Muscat</a>", 58.5874, 23.6105, "<a href=\"https://flagpedia.net/om\"><img src=\"https://flagpedia.net/data/flags/h80/om.webp\" alt=\"Flag of Oman\"></a>"], ["South Asia", "<a href=\"https://en.wikipedia.org/wiki/Pakistan\">Pakistan</a>", "<a href=\"https://en.wikipedia.org/wiki/Islamabad\">Islamabad</a>", 72.8, 30.5167, "<a href=\"https://flagpedia.net/pk\"><img src=\"https://flagpedia.net/data/flags/h80/pk.webp\" alt=\"Flag of Pakistan\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Panama\">Panama</a>", "<a href=\"https://en.wikipedia.org/wiki/Panama City\">Panama City</a>", -79.5188, 8.99427, "<a href=\"https://flagpedia.net/pa\"><img src=\"https://flagpedia.net/data/flags/h80/pa.webp\" alt=\"Flag of Panama\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Peru\">Peru</a>", "<a href=\"https://en.wikipedia.org/wiki/Lima\">Lima</a>", -77.0465, -12.0931, "<a href=\"https://flagpedia.net/pe\"><img src=\"https://flagpedia.net/data/flags/h80/pe.webp\" alt=\"Flag of Peru\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Philippines\">Philippines</a>", "<a href=\"https://en.wikipedia.org/wiki/Manila\">Manila</a>", 121.035, 14.5515, "<a href=\"https://flagpedia.net/ph\"><img src=\"https://flagpedia.net/data/flags/h80/ph.webp\" alt=\"Flag of Philippines\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Palau\">Palau</a>", "<a href=\"https://en.wikipedia.org/wiki/Koror\">Koror</a>", 134.479, 7.34194, "<a href=\"https://flagpedia.net/pw\"><img src=\"https://flagpedia.net/data/flags/h80/pw.webp\" alt=\"Flag of Palau\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Papua New Guinea\">Papua New Guinea</a>", "<a href=\"https://en.wikipedia.org/wiki/Port Moresby\">Port Moresby</a>", 147.194, -9.47357, "<a href=\"https://flagpedia.net/pg\"><img src=\"https://flagpedia.net/data/flags/h80/pg.webp\" alt=\"Flag of Papua New Guinea\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Poland\">Poland</a>", "<a href=\"https://en.wikipedia.org/wiki/Warsaw\">Warsaw</a>", 21.02, 52.26, "<a href=\"https://flagpedia.net/pl\"><img src=\"https://flagpedia.net/data/flags/h80/pl.webp\" alt=\"Flag of Poland\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Puerto Rico\">Puerto Rico</a>", "<a href=\"https://en.wikipedia.org/wiki/San Juan\">San Juan</a>", -66.0, 18.23, "<a href=\"https://flagpedia.net/pr\"><img src=\"https://flagpedia.net/data/flags/h80/pr.webp\" alt=\"Flag of Puerto Rico\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Korea, Dem. People's Rep.\">Korea, Dem. People's Rep.</a>", "<a href=\"https://en.wikipedia.org/wiki/Pyongyang\">Pyongyang</a>", 125.754, 39.0319, "<a href=\"https://flagpedia.net/kp\"><img src=\"https://flagpedia.net/data/flags/h80/kp.webp\" alt=\"Flag of Korea, Dem. People's Rep.\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Portugal\">Portugal</a>", "<a href=\"https://en.wikipedia.org/wiki/Lisbon\">Lisbon</a>", -9.13552, 38.7072, "<a href=\"https://flagpedia.net/pt\"><img src=\"https://flagpedia.net/data/flags/h80/pt.webp\" alt=\"Flag of Portugal\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Paraguay\">Paraguay</a>", "<a href=\"https://en.wikipedia.org/wiki/Asuncion\">Asuncion</a>", -57.6362, -25.3005, "<a href=\"https://flagpedia.net/py\"><img src=\"https://flagpedia.net/data/flags/h80/py.webp\" alt=\"Flag of Paraguay\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/French Polynesia\">French Polynesia</a>", "<a href=\"https://en.wikipedia.org/wiki/Papeete\">Papeete</a>", -149.57, -17.535, "<a href=\"https://flagpedia.net/pf\"><img src=\"https://flagpedia.net/data/flags/h80/pf.webp\" alt=\"Flag of French Polynesia\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Qatar\">Qatar</a>", "<a href=\"https://en.wikipedia.org/wiki/Doha\">Doha</a>", 51.5082, 25.2948, "<a href=\"https://flagpedia.net/qa\"><img src=\"https://flagpedia.net/data/flags/h80/qa.webp\" alt=\"Flag of Qatar\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Romania\">Romania</a>", "<a href=\"https://en.wikipedia.org/wiki/Bucharest\">Bucharest</a>", 26.0979, 44.4479, "<a href=\"https://flagpedia.net/ro\"><img src=\"https://flagpedia.net/data/flags/h80/ro.webp\" alt=\"Flag of Romania\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Russian Federation\">Russian Federation</a>", "<a href=\"https://en.wikipedia.org/wiki/Moscow\">Moscow</a>", 37.6176, 55.7558, "<a href=\"https://flagpedia.net/ru\"><img src=\"https://flagpedia.net/data/flags/h80/ru.webp\" alt=\"Flag of Russian Federation\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Rwanda\">Rwanda</a>", "<a href=\"https://en.wikipedia.org/wiki/Kigali\">Kigali</a>", 30.0587, -1.95325, "<a href=\"https://flagpedia.net/rw\"><img src=\"https://flagpedia.net/data/flags/h80/rw.webp\" alt=\"Flag of Rwanda\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Saudi Arabia\">Saudi Arabia</a>", "<a href=\"https://en.wikipedia.org/wiki/Riyadh\">Riyadh</a>", 46.6977, 24.6748, "<a href=\"https://flagpedia.net/sa\"><img src=\"https://flagpedia.net/data/flags/h80/sa.webp\" alt=\"Flag of Saudi Arabia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Sudan\">Sudan</a>", "<a href=\"https://en.wikipedia.org/wiki/Khartoum\">Khartoum</a>", 32.5363, 15.5932, "<a href=\"https://flagpedia.net/sd\"><img src=\"https://flagpedia.net/data/flags/h80/sd.webp\" alt=\"Flag of Sudan\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Senegal\">Senegal</a>", "<a href=\"https://en.wikipedia.org/wiki/Dakar\">Dakar</a>", -17.4734, 14.7247, "<a href=\"https://flagpedia.net/sn\"><img src=\"https://flagpedia.net/data/flags/h80/sn.webp\" alt=\"Flag of Senegal\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Singapore\">Singapore</a>", "<a href=\"https://en.wikipedia.org/wiki/Singapore\">Singapore</a>", 103.85, 1.28941, "<a href=\"https://flagpedia.net/sg\"><img src=\"https://flagpedia.net/data/flags/h80/sg.webp\" alt=\"Flag of Singapore\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Solomon Islands\">Solomon Islands</a>", "<a href=\"https://en.wikipedia.org/wiki/Honiara\">Honiara</a>", 159.949, -9.42676, "<a href=\"https://flagpedia.net/sb\"><img src=\"https://flagpedia.net/data/flags/h80/sb.webp\" alt=\"Flag of Solomon Islands\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Sierra Leone\">Sierra Leone</a>", "<a href=\"https://en.wikipedia.org/wiki/Freetown\">Freetown</a>", -13.2134, 8.4821, "<a href=\"https://flagpedia.net/sl\"><img src=\"https://flagpedia.net/data/flags/h80/sl.webp\" alt=\"Flag of Sierra Leone\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/El Salvador\">El Salvador</a>", "<a href=\"https://en.wikipedia.org/wiki/San Salvador\">San Salvador</a>", -89.2073, 13.7034, "<a href=\"https://flagpedia.net/sv\"><img src=\"https://flagpedia.net/data/flags/h80/sv.webp\" alt=\"Flag of El Salvador\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/San Marino\">San Marino</a>", "<a href=\"https://en.wikipedia.org/wiki/San Marino\">San Marino</a>", 12.4486, 43.9322, "<a href=\"https://flagpedia.net/sm\"><img src=\"https://flagpedia.net/data/flags/h80/sm.webp\" alt=\"Flag of San Marino\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Somalia\">Somalia</a>", "<a href=\"https://en.wikipedia.org/wiki/Mogadishu\">Mogadishu</a>", 45.3254, 2.07515, "<a href=\"https://flagpedia.net/so\"><img src=\"https://flagpedia.net/data/flags/h80/so.webp\" alt=\"Flag of Somalia\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Serbia\">Serbia</a>", "<a href=\"https://en.wikipedia.org/wiki/Belgrade\">Belgrade</a>", 20.4656, 44.8024, "<a href=\"https://flagpedia.net/rs\"><img src=\"https://flagpedia.net/data/flags/h80/rs.webp\" alt=\"Flag of Serbia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/South Sudan\">South Sudan</a>", "<a href=\"https://en.wikipedia.org/wiki/Juba\">Juba</a>", 31.6, 4.85, "<a href=\"https://flagpedia.net/ss\"><img src=\"https://flagpedia.net/data/flags/h80/ss.webp\" alt=\"Flag of South Sudan\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Sao Tome and Principe\">Sao Tome and Principe</a>", "<a href=\"https://en.wikipedia.org/wiki/Sao Tome\">Sao Tome</a>", 6.6071, 0.20618, "<a href=\"https://flagpedia.net/st\"><img src=\"https://flagpedia.net/data/flags/h80/st.webp\" alt=\"Flag of Sao Tome and Principe\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Suriname\">Suriname</a>", "<a href=\"https://en.wikipedia.org/wiki/Paramaribo\">Paramaribo</a>", -55.1679, 5.8232, "<a href=\"https://flagpedia.net/sr\"><img src=\"https://flagpedia.net/data/flags/h80/sr.webp\" alt=\"Flag of Suriname\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Slovak Republic\">Slovak Republic</a>", "<a href=\"https://en.wikipedia.org/wiki/Bratislava\">Bratislava</a>", 17.1073, 48.1484, "<a href=\"https://flagpedia.net/sk\"><img src=\"https://flagpedia.net/data/flags/h80/sk.webp\" alt=\"Flag of Slovak Republic\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Slovenia\">Slovenia</a>", "<a href=\"https://en.wikipedia.org/wiki/Ljubljana\">Ljubljana</a>", 14.5044, 46.0546, "<a href=\"https://flagpedia.net/si\"><img src=\"https://flagpedia.net/data/flags/h80/si.webp\" alt=\"Flag of Slovenia\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Sweden\">Sweden</a>", "<a href=\"https://en.wikipedia.org/wiki/Stockholm\">Stockholm</a>", 18.0645, 59.3327, "<a href=\"https://flagpedia.net/se\"><img src=\"https://flagpedia.net/data/flags/h80/se.webp\" alt=\"Flag of Sweden\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Eswatini\">Eswatini</a>", "<a href=\"https://en.wikipedia.org/wiki/Mbabane\">Mbabane</a>", 31.4659, -26.5225, "<a href=\"https://flagpedia.net/sz\"><img src=\"https://flagpedia.net/data/flags/h80/sz.webp\" alt=\"Flag of Eswatini\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Seychelles\">Seychelles</a>", "<a href=\"https://en.wikipedia.org/wiki/Victoria\">Victoria</a>", 55.4466, -4.6309, "<a href=\"https://flagpedia.net/sc\"><img src=\"https://flagpedia.net/data/flags/h80/sc.webp\" alt=\"Flag of Seychelles\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Syrian Arab Republic\">Syrian Arab Republic</a>", "<a href=\"https://en.wikipedia.org/wiki/Damascus\">Damascus</a>", 36.3119, 33.5146, "<a href=\"https://flagpedia.net/sy\"><img src=\"https://flagpedia.net/data/flags/h80/sy.webp\" alt=\"Flag of Syrian Arab Republic\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Turks and Caicos Islands\">Turks and Caicos Islands</a>", "<a href=\"https://en.wikipedia.org/wiki/Grand Turk\">Grand Turk</a>", -71.141389, 21.4602778, "<a href=\"https://flagpedia.net/tc\"><img src=\"https://flagpedia.net/data/flags/h80/tc.webp\" alt=\"Flag of Turks and Caicos Islands\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Chad\">Chad</a>", "<a href=\"https://en.wikipedia.org/wiki/N'Djamena\">N'Djamena</a>", 15.0445, 12.1048, "<a href=\"https://flagpedia.net/td\"><img src=\"https://flagpedia.net/data/flags/h80/td.webp\" alt=\"Flag of Chad\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Togo\">Togo</a>", "<a href=\"https://en.wikipedia.org/wiki/Lome\">Lome</a>", 1.2255, 6.1228, "<a href=\"https://flagpedia.net/tg\"><img src=\"https://flagpedia.net/data/flags/h80/tg.webp\" alt=\"Flag of Togo\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Thailand\">Thailand</a>", "<a href=\"https://en.wikipedia.org/wiki/Bangkok\">Bangkok</a>", 100.521, 13.7308, "<a href=\"https://flagpedia.net/th\"><img src=\"https://flagpedia.net/data/flags/h80/th.webp\" alt=\"Flag of Thailand\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Tajikistan\">Tajikistan</a>", "<a href=\"https://en.wikipedia.org/wiki/Dushanbe\">Dushanbe</a>", 68.7864, 38.5878, "<a href=\"https://flagpedia.net/tj\"><img src=\"https://flagpedia.net/data/flags/h80/tj.webp\" alt=\"Flag of Tajikistan\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Turkmenistan\">Turkmenistan</a>", "<a href=\"https://en.wikipedia.org/wiki/Ashgabat\">Ashgabat</a>", 58.3794, 37.9509, "<a href=\"https://flagpedia.net/tm\"><img src=\"https://flagpedia.net/data/flags/h80/tm.webp\" alt=\"Flag of Turkmenistan\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Timor-Leste\">Timor-Leste</a>", "<a href=\"https://en.wikipedia.org/wiki/Dili\">Dili</a>", 125.567, -8.56667, "<a href=\"https://flagpedia.net/tl\"><img src=\"https://flagpedia.net/data/flags/h80/tl.webp\" alt=\"Flag of Timor-Leste\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Tonga\">Tonga</a>", "<a href=\"https://en.wikipedia.org/wiki/Nuku'alofa\">Nuku'alofa</a>", -175.216, -21.136, "<a href=\"https://flagpedia.net/to\"><img src=\"https://flagpedia.net/data/flags/h80/to.webp\" alt=\"Flag of Tonga\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Trinidad and Tobago\">Trinidad and Tobago</a>", "<a href=\"https://en.wikipedia.org/wiki/Port-of-Spain\">Port-of-Spain</a>", -61.4789, 10.6596, "<a href=\"https://flagpedia.net/tt\"><img src=\"https://flagpedia.net/data/flags/h80/tt.webp\" alt=\"Flag of Trinidad and Tobago\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Tunisia\">Tunisia</a>", "<a href=\"https://en.wikipedia.org/wiki/Tunis\">Tunis</a>", 10.21, 36.7899, "<a href=\"https://flagpedia.net/tn\"><img src=\"https://flagpedia.net/data/flags/h80/tn.webp\" alt=\"Flag of Tunisia\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Turkey\">Turkey</a>", "<a href=\"https://en.wikipedia.org/wiki/Ankara\">Ankara</a>", 32.3606, 39.7153, "<a href=\"https://flagpedia.net/tr\"><img src=\"https://flagpedia.net/data/flags/h80/tr.webp\" alt=\"Flag of Turkey\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Tuvalu\">Tuvalu</a>", "<a href=\"https://en.wikipedia.org/wiki/Funafuti\">Funafuti</a>", 179.089567, -8.6314877, "<a href=\"https://flagpedia.net/tv\"><img src=\"https://flagpedia.net/data/flags/h80/tv.webp\" alt=\"Flag of Tuvalu\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Tanzania\">Tanzania</a>", "<a href=\"https://en.wikipedia.org/wiki/Dodoma\">Dodoma</a>", 35.7382, -6.17486, "<a href=\"https://flagpedia.net/tz\"><img src=\"https://flagpedia.net/data/flags/h80/tz.webp\" alt=\"Flag of Tanzania\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Uganda\">Uganda</a>", "<a href=\"https://en.wikipedia.org/wiki/Kampala\">Kampala</a>", 32.5729, 0.314269, "<a href=\"https://flagpedia.net/ug\"><img src=\"https://flagpedia.net/data/flags/h80/ug.webp\" alt=\"Flag of Uganda\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Ukraine\">Ukraine</a>", "<a href=\"https://en.wikipedia.org/wiki/Kiev\">Kiev</a>", 30.5038, 50.4536, "<a href=\"https://flagpedia.net/ua\"><img src=\"https://flagpedia.net/data/flags/h80/ua.webp\" alt=\"Flag of Ukraine\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Uruguay\">Uruguay</a>", "<a href=\"https://en.wikipedia.org/wiki/Montevideo\">Montevideo</a>", -56.0675, -34.8941, "<a href=\"https://flagpedia.net/uy\"><img src=\"https://flagpedia.net/data/flags/h80/uy.webp\" alt=\"Flag of Uruguay\"></a>"], ["North America", "<a href=\"https://en.wikipedia.org/wiki/United States\">United States</a>", "<a href=\"https://en.wikipedia.org/wiki/Washington D.C.\">Washington D.C.</a>", -77.032, 38.8895, "<a href=\"https://flagpedia.net/us\"><img src=\"https://flagpedia.net/data/flags/h80/us.webp\" alt=\"Flag of United States\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Uzbekistan\">Uzbekistan</a>", "<a href=\"https://en.wikipedia.org/wiki/Tashkent\">Tashkent</a>", 69.269, 41.3052, "<a href=\"https://flagpedia.net/uz\"><img src=\"https://flagpedia.net/data/flags/h80/uz.webp\" alt=\"Flag of Uzbekistan\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/St. Vincent and the Grenadines\">St. Vincent and the Grenadines</a>", "<a href=\"https://en.wikipedia.org/wiki/Kingstown\">Kingstown</a>", -61.2653, 13.2035, "<a href=\"https://flagpedia.net/vc\"><img src=\"https://flagpedia.net/data/flags/h80/vc.webp\" alt=\"Flag of St. Vincent and the Grenadines\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Venezuela, RB\">Venezuela, RB</a>", "<a href=\"https://en.wikipedia.org/wiki/Caracas\">Caracas</a>", -69.8371, 9.08165, "<a href=\"https://flagpedia.net/ve\"><img src=\"https://flagpedia.net/data/flags/h80/ve.webp\" alt=\"Flag of Venezuela, RB\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/British Virgin Islands\">British Virgin Islands</a>", "<a href=\"https://en.wikipedia.org/wiki/Road Town\">Road Town</a>", -64.623056, 18.431389, "<a href=\"https://flagpedia.net/vg\"><img src=\"https://flagpedia.net/data/flags/h80/vg.webp\" alt=\"Flag of British Virgin Islands\"></a>"], ["Latin America & Caribbean ", "<a href=\"https://en.wikipedia.org/wiki/Virgin Islands (U.S.)\">Virgin Islands (U.S.)</a>", "<a href=\"https://en.wikipedia.org/wiki/Charlotte Amalie\">Charlotte Amalie</a>", -64.8963, 18.3358, "<a href=\"https://flagpedia.net/vi\"><img src=\"https://flagpedia.net/data/flags/h80/vi.webp\" alt=\"Flag of Virgin Islands (U.S.)\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Vietnam\">Vietnam</a>", "<a href=\"https://en.wikipedia.org/wiki/Hanoi\">Hanoi</a>", 105.825, 21.0069, "<a href=\"https://flagpedia.net/vn\"><img src=\"https://flagpedia.net/data/flags/h80/vn.webp\" alt=\"Flag of Vietnam\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Vanuatu\">Vanuatu</a>", "<a href=\"https://en.wikipedia.org/wiki/Port-Vila\">Port-Vila</a>", 168.321, -17.7404, "<a href=\"https://flagpedia.net/vu\"><img src=\"https://flagpedia.net/data/flags/h80/vu.webp\" alt=\"Flag of Vanuatu\"></a>"], ["East Asia & Pacific", "<a href=\"https://en.wikipedia.org/wiki/Samoa\">Samoa</a>", "<a href=\"https://en.wikipedia.org/wiki/Apia\">Apia</a>", -171.752, -13.8314, "<a href=\"https://flagpedia.net/ws\"><img src=\"https://flagpedia.net/data/flags/h80/ws.webp\" alt=\"Flag of Samoa\"></a>"], ["Europe & Central Asia", "<a href=\"https://en.wikipedia.org/wiki/Kosovo\">Kosovo</a>", "<a href=\"https://en.wikipedia.org/wiki/Pristina\">Pristina</a>", 20.926, 42.565, "<a href=\"https://flagpedia.net/xk\"><img src=\"https://flagpedia.net/data/flags/h80/xk.webp\" alt=\"Flag of Kosovo\"></a>"], ["Middle East & North Africa", "<a href=\"https://en.wikipedia.org/wiki/Yemen, Rep.\">Yemen, Rep.</a>", "<a href=\"https://en.wikipedia.org/wiki/Sana'a\">Sana'a</a>", 44.2075, 15.352, "<a href=\"https://flagpedia.net/ye\"><img src=\"https://flagpedia.net/data/flags/h80/ye.webp\" alt=\"Flag of Yemen, Rep.\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/South Africa\">South Africa</a>", "<a href=\"https://en.wikipedia.org/wiki/Pretoria\">Pretoria</a>", 28.1871, -25.746, "<a href=\"https://flagpedia.net/za\"><img src=\"https://flagpedia.net/data/flags/h80/za.webp\" alt=\"Flag of South Africa\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Zambia\">Zambia</a>", "<a href=\"https://en.wikipedia.org/wiki/Lusaka\">Lusaka</a>", 28.2937, -15.3982, "<a href=\"https://flagpedia.net/zm\"><img src=\"https://flagpedia.net/data/flags/h80/zm.webp\" alt=\"Flag of Zambia\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://en.wikipedia.org/wiki/Zimbabwe\">Zimbabwe</a>", "<a href=\"https://en.wikipedia.org/wiki/Harare\">Harare</a>", 31.0672, -17.8312, "<a href=\"https://flagpedia.net/zw\"><img src=\"https://flagpedia.net/data/flags/h80/zw.webp\" alt=\"Flag of Zimbabwe\"></a>"]];
+        const data = [["Latin America & Caribbean ", "<a href=\"https://flagpedia.net/aw\"><img src=\"https://flagpedia.net/data/flags/h80/aw.webp\" alt=\"Flag of Aruba\"></a>"], ["Sub-Saharan Africa ", "<a href=\"https://flagpedia.net/zw\"><img src=\"https://flagpedia.net/data/flags/h80/zw.webp\" alt=\"Flag of Zimbabwe\"></a>"]];
         // Display the table
         $(document).ready(function () {
             window.dataTablePromise.then(() => {
                 // Define the dt_args
-                let dt_args = {"order": []};
+                let dt_args = {"order": [], "fnInfoCallback": function (oSettings, iStart, iEnd, iMax, iTotal, sPre) { return sPre + ' (<a href="https://mwouts.github.io/itables/downsampling.html">downsampled</a> from 208x6 to 2x2 as maxBytes=65536)'; }, "dom": "ti"};
                 dt_args["data"] = data;
 
                 
-                $('#23b0ca2f-e135-42f7-8ea8-75ee97ede8dd').DataTable(dt_args);
+                $('#62f36f73-3e95-42b1-bd71-18ac54d7793e').DataTable(dt_args);
             });
         })
     }
@@ -1395,7 +1407,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="capital">
-<h2>capital<a class="headerlink" href="#capital" title="Permalink to this heading">#</a></h2>
+<h2>capital<a class="headerlink" href="#capital" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;capital&quot;</span><span class="p">])</span>
@@ -1426,7 +1438,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="d5dd2291-5e4e-455b-b7f1-0f484ddd51d2" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="0f7f2727-a4a1-414d-a519-184dac3f1142" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>capital</th>
@@ -1446,7 +1458,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#d5dd2291-5e4e-455b-b7f1-0f484ddd51d2').DataTable(dt_args);
+                $('#0f7f2727-a4a1-414d-a519-184dac3f1142').DataTable(dt_args);
             });
         })
     }
@@ -1456,7 +1468,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="complex-index">
-<h2>complex_index<a class="headerlink" href="#complex-index" title="Permalink to this heading">#</a></h2>
+<h2>complex_index<a class="headerlink" href="#complex-index" title="Link to this heading">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;complex_index&quot;</span><span class="p">])</span>
@@ -1487,7 +1499,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="76ca63d0-3761-4355-a306-d9ffb3504d10" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d295b2ef-1510-4ef0-940c-7233155e05d2" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>('code', 'code')</th>
@@ -1511,7 +1523,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#76ca63d0-3761-4355-a306-d9ffb3504d10').DataTable(dt_args);
+                $('#d295b2ef-1510-4ef0-940c-7233155e05d2').DataTable(dt_args);
             });
         })
     }
@@ -1521,7 +1533,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="int-float-str">
-<h2>int_float_str<a class="headerlink" href="#int-float-str" title="Permalink to this heading">#</a></h2>
+<h2>int_float_str<a class="headerlink" href="#int-float-str" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;int_float_str&quot;</span><span class="p">])</span>
@@ -1552,7 +1564,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="5a1543a5-2451-4c5a-a8ff-630338a1ac14" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="71f1db90-501d-41a8-90c1-76a9d9178920" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>int</th>
@@ -1574,7 +1586,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#5a1543a5-2451-4c5a-a8ff-630338a1ac14').DataTable(dt_args);
+                $('#71f1db90-501d-41a8-90c1-76a9d9178920').DataTable(dt_args);
             });
         })
     }
@@ -1584,7 +1596,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="wide">
-<h2>wide<a class="headerlink" href="#wide" title="Permalink to this heading">#</a></h2>
+<h2>wide<a class="headerlink" href="#wide" title="Link to this heading">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;wide&quot;</span><span class="p">],</span> <span class="n">maxBytes</span><span class="o">=</span><span class="mi">100000</span><span class="p">,</span> <span class="n">maxColumns</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">scrollX</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1615,7 +1627,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="5a2f9b47-3117-4c10-8d1f-16f9a4ed757e" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="58458df6-105a-41a8-906a-af3da48eb307" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>column_0</th>
@@ -1734,7 +1746,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#5a2f9b47-3117-4c10-8d1f-16f9a4ed757e').DataTable(dt_args);
+                $('#58458df6-105a-41a8-906a-af3da48eb307').DataTable(dt_args);
             });
         })
     }
@@ -1744,7 +1756,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="long-column-names">
-<h2>long_column_names<a class="headerlink" href="#long-column-names" title="Permalink to this heading">#</a></h2>
+<h2>long_column_names<a class="headerlink" href="#long-column-names" title="Link to this heading">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;long_column_names&quot;</span><span class="p">],</span> <span class="n">scrollX</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1775,7 +1787,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="0b28149c-1365-4573-bb00-426db192771c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="cf7f756a-a7ed-4103-a20c-6a3293bbbeab" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>short name</th>
@@ -1800,7 +1812,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#0b28149c-1365-4573-bb00-426db192771c').DataTable(dt_args);
+                $('#cf7f756a-a7ed-4103-a20c-6a3293bbbeab').DataTable(dt_args);
             });
         })
     }
@@ -1810,7 +1822,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="named-column-index">
-<h2>named_column_index<a class="headerlink" href="#named-column-index" title="Permalink to this heading">#</a></h2>
+<h2>named_column_index<a class="headerlink" href="#named-column-index" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">dict_of_test_dfs</span><span class="p">[</span><span class="s2">&quot;named_column_index&quot;</span><span class="p">])</span>
@@ -1841,7 +1853,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="ce950da4-afb4-4190-a57c-b5214e80bedc" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d9fda010-bacc-4e89-8098-968432e41248" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>a</th>
@@ -1861,7 +1873,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#ce950da4-afb4-4190-a57c-b5214e80bedc').DataTable(dt_args);
+                $('#d9fda010-bacc-4e89-8098-968432e41248').DataTable(dt_args);
             });
         })
     }
@@ -1871,7 +1883,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 </div>
 </section>
 <section id="big-integers">
-<h2>big_integers<a class="headerlink" href="#big-integers" title="Permalink to this heading">#</a></h2>
+<h2>big_integers<a class="headerlink" href="#big-integers" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itables.options</span> <span class="k">as</span> <span class="nn">opt</span>
@@ -1906,7 +1918,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
 }
 </style>
 <div class="itables">
-<table id="542a4b6d-4414-4eb1-9034-74438640cab1" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="5146dae1-e26e-48a1-83f6-f3a3d47e8c5c" class="display nowrap"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
       
       <th>bigint</th>
@@ -1927,7 +1939,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
                 dt_args["data"] = data;
 
                 
-                $('#542a4b6d-4414-4eb1-9034-74438640cab1').DataTable(dt_args);
+                $('#5146dae1-e26e-48a1-83f6-f3a3d47e8c5c').DataTable(dt_args);
             });
         })
     }
@@ -1995,6 +2007,7 @@ dataframes are displayed nicely with the default <code class="docutils literal n
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -2048,7 +2061,7 @@ By Marc Wouts
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -2072,8 +2085,8 @@ By Marc Wouts
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
