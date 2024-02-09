@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Supported Notebook Editors &#8212; Interactive Tables</title>
+    <title>Supported Editors &#8212; Interactive Tables</title>
   
   
   
@@ -53,18 +53,10 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=36754332"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'supported_editors';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -179,7 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Supported Notebook Editors</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Supported Editors</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="advanced_parameters.html">Advanced parameters</a></li>
@@ -188,6 +180,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="downsampling.html">Downsampling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sample_dataframes.html">Sample dataframes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="polars_dataframes.html">Polars dataframes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quarto.html">Quarto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing.html">Developing ITables</a></li>
@@ -331,7 +324,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Supported Notebook Editors</h1>
+    <h1>Supported Editors</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -341,7 +334,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Supported Notebook Editors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Supported Editors</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">Jupyter Lab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-nb-convert">Jupyter NB convert</a></li>
@@ -349,6 +342,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">Google Colab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code">VS Code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pycharm">PyCharm</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quarto">Quarto</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-a-dataframe-to-an-html-table">Exporting a DataFrame to an HTML table</a></li>
@@ -365,8 +359,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="supported-notebook-editors">
-<h1>Supported Notebook Editors<a class="headerlink" href="#supported-notebook-editors" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="supported-editors">
+<h1>Supported Editors<a class="headerlink" href="#supported-editors" title="Link to this heading">#</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">itables</span></code> has been tested in many development environments.</p>
 <section id="jupyter-notebook">
 <h2>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading">#</a></h2>
@@ -402,6 +396,11 @@ document.write(`
 <p>In PyCharm we recommend to call <code class="docutils literal notranslate"><span class="pre">init_notebook_mode</span></code> with the <code class="docutils literal notranslate"><span class="pre">connected=True</span></code> argument,
 because otherwise the notebooks do not display the interactive tables when they are reloaded.</p>
 <p><img alt="" src="_images/pycharm.png" /></p>
+</section>
+<section id="quarto">
+<h2>Quarto<a class="headerlink" href="#quarto" title="Link to this heading">#</a></h2>
+<p>ITables works well with Quarto - check out our <code class="docutils literal notranslate"><span class="pre">html</span></code> and <code class="docutils literal notranslate"><span class="pre">revealjs</span></code> <a class="reference internal" href="quarto.html"><span class="std std-doc">examples</span></a>.</p>
+<iframe src=quarto_revealjs.html width="750px" height="500px"></iframe>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="exporting-a-dataframe-to-an-html-table">
@@ -492,7 +491,7 @@ because otherwise the notebooks do not display the interactive tables when they 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Supported Notebook Editors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Supported Editors</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">Jupyter Lab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-nb-convert">Jupyter NB convert</a></li>
@@ -500,6 +499,7 @@ because otherwise the notebooks do not display the interactive tables when they 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">Google Colab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code">VS Code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pycharm">PyCharm</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quarto">Quarto</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-a-dataframe-to-an-html-table">Exporting a DataFrame to an HTML table</a></li>

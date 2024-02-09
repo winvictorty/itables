@@ -1,6 +1,21 @@
 ITables ChangeLog
 =================
 
+1.7.0 (2024-02-09)
+------------------
+
+**Added**
+- ITables works well with Quarto. We have added Quarto examples to the documentation. We set `data-quarto-disable-processing="true"` on the tables that are generated with `use_to_html=False` and thus can't be processed by Quarto ([#179](https://github.com/mwouts/itables/issues/179))
+
+**Fixed**
+- ITables works when you duplicate a notebook ([#222](https://github.com/mwouts/itables/issues/222))
+- We use `df.isetitem(i, ...)` rather than `df.iloc[:,i] = ...` to avoid a warning with Pandas 2.2.0 ([#223](https://github.com/mwouts/itables/issues/223))
+
+**Changed**
+- We have changed how datatables.net is loaded. This is expected to improve the VSCode experience ([#216](https://github.com/mwouts/itables/issues/216))
+- We have removed legacy Python 2 code.
+
+
 1.6.4 (2024-02-03)
 ------------------
 
