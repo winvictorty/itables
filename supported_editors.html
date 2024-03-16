@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'supported_editors';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Advanced parameters" href="advanced_parameters.html" />
-    <link rel="prev" title="Quick Start" href="quick_start.html" />
+    <link rel="next" title="Quarto" href="quarto.html" />
+    <link rel="prev" title="Custom Extensions" href="custom_extensions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -170,22 +170,32 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">How to use DataTables</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="advanced_parameters.html">The DataTable Arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formatting.html">Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_css.html">Styling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">DataTables Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_extensions.html">Custom Extensions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ITables</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Supported Editors</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="advanced_parameters.html">Advanced parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pandas_style.html">Pandas Style</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_css.html">Custom CSS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="downsampling.html">Downsampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sample_dataframes.html">Sample dataframes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="polars_dataframes.html">Polars dataframes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quarto.html">Quarto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="downsampling.html">Downsampling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing.html">Developing ITables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">ITables ChangeLog</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Example DataFrames</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="sample_dataframes.html">Sample dataframes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polars_dataframes.html">Polars dataframes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pandas_style.html">Pandas Style examples</a></li>
 </ul>
 
     </div>
@@ -388,7 +398,7 @@ document.write(`
 </section>
 <section id="vs-code">
 <h2>VS Code<a class="headerlink" href="#vs-code" title="Link to this heading">#</a></h2>
-<p>In VS Code, <code class="docutils literal notranslate"><span class="pre">itables</span></code> works both for Jupyter Notebooks and Python scripts</p>
+<p>In VS Code, <code class="docutils literal notranslate"><span class="pre">itables</span></code> works both for Jupyter Notebooks and Python scripts.</p>
 <p><img alt="" src="_images/code.png" /></p>
 </section>
 <section id="pycharm">
@@ -405,7 +415,7 @@ because otherwise the notebooks do not display the interactive tables when they 
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="exporting-a-dataframe-to-an-html-table">
 <h1>Exporting a DataFrame to an HTML table<a class="headerlink" href="#exporting-a-dataframe-to-an-html-table" title="Link to this heading">#</a></h1>
-<p>To get the HTML representation of a Pandas DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> as an interactive <a class="reference external" href="https://datatables.net/">datatable</a>, you can use <code class="docutils literal notranslate"><span class="pre">to_html_datatable</span></code> as below:</p>
+<p>To get the HTML representation of a Pandas DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> as an interactive <a class="reference external" href="https://datatables.net/">DataTable</a>, you can use <code class="docutils literal notranslate"><span class="pre">to_html_datatable</span></code> as below:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">to_html_datatable</span>
 <span class="kn">from</span> <span class="nn">itables.sample_dfs</span> <span class="kn">import</span> <span class="n">get_countries</span>
 
@@ -418,6 +428,7 @@ because otherwise the notebooks do not display the interactive tables when they 
 <h1>Using ITables in Shiny<a class="headerlink" href="#using-itables-in-shiny" title="Link to this heading">#</a></h1>
 <p>You can use ITables in Web applications generated with <a class="reference external" href="https://shiny.rstudio.com/py/">Shiny</a> for Python with e.g.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">shiny</span> <span class="kn">import</span> <span class="n">ui</span>
+
 <span class="kn">from</span> <span class="nn">itables.shiny</span> <span class="kn">import</span> <span class="n">DT</span>
 
 <span class="n">ui</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">DT</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
@@ -458,20 +469,20 @@ because otherwise the notebooks do not display the interactive tables when they 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="quick_start.html"
+       href="custom_extensions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Quick Start</p>
+        <p class="prev-next-title">Custom Extensions</p>
       </div>
     </a>
     <a class="right-next"
-       href="advanced_parameters.html"
+       href="quarto.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Advanced parameters</p>
+        <p class="prev-next-title">Quarto</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -529,7 +540,7 @@ By Marc Wouts
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2019-2024.
       <br/>
     
   </p>
