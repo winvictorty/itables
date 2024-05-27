@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Developing ITables" href="developing.html" />
-    <link rel="prev" title="References" href="references.html" />
+    <link rel="prev" title="IPyWidgets" href="ipywidgets.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -176,22 +176,29 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">How to use DataTables</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">ITables in Notebooks</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="advanced_parameters.html">The DataTables Arguments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formatting.html">Formatting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_css.html">Styling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="extensions.html">DataTables Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_parameters.html">Advanced Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_css.html">Table Style and CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formatting.html">Cell Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pandas_style.html">Using Pandas Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Download Buttons and Other Extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_extensions.html">Custom Extensions</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">ITables</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="supported_editors.html">Supported Editors</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="quarto.html">Quarto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="downsampling.html">Downsampling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_editors.html">Supported Editors</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ITables in Applications</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="html_export.html">HTML export</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dash.html">Dash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shiny.html">Shiny</a></li>
+<li class="toctree-l1"><a class="reference internal" href="streamlit.html">Streamlit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipywidgets.html">IPyWidgets</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing to ITables</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing.html">Developing ITables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
@@ -201,7 +208,6 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sample_dataframes.html">Sample dataframes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="polars_dataframes.html">Polars dataframes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pandas_style.html">Pandas Style examples</a></li>
 </ul>
 
     </div>
@@ -243,6 +249,37 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/mwouts/itables/main?urlpath=lab/tree/docs/contributing.md" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -317,6 +354,23 @@
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/contributing.ipynb" target="_blank"
+   class="btn btn-sm btn-download-notebook-button dropdown-item"
+   title="Download notebook file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
       
       
       
@@ -414,9 +468,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-an-issue">Reporting an issue</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improving-the-documentation">Improving the documentation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-a-new-feature">Developing a new feature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report-an-issue">Report an issue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improve-the-documentation">Improve the documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#give-credit-to-itables">Give credit to ITables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support-datatables">Support DataTables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#develop-a-new-feature">Develop a new feature</a></li>
 </ul>
             </nav>
         </div>
@@ -431,27 +487,63 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="contributing">
 <h1>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">#</a></h1>
 <p>Thanks for considering making a contribution to ITables. There are
-indeed many ways to help!</p>
-<section id="reporting-an-issue">
-<h2>Reporting an issue<a class="headerlink" href="#reporting-an-issue" title="Link to this heading">#</a></h2>
+many ways you can help!</p>
+<section id="report-an-issue">
+<h2>Report an issue<a class="headerlink" href="#report-an-issue" title="Link to this heading">#</a></h2>
 <p>If you see an issue, a possible improvement, or if you can’t find
 the answer to your question, then you are very welcome to create
 an issue on this project. Please provide enough detail so that
 we can reproduce the issue.</p>
 </section>
-<section id="improving-the-documentation">
-<h2>Improving the documentation<a class="headerlink" href="#improving-the-documentation" title="Link to this heading">#</a></h2>
+<section id="improve-the-documentation">
+<h2>Improve the documentation<a class="headerlink" href="#improve-the-documentation" title="Link to this heading">#</a></h2>
 <p>If you would like to add a new example,
 or improve the documentation, feel free to make a pull request!</p>
 <p>You can render the documentation locally - see the section on
 <a class="reference internal" href="developing.html#jupyter-book"><span class="std std-ref">Jupyter Book</span></a> in the developer guide.</p>
 </section>
-<section id="developing-a-new-feature">
-<h2>Developing a new feature<a class="headerlink" href="#developing-a-new-feature" title="Link to this heading">#</a></h2>
+<section id="give-credit-to-itables">
+<h2>Give credit to ITables<a class="headerlink" href="#give-credit-to-itables" title="Link to this heading">#</a></h2>
+<p>It’s always great to see new stars coming to ITables! <a class="github-button" href="https://github.com/mwouts/itables" data-icon="octicon-star" data-show-count="true"></a></p>
+<script src="https://buttons.github.io/buttons.js"></script>
+<p>If you wanted to share a link to ITables and DataTables (no obligation whatsoever), you could use something like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">display</span>
+
+<span class="n">display</span><span class="p">(</span>
+    <span class="n">HTML</span><span class="p">(</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Tables displayed with &lt;a href=https://mwouts.github.io/itables/&gt;ITables&lt;/a&gt;,</span>
+<span class="sd">a Python wrapper for &lt;a href=https://datatables.net&gt;DataTables&lt;/a&gt;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+Tables displayed with <a href=https://mwouts.github.io/itables/>ITables</a>,
+a Python wrapper for <a href=https://datatables.net>DataTables</a>
+</div></div>
+</div>
+</section>
+<section id="support-datatables">
+<h2>Support DataTables<a class="headerlink" href="#support-datatables" title="Link to this heading">#</a></h2>
+<p>Allan Jardine, the main developer of DataTables, has done a fantastic work on <a class="reference external" href="https://datatables.net/">DataTables</a>.</p>
+<p>If you enjoy his library, you could become a
+<a class="reference external" href="https://datatables.net/supporters/">supporter</a> -
+contributions range from 9 to 99$/year before VAT.
+Or you could take a subscription for DataTable’s <a class="reference external" href="https://editor.datatables.net">Editor</a>
+that ITables might support in the future (please subscribe to <a class="reference external" href="https://github.com/mwouts/itables/issues/243">#243</a> for updates).</p>
+</section>
+<section id="develop-a-new-feature">
+<h2>Develop a new feature<a class="headerlink" href="#develop-a-new-feature" title="Link to this heading">#</a></h2>
 <p>It is generally a good idea to get in touch with us first - e.g.
 open an issue and let us know what you’d like to do.</p>
-<p>But you can also simply clone the project and test your ideas.</p>
-<p>A guide on how to set up a development environment, and how to
+<p>But you can also simply clone the project and test your ideas.
+A guide on how to set up a development environment, and how to
 run some tests, is available <a class="reference internal" href="developing.html"><span class="std std-doc">here</span></a>.</p>
 </section>
 </section>
@@ -465,16 +557,16 @@ run some tests, is available <a class="reference internal" href="developing.html
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "itables"
         },
         kernelOptions: {
-            name: "python3",
+            name: "itables",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'itables'</script>
 
                 </article>
               
@@ -487,12 +579,12 @@ run some tests, is available <a class="reference internal" href="developing.html
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="references.html"
+       href="ipywidgets.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">References</p>
+        <p class="prev-next-title">IPyWidgets</p>
       </div>
     </a>
     <a class="right-next"
@@ -520,9 +612,11 @@ run some tests, is available <a class="reference internal" href="developing.html
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-an-issue">Reporting an issue</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improving-the-documentation">Improving the documentation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-a-new-feature">Developing a new feature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report-an-issue">Report an issue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improve-the-documentation">Improve the documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#give-credit-to-itables">Give credit to ITables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support-datatables">Support DataTables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#develop-a-new-feature">Develop a new feature</a></li>
 </ul>
   </nav></div>
 

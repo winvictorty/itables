@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'supported_editors';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Quarto" href="quarto.html" />
-    <link rel="prev" title="Custom Extensions" href="custom_extensions.html" />
+    <link rel="next" title="HTML export" href="html_export.html" />
+    <link rel="prev" title="References" href="references.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -176,22 +176,29 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">How to use DataTables</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="advanced_parameters.html">The DataTables Arguments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formatting.html">Formatting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_css.html">Styling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="extensions.html">DataTables Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_extensions.html">Custom Extensions</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">ITables</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">ITables in Notebooks</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Supported Editors</a></li>
-
-
+<li class="toctree-l1"><a class="reference internal" href="advanced_parameters.html">Advanced Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_css.html">Table Style and CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formatting.html">Cell Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pandas_style.html">Using Pandas Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Download Buttons and Other Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_extensions.html">Custom Extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quarto.html">Quarto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="downsampling.html">Downsampling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Supported Editors</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ITables in Applications</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="html_export.html">HTML export</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dash.html">Dash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shiny.html">Shiny</a></li>
+<li class="toctree-l1"><a class="reference internal" href="streamlit.html">Streamlit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipywidgets.html">IPyWidgets</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing to ITables</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing.html">Developing ITables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
@@ -201,7 +208,6 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sample_dataframes.html">Sample dataframes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="polars_dataframes.html">Polars dataframes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pandas_style.html">Pandas Style examples</a></li>
 </ul>
 
     </div>
@@ -414,7 +420,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Supported Editors</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">Jupyter Lab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-nb-convert">Jupyter NB convert</a></li>
@@ -424,11 +429,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pycharm">PyCharm</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quarto">Quarto</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-a-dataframe-to-an-html-table">Exporting a DataFrame to an HTML table</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#using-itables-in-shiny">Using ITables in Shiny</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -441,7 +441,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="supported-editors">
 <h1>Supported Editors<a class="headerlink" href="#supported-editors" title="Link to this heading">#</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">itables</span></code> has been tested in many development environments.</p>
+<p>ITables has been tested in the following environments</p>
 <section id="jupyter-notebook">
 <h2>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading">#</a></h2>
 <p>Try it on <a class="reference external" href="https://mybinder.org/v2/gh/mwouts/itables/main?filepath=docs/quick_start.md"><img alt="Notebook" src="https://img.shields.io/badge/Binder-JupyterNotebook-blue.svg" /></a></p>
@@ -483,30 +483,6 @@ because otherwise the notebooks do not display the interactive tables when they 
 <iframe src=quarto_revealjs.html width="750px" height="500px"></iframe>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="exporting-a-dataframe-to-an-html-table">
-<h1>Exporting a DataFrame to an HTML table<a class="headerlink" href="#exporting-a-dataframe-to-an-html-table" title="Link to this heading">#</a></h1>
-<p>To get the HTML representation of a Pandas DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> as an interactive <a class="reference external" href="https://datatables.net/">DataTable</a>, you can use <code class="docutils literal notranslate"><span class="pre">to_html_datatable</span></code> as below:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">to_html_datatable</span>
-<span class="kn">from</span> <span class="nn">itables.sample_dfs</span> <span class="kn">import</span> <span class="n">get_countries</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">get_countries</span><span class="p">()</span>
-<span class="n">html</span> <span class="o">=</span> <span class="n">to_html_datatable</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="using-itables-in-shiny">
-<h1>Using ITables in Shiny<a class="headerlink" href="#using-itables-in-shiny" title="Link to this heading">#</a></h1>
-<p>You can use ITables in Web applications generated with <a class="reference external" href="https://shiny.rstudio.com/py/">Shiny</a> for Python with e.g.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">shiny</span> <span class="kn">import</span> <span class="n">ui</span>
-
-<span class="kn">from</span> <span class="nn">itables.shiny</span> <span class="kn">import</span> <span class="n">DT</span>
-
-<span class="n">ui</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">DT</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
-</pre></div>
-</div>
-<p>See also our <a class="reference external" href="https://github.com/mwouts/itables/tree/main/tests/sample_python_apps">tested examples</a>.</p>
-<p>ITables won’t work in Dash because jQuery is not usable in Dash (see the <a class="reference external" href="https://dash.plotly.com/faqs">Dash FAQ</a>).</p>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -539,20 +515,20 @@ because otherwise the notebooks do not display the interactive tables when they 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="custom_extensions.html"
+       href="references.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Custom Extensions</p>
+        <p class="prev-next-title">References</p>
       </div>
     </a>
     <a class="right-next"
-       href="quarto.html"
+       href="html_export.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quarto</p>
+        <p class="prev-next-title">HTML export</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -572,7 +548,6 @@ because otherwise the notebooks do not display the interactive tables when they 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Supported Editors</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">Jupyter Notebook</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">Jupyter Lab</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-nb-convert">Jupyter NB convert</a></li>
@@ -582,11 +557,6 @@ because otherwise the notebooks do not display the interactive tables when they 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pycharm">PyCharm</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quarto">Quarto</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-a-dataframe-to-an-html-table">Exporting a DataFrame to an HTML table</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#using-itables-in-shiny">Using ITables in Shiny</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>

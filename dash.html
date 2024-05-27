@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Troubleshooting &#8212; Interactive Tables</title>
+    <title>Dash &#8212; Interactive Tables</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'troubleshooting';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dash';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ITables ChangeLog" href="changelog.html" />
-    <link rel="prev" title="Developing ITables" href="developing.html" />
+    <link rel="next" title="Shiny" href="shiny.html" />
+    <link rel="prev" title="HTML export" href="html_export.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -190,18 +190,18 @@
 <li class="toctree-l1"><a class="reference internal" href="supported_editors.html">Supported Editors</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ITables in Applications</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="html_export.html">HTML export</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dash.html">Dash</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Dash</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shiny.html">Shiny</a></li>
 <li class="toctree-l1"><a class="reference internal" href="streamlit.html">Streamlit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ipywidgets.html">IPyWidgets</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing to ITables</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing.html">Developing ITables</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">ITables ChangeLog</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Example DataFrames</span></p>
@@ -254,37 +254,6 @@
 
 
 
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/mwouts/itables/main?urlpath=lab/tree/docs/troubleshooting.md" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -310,7 +279,7 @@
       
       
       
-      <li><a href="https://github.com/mwouts/itables/edit/main/docs/troubleshooting.md" target="_blank"
+      <li><a href="https://github.com/mwouts/itables/edit/main/docs/dash.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -327,7 +296,7 @@
       
       
       
-      <li><a href="https://github.com/mwouts/itables/issues/new?title=Issue%20on%20page%20%2Ftroubleshooting.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/mwouts/itables/issues/new?title=Issue%20on%20page%20%2Fdash.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,24 +326,7 @@
       
       
       
-      <li><a href="_sources/troubleshooting.ipynb" target="_blank"
-   class="btn btn-sm btn-download-notebook-button dropdown-item"
-   title="Download notebook file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="btn__text-container">.ipynb</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="_sources/troubleshooting.md" target="_blank"
+      <li><a href="_sources/dash.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -445,9 +397,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -458,21 +408,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Troubleshooting</h1>
+    <h1>Dash</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-takes-forever">Loading takes forever?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trust-your-notebook">Trust your notebook</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-itables-version">Check ITables’ version</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -482,189 +422,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="troubleshooting">
-<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h1>
-<section id="loading-takes-forever">
-<h2>Loading takes forever?<a class="headerlink" href="#loading-takes-forever" title="Link to this heading">#</a></h2>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">show</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-<span class="n">tags</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="s1">&#39;&lt;caption style=&quot;caption-side: bottom&quot;&gt;A table that does not load, due &#39;</span>
-    <span class="s2">&quot;to &lt;code&gt;init_notebook_mode&lt;/code&gt;&lt;br&gt;not being called in this document&lt;/caption&gt;&quot;</span>
-<span class="p">)</span>
-
-<span class="n">show</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">connected</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="n">tags</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</details>
-<div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_4c0359ad_41e4_418a_b889_7b554839af85" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
-<caption style="caption-side: bottom">A table that does not load, due to <code>init_notebook_mode</code><br>not being called in this document</caption><thead>
-    <tr style="text-align: right;">
-      <th></th>
-    </tr>
-  </thead><tbody><tr>
-<td style="vertical-align:middle; text-align:left">
-<div style="float:left; margin-right: 10px;">
-<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
-    <g style="fill:#d9d7fc">
-        <path d="M100,400H500V357H100Z" />
-        <path d="M100,300H400V257H100Z" />
-        <path d="M0,200H400V157H0Z" />
-        <path d="M100,100H500V57H100Z" />
-        <path d="M100,350H500V307H100Z" />
-        <path d="M100,250H400V207H100Z" />
-        <path d="M0,150H400V107H0Z" />
-        <path d="M100,50H500V7H100Z" />
-    </g>
-    <g style="fill:#1a1366;stroke:#1a1366;">
-   <rect x="100" y="7" width="400" height="43">
-    <animate
-      attributeName="width"
-      values="0;400;0"
-      dur="5s"
-      repeatCount="indefinite" />
-      <animate
-      attributeName="x"
-      values="100;100;500"
-      dur="5s"
-      repeatCount="indefinite" />
-  </rect>
-        <rect x="0" y="107" width="400" height="43">
-    <animate
-      attributeName="width"
-      values="0;400;0"
-      dur="3.5s"
-      repeatCount="indefinite" />
-    <animate
-      attributeName="x"
-      values="0;0;400"
-      dur="3.5s"
-      repeatCount="indefinite" />
-  </rect>
-        <rect x="100" y="207" width="300" height="43">
-    <animate
-      attributeName="width"
-      values="0;300;0"
-      dur="3s"
-      repeatCount="indefinite" />
-    <animate
-      attributeName="x"
-      values="100;100;400"
-      dur="3s"
-      repeatCount="indefinite" />
-  </rect>
-        <rect x="100" y="307" width="400" height="43">
-    <animate
-      attributeName="width"
-      values="0;400;0"
-      dur="4s"
-      repeatCount="indefinite" />
-      <animate
-      attributeName="x"
-      values="100;100;500"
-      dur="4s"
-      repeatCount="indefinite" />
-  </rect>
-        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
-            <g transform="translate(45 50) rotate(-45)">
-                <circle r="33" cx="0" cy="0" />
-                <rect x="-8" y="32" width="16" height="30" />
-            </g>
-
-            <g transform="translate(450 152)">
-                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
-                <rect x="-15" y="-40" width="60" height="60" />
-            </g>
-
-            <g transform="translate(50 352)">
-                <polygon points="-35,-5 0,-40 35,-5" />
-                <polygon points="-35,10 0,45 35,10" />
-            </g>
-
-            <g transform="translate(75 250)">
-                <polyline points="-30,30 -60,0 -30,-30" />
-                <polyline points="0,30 -30,0 0,-30" />
-            </g>
-
-            <g transform="translate(425 250) rotate(180)">
-                <polyline points="-30,30 -60,0 -30,-30" />
-                <polyline points="0,30 -30,0 0,-30" />
-            </g>
-        </g>
-    </g>
-</svg>
-</a>
-</div>
-<div>
-Loading ITables v2.1.0rc3 from the <code>init_notebook_mode</code> cell...
-(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
-</div>
-</tr></tbody>
-
-</table>
-<script type="module">
-    const { DataTable, jQuery: $ } = await import(window._datatables_src_for_itables_2_1_0rc3);
-
-    document.querySelectorAll("#itables_4c0359ad_41e4_418a_b889_7b554839af85:not(.dataTable)").forEach(table => {
-        // Define the table data
-        const data = [];
-
-        // Define the dt_args
-        let dt_args = {"layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "order": []};
-        dt_args["data"] = data;
-
-        
-        new DataTable(table, dt_args);
-    });
-</script>
-</div></div>
-</div>
-<p>If a table says “Loading…” forever, then maybe</p>
-<ul class="simple">
-<li><p>You forgot to run <code class="docutils literal notranslate"><span class="pre">init_notebook_mode</span></code> (like in the example above), or you deleted that cell or its output</p></li>
-<li><p>Or you ran <code class="docutils literal notranslate"><span class="pre">init_notebook_mode(connected=True)</span></code> but you are not connected to the internet?</p></li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you change the value of the <code class="docutils literal notranslate"><span class="pre">connected</span></code> argument in
-the <code class="docutils literal notranslate"><span class="pre">init_notebook_mode</span></code> cell, you need to re-execute all the cells
-that display interactive tables.</p>
-</div>
-</section>
-<section id="trust-your-notebook">
-<h2>Trust your notebook<a class="headerlink" href="#trust-your-notebook" title="Link to this heading">#</a></h2>
-<p>It could also be that your notebook is not <em>trusted</em>. This happens when you
-have not run the notebook in full yourself (e.g. the notebook was sent to you with outputs,
-or the notebook was created by a tool like <code class="docutils literal notranslate"><span class="pre">papermill</span></code>). In that case, JavaScript
-code cannot run (and the interactive tables won’t display)
-until you tell Jupyter that you trust the notebook content
-(run “Trust Notebook” in View / Activate Command Palette).</p>
-</section>
-<section id="check-itables-version">
-<h2>Check ITables’ version<a class="headerlink" href="#check-itables-version" title="Link to this heading">#</a></h2>
-<p>If the above does not help, please check out the <a class="reference internal" href="changelog.html"><span class="std std-doc">ChangeLog</span></a>
-and decide whether you should upgrade <code class="docutils literal notranslate"><span class="pre">itables</span></code>. You can tell the version
-of ITables that you are using by looking at the loading message (from ITables v2.0.1 on)
-or by running this code snippet:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itables</span> <span class="k">as</span> <span class="nn">it</span>
-
-<span class="n">it</span><span class="o">.</span><span class="n">__version__</span>
-</pre></div>
-</div>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="dash">
+<h1>Dash<a class="headerlink" href="#dash" title="Link to this heading">#</a></h1>
+<p>ITables does not have a <a class="reference external" href="https://dash.plotly.com/">Dash</a> component, but might get one in the future.
+You are welcome to subscribe or contribute to <a class="reference external" href="https://github.com/mwouts/itables/issues/245">#245</a>.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -676,16 +437,16 @@ or by running this code snippet:</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "itables"
+            mode: "python"
         },
         kernelOptions: {
-            name: "itables",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'itables'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -698,20 +459,20 @@ or by running this code snippet:</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="developing.html"
+       href="html_export.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Developing ITables</p>
+        <p class="prev-next-title">HTML export</p>
       </div>
     </a>
     <a class="right-next"
-       href="changelog.html"
+       href="shiny.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ITables ChangeLog</p>
+        <p class="prev-next-title">Shiny</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -722,22 +483,7 @@ or by running this code snippet:</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-takes-forever">Loading takes forever?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trust-your-notebook">Trust your notebook</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-itables-version">Check ITables’ version</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
