@@ -29,7 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
@@ -46,7 +46,7 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -238,9 +238,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -398,9 +398,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -438,15 +438,13 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="streamlit">
 <h1>Streamlit<a class="headerlink" href="#streamlit" title="Link to this heading">#</a></h1>
 <p>ITables in version <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code> or above can be used in Streamlit.</p>
-<p>To render a DataFrame with ITables in a Streamlit app, use <code class="docutils literal notranslate"><span class="pre">interactive_table</span></code>:</p>
+<p>To render a DataFrame with ITables in a Streamlit app, use <code class="docutils literal notranslate"><span class="pre">itables.streamlit.interactive_table</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itables.streamlit</span> <span class="kn">import</span> <span class="n">interactive_table</span>
 </pre></div>
 </div>
 <p>The function <code class="docutils literal notranslate"><span class="pre">interactive_table</span></code> accepts the same arguments as <code class="docutils literal notranslate"><span class="pre">show</span></code> and <code class="docutils literal notranslate"><span class="pre">to_html_datatable</span></code>, e.g. the
 first argument is the dataframe that will be displayed, and then you
 can set a <code class="docutils literal notranslate"><span class="pre">caption</span></code>, custom <code class="docutils literal notranslate"><span class="pre">classes</span></code> or <code class="docutils literal notranslate"><span class="pre">style</span></code>, and even activate the <code class="docutils literal notranslate"><span class="pre">buttons</span></code> extension, etc…</p>
-<p>Unlike <code class="docutils literal notranslate"><span class="pre">show</span></code>, <code class="docutils literal notranslate"><span class="pre">interactive_table</span></code> has <code class="docutils literal notranslate"><span class="pre">scrollX=True</span></code> by default. This makes the
-rendering of wide tables more similar to that of <code class="docutils literal notranslate"><span class="pre">show</span></code> in Notebooks.</p>
 <section id="a-sample-application">
 <h2>A sample application<a class="headerlink" href="#a-sample-application" title="Link to this heading">#</a></h2>
 <p>A sample Streamlit application is available at <a class="reference external" href="https://itables.streamlit.app">itables.streamlit.app</a> (source code <a class="reference external" href="https://github.com/mwouts/demo_itables_in_streamlit/blob/main/itables_app.py">here</a>)</p>
